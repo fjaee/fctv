@@ -1,0 +1,91 @@
+#EXTM3U
+
+# Entertainment - No DRM
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_kapamilya_channel.webp" group-title="Entertainment",Kapamilya Channel
+http://136.239.173.2:6610/001/2/ch00000090990000001286/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2Bqw65FFCygtQMRRIUPF0xuXytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001694&contentid=ch00000000000000001694&videoid=ch00000090990000001286&recommendtype=0&userid=1004802317138&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=CCJLYZ04O9IXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_alltv2.webp" group-title="Entertainment",ALLTV2
+http://136.239.158.10:6610/001/2/ch00000090990000001179/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2Bow35sHUcBhGBpxqddBGYEnytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001415&contentid=ch00000000000000001415&videoid=ch00000090990000001179&recommendtype=0&userid=1205050496206&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=02WMA0HI2O3AXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_gma7.webp" group-title="Entertainment",GMA 7
+http://136.158.97.2:6610/001/2/ch00000090990000001093/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMAoLvT86fM74ocVChyFS93HUsyK4TH4mOENKJ45mwOyS0g%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001214&contentid=ch00000000000000001214&videoid=ch00000090990000001093&recommendtype=0&userid=1438418816418&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=BLJMICF8T5XXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO&IASHttpSessionId=RR20448620260101155237367179&ispcode=55
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_tv5.webp" group-title="Entertainment",TV5
+http://136.239.158.30:6610/001/2/ch00000090990000001088/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2Boh0xOsaoSFLqA0PEh9gVjiytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001213&contentid=ch00000000000000001213&videoid=ch00000090990000001088&recommendtype=0&userid=1150006064464&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=J62NMXIGLTMXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_gtv.webp" group-title="Entertainment",GTV
+http://136.239.159.18:6610/001/2/ch00000090990000001143/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BrwAtJC%2BsmBQ5ARU076BdkhytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001313&contentid=ch00000000000000001313&videoid=ch00000090990000001143&recommendtype=0&userid=1590268675436&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=AAIUZ2MAG7XXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
+
+# News - No DRM
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_bnc.webp" group-title="News",Bilyonaryo News Channel
+https://amg19223-amg19223c11-amgplt0352.playout.now3.amagi.tv/playlist/amg19223-amg19223c11-amgplt0352/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_cna.webp" group-title="News",CNA
+https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8
+
+# Documentary - No DRM
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_nat_geo.webp" group-title="Documentary",National Geographic
+http://supersonictv.live:8080/611366/682256/22124
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_nat_geo_wild.webp" group-title="Documentary",National Geographic Wild
+http://supersonictv.live:8080/611366/682256/22125
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_wild_earth.webp" group-title="Documentary",Wild Earth
+https://wildearth-plex.amagi.tv/masterR1080p.m3u8
+
+# International - No DRM
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_arirang.webp" group-title="International",Arirang
+https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
+
+# Anime - No DRM
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_aniplus.webp" group-title="Anime",AniPlus
+https://amg18481-amg18481c1-amgplt0352.playout.now3.amagi.tv/playlist/amg18481-amg18481c1-amgplt0352/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_anime_x_hidive.webp" group-title="Anime",Anime X HiDive
+https://amc-anime-x-hidive-1-us.tablo.wurl.tv/3000.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_ani_blast.webp" group-title="Anime",Ani-blast
+https://amg19223-amg19223c9-amgplt0019.playout.now3.amagi.tv/playlist/amg19223-amg19223c9-amgplt0019/playlist.m3u8
+
+# Kids - No DRM
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_zoomoo.webp" group-title="Kids",ZooMoo
+https://zoomoo-samsungau.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_kartoon_channel.webp" group-title="Kids",Kartoon Channel!
+https://live-manifest.production-public.tubi.io/live/ede882c2-43d6-4eca-9351-ea29e84dc217/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_boomerang.webp" group-title="Kids",BOOMERANG
+http://23.237.104.106:8080/USA_BOOMERANG/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_disney_xd.webp" group-title="Kids",Disney XD
+http://23.237.104.106:8080/USA_DISNEY_XD/index.m3u8
+
+# Music - No DRM
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_new_k_pop.webp" group-title="Music",New K-Pop
+https://newidco-newkid-1-eu.xiaomi.wurl.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_vevo_pop.webp" group-title="Music",Vevo Pop
+https://amg00056-amg00056c6-rakuten-uk-3235.playouts.now.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_trace_urban.webp" group-title="Music",Trace Urban
+https://lightning-traceurban-samsungau.amagi.tv/playlist.m3u8
+
+# Movies - No DRM
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_starz.webp" group-title="Movies",Starz
+http://212.102.60.231/STARZ/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_star_movies.webp" group-title="Movies",Star Movies
+http://103.175.242.10:8080/starmovies/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_amc_presents.webp" group-title="Movies",Stories by AMC
+https://amc-amcpresents-1-us.plex.wurl.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_moviesphere.webp" group-title="Movies",MovieSphere
+https://amg00353-lionsgatestudio-moviesphere-xumo-zh5u0.amagi.tv/playlist.m3u8
+
+# Entertainment - More
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_game_show_network.webp" group-title="Entertainment",Game Show Network
+https://a-cdn.klowdtv.com/live2/gsn_720p/chunks.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_comedy_central.webp" group-title="Entertainment",Comedy Central
+http://23.237.104.106:8080/USA_COMEDY_CENTRAL/index.m3u8
