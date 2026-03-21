@@ -166,14 +166,31 @@ document.getElementById('player-title').textContent=ch.name;
 const video=document.getElementById('video');
 if(!player)player=new shaka.Player(video);
 player.configure({drm:{clearKeys:{}}});
-if(ch.drm&&ch.drm.clearkey){
+if(ch.drm){
 const keys={};
+if(ch.drm.keys&&Array.isArray(ch.drm.keys)){
+ch.drm.keys.forEach(jwk=>{
+if(jwk.kid&&jwk.k){
+const kid=jwk.kid.replace(/-/g,'+').replace(/_/g,'/');
+const k=jwk.k.replace(/-/g,'+').replace(/_/g,'/');
+keys[kid]=k;
+}
+});
+}else if(ch.drm.clearkey){
 if(Array.isArray(ch.drm.clearkey)){
 ch.drm.clearkey.forEach(pair=>{
-if(pair.kid&&pair.key)keys[pair.kid]=pair.key;});
+if(pair.kid&&pair.key)keys[pair.kid]=pair.key;
+});
 }else if(typeof ch.drm.clearkey==='object'){
-Object.assign(keys,ch.drm.clearkey);}
-player.configure({drm:{clearKeys:keys}});}
+Object.assign(keys,ch.drm.clearkey);
+}
+}else{
+Object.assign(keys,ch.drm);
+}
+if(Object.keys(keys).length>0){
+player.configure({drm:{clearKeys:keys}});
+}
+}
 const netConfig={networkingEngine:player.getNetworkingEngine()};
 if(ch.headers){
 const headers={};
