@@ -12,6 +12,8 @@ except Exception as e:
     print(f"Error fetching source JSON: {e}")
     exit(1)
 
+print(f"Fetched {len(data)} channels from source.")
+
 # 2. Base URLs for Logos
 BASE_NOODTAYO = "https://raw.githubusercontent.com/noodtayo/app/main/images/"
 BASE_TVLOGO   = "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/"
@@ -234,4 +236,5 @@ m3u_all = ['#EXTM3U'] + [build_m3u_entry(ch) for ch in data]
 with open('channels-all.m3u', 'w', encoding='utf-8') as f:
     f.write('\n\n'.join(m3u_all))
 
-print("Files generated successfully!")
+print(f"Generated channels-drm.m3u with {len([ch for ch in data if 'drm' in ch])} channels.")
+print(f"Generated channels-all.m3u with {len(data)} channels (INCLUDING non-DRM like GMA 7).")
