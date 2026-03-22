@@ -1,13 +1,14 @@
 import json
 import urllib.request
 import os
+from datetime import datetime
 
 # 1. Fetch the latest channels.json from the source
 SOURCE_URL = "https://raw.githubusercontent.com/noodtayo/app/refs/heads/main/channels.json"
 try:
-    req = urllib.request.Request(SOURCE_URL, headers={'User-Agent': 'Mozilla/5.0'})
+    req = urllib.request.Request(SOURCE_URL, headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req, timeout=10) as resp:
-        data = json.loads(resp.read().decode('utf-8'))
+        data = json.loads(resp.read().decode("utf-8"))
 except Exception as e:
     print(f"Error fetching source JSON: {e}")
     exit(1)
@@ -27,7 +28,7 @@ CA  = BASE_TVLOGO + "canada/"
 MY  = BASE_TVLOGO + "malaysia/"
 ASI = BASE_TVLOGO + "world-asia/"
 
-# 3. Logo Dictionaries
+# 3. Noodtayo repo confirmed images
 NOODTAYO_REPO = {
     "ch_ani_blast", "ch_astro_grandstand", "ch_astro_showcase", "ch_astro_showtime",
     "ch_boomerang", "ch_ccm", "ch_celestial_movies", "ch_comedy_central",
@@ -37,10 +38,15 @@ NOODTAYO_REPO = {
     "ch_tv_maria", "ch_zoomoo"
 }
 
+# 4. Logo Maps
 TV_LOGO_MAP = {
-    "ch_kapamilya_channel":  PH + "kapamilya-channel-ph.png",
-    "ch_alltv2":             PH + "alltv-ph.png",
-    "ch_gma7":               PH + "gma-ph.png",
+    # === UPDATED logos (user-verified) ===
+    "ch_kapamilya_channel":  "https://static.wikia.nocookie.net/logopedia/images/4/4a/ABS_KapCha_Logo.svg/revision/latest?cb=20260321024922",
+    "ch_alltv2":             "https://static.wikia.nocookie.net/logopedia/images/8/81/ABS-CBN_sa_ALLTV2_vertical.svg/revision/latest?cb=20260321025150",
+    "ch_gma7":               "https://upload.wikimedia.org/wikipedia/en/thumb/c/c0/GMA_Network_Logo_Vector.svg/1280px-GMA_Network_Logo_Vector.svg.png",
+    "ch_kapatid_channel":    "https://static.wikia.nocookie.net/tv5network/images/8/8b/Kapatid_Channel_%282025%29.png/revision/latest/scale-to-width-down/1200?cb=20260129063212",
+    "ch_pilipinas_live":     "https://pilipinaslive.com/assets/images/logo/pilipinaslive-logo-wbg.png",
+    # === Philippine channels — tv-logo/tv-logos verified ===
     "ch_tv5":                PH + "tv5-ph.png",
     "ch_gtv":                PH + "gtv-ph.png",
     "ch_a2z":                PH + "a2z-ph.png",
@@ -90,6 +96,7 @@ TV_LOGO_MAP = {
     "ch_jeepney_tv":         PH + "jeepney-tv-ph.png",
     "ch_rock_action":        PH + "rock-action-ph.png",
     "ch_celestial_movies_pinoy": PH + "celestial-movies-pinoy-ph.png",
+    # === International ===
     "ch_animal_planet":      INT + "animal-planet-int.png",
     "ch_arirang":            INT + "arirang-int.png",
     "ch_bbc_news":           INT + "bbc-world-news-int.png",
@@ -101,17 +108,6 @@ TV_LOGO_MAP = {
     "ch_disney_channel":     INT + "disney-channel-int.png",
     "ch_dreamworks":         INT + "dreamworks-tv-int.png",
     "ch_fashion_tv":         INT + "fashion-tv-int.png",
-    "ch_bbc_earth":          AU + "bbc-earth-au.png",
-    "ch_discovery":          AU + "discovery-channel-au.png",
-    "ch_crime_investigation":AU + "crime-and-investigation-au.png",
-    "ch_adult_swim":         AU + "adult-swim-au.png",
-    "ch_abc_australia":      AU + "abc-au.png",
-    "ch_cbeebies":           AU + "bbc-cbeebies-au.png",
-    "ch_moonbug":            MY + "moonbug-kids-my.png",
-    "ch_hits":               ASI + "hits-asi.png",
-    "ch_hits_movies":        ASI + "hits-movies-asi.png",
-    "ch_rock_x_stream":      ASI + "rock-entertainment-asi.png",
-    "ch_al_jazeera":         UK  + "al-jazeera-uk.png",
     "ch_bloomberg":          INT + "bloomberg-television-int.png",
     "ch_nat_geo":            INT + "national-geographic-int.png",
     "ch_nat_geo_wild":       INT + "national-geographic-wild-int.png",
@@ -126,115 +122,135 @@ TV_LOGO_MAP = {
     "ch_animax":             INT + "animax-int.png",
     "ch_anime_x_hidive":     INT + "hidive-int.png",
     "ch_axn":                INT + "axn-int.png",
-    "ch_hgtv":               US  + "hgtv-us.png",
-    "ch_food_network":       US  + "food-network-us.png",
-    "ch_history":            US  + "history-us.png",
-    "ch_lifetime":           US  + "lifetime-us.png",
-    "ch_trutv":              US  + "trutv-us.png",
-    "ch_true_tv":            US  + "trutv-us.png",
-    "ch_travel_channel":     US  + "travel-channel-us.png",
-    "ch_nba_tv":             US  + "nba-tv-us.png",
-    "ch_nfl_network":        US  + "nfl-network-us.png",
-    "ch_cnbc":               US  + "cnbc-us.png",
     "ch_love_nature":        INT + "love-nature-int.png",
     "ch_tvn":                INT + "tvn-int.png",
     "ch_tvn_movies":         INT + "tvn-movies-int.png",
     "ch_bein_sports_1":      INT + "bein-sports-1-int.png",
     "ch_bein_sports_2":      INT + "bein-sports-2-int.png",
     "ch_bein_sports_3":      INT + "bein-sports-3-int.png",
-    "ch_sky_sports_f1":      UK  + "sky-sports-f1-uk.png",
-    "ch_tnt_sports_1":       UK  + "tnt-sports-1-uk.png",
-    "ch_tnt_sports_2":       UK  + "tnt-sports-2-uk.png",
-    "ch_tnt_sports_3":       UK  + "tnt-sports-3-uk.png",
-    "ch_tnt_sports_4":       UK  + "tnt-sports-4-uk.png",
-    "ch_eurosport_1":        UK  + "eurosport-1-uk.png",
-    "ch_eurosport_2":        UK  + "eurosport-2-uk.png",
     "ch_one_championship":   INT + "one-championship-int.png",
     "ch_fifa_plus":          INT + "fifa-plus-int.png",
-    "ch_ytv":                CA  + "ytv-ca.png"
+    # === Australia ===
+    "ch_bbc_earth":          AU + "bbc-earth-au.png",
+    "ch_discovery":          AU + "discovery-channel-au.png",
+    "ch_crime_investigation":AU + "crime-and-investigation-au.png",
+    "ch_adult_swim":         AU + "adult-swim-au.png",
+    "ch_abc_australia":      AU + "abc-au.png",
+    "ch_cbeebies":           AU + "bbc-cbeebies-au.png",
+    # === United Kingdom ===
+    "ch_al_jazeera":         UK + "al-jazeera-uk.png",
+    "ch_sky_sports_f1":      UK + "sky-sports-f1-uk.png",
+    "ch_tnt_sports_1":       UK + "tnt-sports-1-uk.png",
+    "ch_tnt_sports_2":       UK + "tnt-sports-2-uk.png",
+    "ch_tnt_sports_3":       UK + "tnt-sports-3-uk.png",
+    "ch_tnt_sports_4":       UK + "tnt-sports-4-uk.png",
+    "ch_eurosport_1":        UK + "eurosport-1-uk.png",
+    "ch_eurosport_2":        UK + "eurosport-2-uk.png",
+    # === United States ===
+    "ch_hgtv":               US + "hgtv-us.png",
+    "ch_food_network":       US + "food-network-us.png",
+    "ch_history":            US + "history-us.png",
+    "ch_lifetime":           US + "lifetime-us.png",
+    "ch_trutv":              US + "trutv-us.png",
+    "ch_true_tv":            US + "trutv-us.png",
+    "ch_travel_channel":     US + "travel-channel-us.png",
+    "ch_nba_tv":             US + "nba-tv-us.png",
+    "ch_nfl_network":        US + "nfl-network-us.png",
+    "ch_cnbc":               US + "cnbc-us.png",
+    # === Canada ===
+    "ch_ytv":                CA + "ytv-ca.png",
+    # === Malaysia ===
+    "ch_moonbug":            MY + "moonbug-kids-my.png",
+    # === World Asia ===
+    "ch_hits":               ASI + "hits-asi.png",
+    "ch_hits_movies":        ASI + "hits-movies-asi.png",
+    "ch_rock_x_stream":      ASI + "rock-entertainment-asi.png",
 }
 
 WIKI_FILE_MAP = {
-    "ch_kapatid_channel": "Kapatid_Channel_logo.png",
-    "ch_star_movies": "Star_Movies_logo.svg",
+    "ch_star_movies":        "Star_Movies_logo.svg",
     "ch_star_movies_select": "Star_Movies_Select_logo.png",
-    "ch_movies_now": "Movies_Now_Logo.png",
-    "ch_bnc": "Bilyonaryo_News_Channel_logo.png",
-    "ch_deped_tv": "DepEd_TV_logo.png",
-    "ch_hits_now": "HITS_Now_logo.png",
-    "ch_thrill": "THRILL_Channel_PH.png",
-    "ch_varsity_channel": "UAAP_Varsity_Channel_logo.png",
-    "ch_wil_tv": "Wil_TV_logo.png",
-    "ch_myx": "MYX_logo_2021.svg",
-    "ch_tfc": "The_Filipino_Channel_logo.svg",
-    "ch_light_tv": "Light_TV_logo.png",
-    "ch_mindanow_network": "Mindanow_Network_logo.png",
-    "ch_living_asia_channel": "Living_Asia_Channel_logo.png",
-    "ch_metro_channel": "Metro_Channel_PH_logo.png",
-    "ch_amc_presents": "AMC_logo_2016.svg",
-    "ch_moviesphere": "Moviesphere_logo.png",
-    "ch_wild_earth": "Wild_Earth_channel_logo.png",
-    "ch_new_k_pop": "K-pop_logo.png",
-    "ch_vevo_pop": "Vevo_logo.svg",
-    "ch_one": "ONE_TV_Philippines.png",
-    "ch_tennis_plus": "Tennis_Channel_logo.svg",
-    "ch_k_plus": "K%2B_channel_logo.png",
-    "ch_abante_radyo": "No_image_available.svg",
-    "ch_pilipinas_live": "Pilipinas_Live_logo.png"
+    "ch_movies_now":         "Movies_Now_Logo.png",
+    "ch_bnc":                "Bilyonaryo_News_Channel_logo.png",
+    "ch_deped_tv":           "DepEd_TV_logo.png",
+    "ch_hits_now":           "HITS_Now_logo.png",
+    "ch_thrill":             "THRILL_Channel_PH.png",
+    "ch_varsity_channel":    "UAAP_Varsity_Channel_logo.png",
+    "ch_wil_tv":             "Wil_TV_logo.png",
+    "ch_myx":                "MYX_logo_2021.svg",
+    "ch_tfc":                "The_Filipino_Channel_logo.svg",
+    "ch_light_tv":           "Light_TV_logo.png",
+    "ch_mindanow_network":   "Mindanow_Network_logo.png",
+    "ch_living_asia_channel":"Living_Asia_Channel_logo.png",
+    "ch_metro_channel":      "Metro_Channel_PH_logo.png",
+    "ch_amc_presents":       "AMC_logo_2016.svg",
+    "ch_moviesphere":        "Moviesphere_logo.png",
+    "ch_wild_earth":         "Wild_Earth_channel_logo.png",
+    "ch_new_k_pop":          "K-pop_logo.png",
+    "ch_vevo_pop":           "Vevo_logo.svg",
+    "ch_one":                "ONE_TV_Philippines.png",
+    "ch_tennis_plus":        "Tennis_Channel_logo.svg",
+    "ch_k_plus":             "K%2B_channel_logo.png",
+    "ch_abante_radyo":       "No_image_available.svg",
 }
 
-# 4. Helper Functions
+# 5. Helper Functions
 def get_logo(ch):
-    if 'logo' in ch: return ch['logo']
-    ll = ch.get('logoLocal', '')
+    if "logo" in ch: return ch["logo"]
+    ll = ch.get("logoLocal", "")
     if ll in NOODTAYO_REPO: return BASE_NOODTAYO + ll + ".webp"
-    if ll in TV_LOGO_MAP: return TV_LOGO_MAP[ll]
+    if ll in TV_LOGO_MAP:   return TV_LOGO_MAP[ll]
     if ll in WIKI_FILE_MAP:
         return f"https://en.wikipedia.org/wiki/Special:FilePath/{WIKI_FILE_MAP[ll]}?width=400"
     return ""
 
 def build_m3u_entry(ch):
-    name = ch.get('name', 'Unknown')
-    category = ch.get('category', 'General')
-    logo = get_logo(ch)
-    stream_url = ch.get('streamUrl', '')
-    drm = ch.get('drm', None)
-    headers = ch.get('headers', {})
+    name       = ch.get("name", "Unknown")
+    category   = ch.get("category", "General")
+    logo       = get_logo(ch)
+    stream_url = ch.get("streamUrl", "")
+    drm        = ch.get("drm", None)
+    headers    = ch.get("headers", {})
 
     extinf = f'#EXTINF:-1 tvg-name="{name}" tvg-logo="{logo}" group-title="{category}",{name}'
-    lines = [extinf]
+    lines  = [extinf]
 
     if drm:
-        lines.append('#KODIPROP:inputstream=inputstream.adaptive')
-        lines.append('#KODIPROP:inputstream.adaptive.manifest_type=mpd')
-        lines.append('#KODIPROP:inputstream.adaptive.license_type=clearkey')
-        if 'keys' in drm:
+        lines.append("#KODIPROP:inputstream=inputstream.adaptive")
+        lines.append("#KODIPROP:inputstream.adaptive.manifest_type=mpd")
+        lines.append("#KODIPROP:inputstream.adaptive.license_type=clearkey")
+        if "keys" in drm:
             keys_out = []
-            for key in drm['keys']:
-                k   = key['k'].replace('+', '-').replace('/', '_').rstrip('=')
-                kid = key['kid'].replace('+', '-').replace('/', '_').rstrip('=')
+            for key in drm["keys"]:
+                k   = key["k"].replace("+", "-").replace("/", "_").rstrip("=")
+                kid = key["kid"].replace("+", "-").replace("/", "_").rstrip("=")
                 keys_out.append({"kty": "oct", "k": k, "kid": kid})
-            license_key = json.dumps({"keys": keys_out, "type": "temporary"}, separators=(',', ':'))
-            lines.append(f'#KODIPROP:inputstream.adaptive.license_key={license_key}')
+            license_key = json.dumps({"keys": keys_out, "type": "temporary"}, separators=(",", ":"))
+            lines.append(f"#KODIPROP:inputstream.adaptive.license_key={license_key}")
         else:
             kid, key = next(iter(drm.items()))
-            lines.append(f'#KODIPROP:inputstream.adaptive.license_key={kid}:{key}')
+            lines.append(f"#KODIPROP:inputstream.adaptive.license_key={kid}:{key}")
 
-    ua = headers.get('User-Agent', '')
+    ua = headers.get("User-Agent", "")
     if ua:
-        stream_url = f'{stream_url}|User-Agent={ua}'
+        stream_url = f"{stream_url}|User-Agent={ua}"
 
     lines.append(stream_url)
-    return '\n'.join(lines)
+    return "\n".join(lines)
 
-# 5. Build and Save Files
-m3u_drm = ['#EXTM3U'] + [build_m3u_entry(ch) for ch in data if 'drm' in ch]
-with open('channels-drm.m3u', 'w', encoding='utf-8') as f:
-    f.write('\n\n'.join(m3u_drm))
+# 6. Build and Save Files
+timestamp   = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
+m3u_header  = f'#EXTM3U\n# Last Auto-Update: {timestamp}'
 
-m3u_all = ['#EXTM3U'] + [build_m3u_entry(ch) for ch in data]
-with open('channels-all.m3u', 'w', encoding='utf-8') as f:
-    f.write('\n\n'.join(m3u_all))
+drm_channels = [ch for ch in data if "drm" in ch]
+m3u_drm      = [m3u_header] + [build_m3u_entry(ch) for ch in drm_channels]
+with open("channels-drm.m3u", "w", encoding="utf-8") as f:
+    f.write("\n\n".join(m3u_drm))
 
-print(f"Generated channels-drm.m3u with {len([ch for ch in data if 'drm' in ch])} channels.")
-print(f"Generated channels-all.m3u with {len(data)} channels (INCLUDING non-DRM like GMA 7).")
+m3u_all = [m3u_header] + [build_m3u_entry(ch) for ch in data]
+with open("channels-all.m3u", "w", encoding="utf-8") as f:
+    f.write("\n\n".join(m3u_all))
+
+print(f"channels-drm.m3u → {len(drm_channels)} DRM channels")
+print(f"channels-all.m3u → {len(data)} total channels (ALL including non-DRM)")
+print(f"Timestamp: {timestamp}")
