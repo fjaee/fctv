@@ -1,10 +1,12 @@
 import json
 import urllib.request
-import os
+import hashlib
+import sys
 from datetime import datetime
 
-SOURCE_URL  = "https://raw.githubusercontent.com/noodtayo/app/refs/heads/main/channels.json"
+SOURCE_URL  = "https://raw.githubusercontent.com/eyhehez/ugh/refs/heads/main/zzzcha.json"
 BACKUP_FILE = "channels-backup.json"
+HASH_FILE   = "channels.hash"
 
 # ── 1. Load backup (always exists in repo) ────────────────────────────────────
 with open(BACKUP_FILE, "r", encoding="utf-8") as f:
@@ -16,39 +18,68 @@ fetched = []
 try:
     req = urllib.request.Request(SOURCE_URL, headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req, timeout=10) as resp:
-        fetched = json.loads(resp.read().decode("utf-8"))
+        raw = json.loads(resp.read().decode("utf-8"))
+        fetched = raw.get("channels", raw) if isinstance(raw, dict) else raw
     print(f"Source fetched: {len(fetched)} channels.")
 except Exception as e:
     print(f"Source unavailable ({e}). Using backup only.")
 
 # ── 3. Merge logic: NEVER delete, only add/update ────────────────────────────
 def merge_channels(fetched, backup):
-    # Use channel name as stable key
-    merged = {ch["name"]: ch for ch in backup}   # start from full backup
-
+    merged = {ch["name"]: ch for ch in backup}
     for ch in fetched:
         name = ch["name"]
         if name in merged:
-            # Update streamUrl if source has one
             if ch.get("streamUrl"):
                 merged[name]["streamUrl"] = ch["streamUrl"]
-            # Update DRM/ClearKeys if source has new ones
             if "drm" in ch:
                 merged[name]["drm"] = ch["drm"]
-            # Update headers if present
             if "headers" in ch:
                 merged[name]["headers"] = ch["headers"]
+            if "logoLocal" in ch and "logoLocal" not in merged[name]:
+                merged[name]["logoLocal"] = ch["logoLocal"]
+            if "category" in ch:
+                merged[name]["category"] = ch["category"]
         else:
-            # Brand new channel — add it
             merged[name] = ch
             print(f"  [NEW] {name}")
-
     return list(merged.values())
 
 data = merge_channels(fetched, backup)
 print(f"Merged total: {len(data)} channels (backup: {len(backup)}, fetched: {len(fetched)}).")
 
-# ── 4. Update backup with merged result (persists to repo) ───────────────────
+# ── 4. Hash check — skip everything if no real changes ───────────────────────
+def compute_hash(channels):
+    # Hash only meaningful fields: name, streamUrl, drm, headers
+    fingerprint = json.dumps(
+        sorted([
+            {
+                "n": ch.get("name",""),
+                "u": ch.get("streamUrl",""),
+                "d": ch.get("drm",""),
+                "h": ch.get("headers",""),
+            }
+            for ch in channels
+        ], key=lambda x: x["n"]),
+        sort_keys=True, separators=(",",":")
+    )
+    return hashlib.sha256(fingerprint.encode()).hexdigest()
+
+new_hash = compute_hash(data)
+old_hash = ""
+try:
+    with open(HASH_FILE, "r") as f:
+        old_hash = f.read().strip()
+except FileNotFoundError:
+    pass
+
+if new_hash == old_hash:
+    print("No channel changes detected. Skipping M3U regeneration.")
+    sys.exit(0)
+
+print(f"Changes detected! Regenerating M3U files...")
+
+# ── 5. Update backup with merged result (persists to repo) ───────────────────
 if fetched:
     with open(BACKUP_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
@@ -56,8 +87,7 @@ if fetched:
 else:
     print("Source was empty/unavailable — backup unchanged, no channels removed.")
 
-# ── 5. Logo maps ──────────────────────────────────────────────────────────────
-BASE_NOODTAYO = "https://raw.githubusercontent.com/noodtayo/app/main/images/"
+# ── 6. Logo maps ──────────────────────────────────────────────────────────────
 BASE_TVLOGO   = "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/"
 PH  = BASE_TVLOGO + "philippines/"
 INT = BASE_TVLOGO + "international/"
@@ -68,17 +98,8 @@ CA  = BASE_TVLOGO + "canada/"
 MY  = BASE_TVLOGO + "malaysia/"
 ASI = BASE_TVLOGO + "world-asia/"
 
-NOODTAYO_REPO = {
-    "ch_ani_blast","ch_astro_grandstand","ch_astro_showcase","ch_astro_showtime",
-    "ch_boomerang","ch_ccm","ch_celestial_movies","ch_comedy_central",
-    "ch_disney_xd","ch_espn","ch_f1_tv","ch_fight_plus","ch_game_show_network",
-    "ch_gma_life_tv","ch_gma_news_tv","ch_gma_pinoy_tv","ch_kartoon_channel",
-    "ch_pickle_tv","ch_starz","ch_tennis_channel_2","ch_tlc","ch_trace_urban",
-    "ch_tv_maria","ch_zoomoo"
-}
-
 TV_LOGO_MAP = {
-    "ch_kapamilya_channel":  "https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Kapamilya_Channel_Logo_2020.svg/960px-Kapamilya_Channel_Logo_2020.svg.png?_=20260323175529",
+    "ch_kapamilya_channel":  "https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Kapamilya_Channel_Logo_2020.svg/960px-Kapamilya_Channel_Logo_2020.svg.png",
     "ch_alltv2":             "https://static.wikia.nocookie.net/abscbn/images/9/94/Kapamilya_Channel_sa_ALLTV2.png/revision/latest/scale-to-width-down/1000?cb=20260110141630",
     "ch_gma7":               "https://upload.wikimedia.org/wikipedia/en/thumb/c/c0/GMA_Network_Logo_Vector.svg/1280px-GMA_Network_Logo_Vector.svg.png",
     "ch_kapatid_channel":    "https://static.wikia.nocookie.net/tv5network/images/8/8b/Kapatid_Channel_%282025%29.png/revision/latest/scale-to-width-down/1200?cb=20260129063212",
@@ -132,9 +153,16 @@ TV_LOGO_MAP = {
     "ch_trutv":US+"trutv-us.png","ch_true_tv":US+"trutv-us.png",
     "ch_travel_channel":US+"travel-channel-us.png","ch_nba_tv":US+"nba-tv-us.png",
     "ch_nfl_network":US+"nfl-network-us.png","ch_cnbc":US+"cnbc-us.png",
+    "ch_espn":US+"espn-us.png","ch_espn2":US+"espn2-us.png",
+    "ch_cbs_sports_network":US+"cbs-sports-network-us.png",
     "ch_ytv":CA+"ytv-ca.png","ch_moonbug":MY+"moonbug-kids-my.png",
     "ch_hits":ASI+"hits-asi.png","ch_hits_movies":ASI+"hits-movies-asi.png",
+    "ch_hits_now":ASI+"hits-now-asi.png",
     "ch_rock_x_stream":ASI+"rock-entertainment-asi.png",
+    "ch_astro_showcase":ASI+"astro-showcase-asi.png",
+    "ch_astro_showtime":ASI+"astro-showtime-asi.png",
+    "ch_celestial_movies":ASI+"celestial-movies-asi.png",
+    "ch_ccm":ASI+"celestial-classic-movies-asi.png",
 }
 
 WIKI_FILE_MAP = {
@@ -148,15 +176,27 @@ WIKI_FILE_MAP = {
     "ch_amc_presents":"AMC_logo_2016.svg","ch_moviesphere":"Moviesphere_logo.png",
     "ch_wild_earth":"Wild_Earth_channel_logo.png","ch_new_k_pop":"K-pop_logo.png",
     "ch_vevo_pop":"Vevo_logo.svg","ch_one":"ONE_TV_Philippines.png",
-    "ch_tennis_plus":"Tennis_Channel_logo.svg","ch_k_plus":"K%2B_channel_logo.png",
-    "ch_abante_radyo":"No_image_available.svg",
+    "ch_tennis_plus":"Tennis_Channel_logo.svg","ch_tennnis_channel":"Tennis_Channel_logo.svg",
+    "ch_k_plus":"K%2B_channel_logo.png","ch_abante_radyo":"No_image_available.svg",
+    "ch_f1_tv":"F1_logo.svg",
+    "ch_astro_grandstand":"Astro_Grandstand.png",
+    "ch_redbull_tv":"Red_Bull_TV_logo.png",
+    "ch_x_games_tv":"X_Games_logo.svg",
+    "ch_tna_wrestling":"TNA_Wrestling_Logo.png",
+    "ch_world_poker_tour":"World_Poker_Tour_logo.png",
+    "ch_nascar":"NASCAR_logo.svg",
+    "ch_motorvision_tv":"Motorvision_TV_logo.png",
+    "ch_mnplus":"Movies_Now_Logo.png",
+    "ch_mnx_hd":"MNX_HD_logo.png",
+    "ch_romedy_now":"Romedy_Now_logo.png",
+    "ch_amc":"AMC_logo_2016.svg",
+    "ch_zee_sine":"Zee_Sine_logo.png",
 }
 
-# ── 6. Helper functions ───────────────────────────────────────────────────────
+# ── 7. Helper functions ───────────────────────────────────────────────────────
 def get_logo(ch):
     if "logo" in ch: return ch["logo"]
     ll = ch.get("logoLocal","")
-    if ll in NOODTAYO_REPO: return BASE_NOODTAYO + ll + ".webp"
     if ll in TV_LOGO_MAP:   return TV_LOGO_MAP[ll]
     if ll in WIKI_FILE_MAP: return f"https://en.wikipedia.org/wiki/Special:FilePath/{WIKI_FILE_MAP[ll]}?width=400"
     return ""
@@ -187,20 +227,18 @@ def build_m3u_entry(ch):
     lines.append(stream_url)
     return "\n".join(lines)
 
-# ── 7. Build and save M3U files ───────────────────────────────────────────────
+# ── 8. Build and save M3U files ───────────────────────────────────────────────
 timestamp  = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
-m3u_header = f'#EXTM3U\n# Last Auto-Update: {timestamp}'
-
-drm_channels = [ch for ch in data if "drm" in ch]
-
-m3u_drm = [m3u_header] + [build_m3u_entry(ch) for ch in drm_channels]
-with open("channels-drm.m3u","w",encoding="utf-8") as f:
-    f.write("\n\n".join(m3u_drm))
+m3u_header = f'#EXTM3U\n# Last Updated: {timestamp}'
 
 m3u_all = [m3u_header] + [build_m3u_entry(ch) for ch in data]
 with open("channels-all.m3u","w",encoding="utf-8") as f:
     f.write("\n\n".join(m3u_all))
 
+# ── 9. Save new hash (only reached if changes were found) ────────────────────
+with open(HASH_FILE, "w") as f:
+    f.write(new_hash)
+
 print(f"channels-all.m3u  → {len(data)} channels")
-print(f"channels-drm.m3u  → {len(drm_channels)} channels")
+print(f"Hash updated: {new_hash[:12]}...")
 print(f"Timestamp: {timestamp}")
