@@ -19,6 +19,9 @@ Maintained daily. Entries are never removed — only added or refreshed.
 ```
 https://raw.githubusercontent.com/fjaee/fctv/master/channels-all.m3u
 ```
+```
+https://goo.su/tq6Et
+```
 
 > For personal use with a compatible media player.
 
