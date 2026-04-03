@@ -1,21 +1,21 @@
 #EXTM3U
-# Last Auto-Update: 2026-04-03 03:17:52 UTC
+# Last Updated: 2026-04-03 05:27:16 UTC
 
-#EXTINF:-1 tvg-name="Kapamilya Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Kapamilya_Channel_Logo_2020.svg/960px-Kapamilya_Channel_Logo_2020.svg.png?_=20260323175529" group-title="Entertainment",Kapamilya Channel
+#EXTINF:-1 tvg-name="Kapamilya Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Kapamilya_Channel_Logo_2020.svg/960px-Kapamilya_Channel_Logo_2020.svg.png" group-title="Entertainment",Kapamilya Channel
 http://136.239.173.2:6610/001/2/ch00000090990000001286/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2Bqw65FFCygtQMRRIUPF0xuXytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001694&contentid=ch00000000000000001694&videoid=ch00000090990000001286&recommendtype=0&userid=1004802317138&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=CCJLYZ04O9IXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
 
 #EXTINF:-1 tvg-name="ALLTV2" tvg-logo="https://static.wikia.nocookie.net/abscbn/images/9/94/Kapamilya_Channel_sa_ALLTV2.png/revision/latest/scale-to-width-down/1000?cb=20260110141630" group-title="Entertainment",ALLTV2
 http://136.239.158.10:6610/001/2/ch00000090990000001179/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2Bow35sHUcBhGBpxqddBGYEnytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001415&contentid=ch00000000000000001415&videoid=ch00000090990000001179&recommendtype=0&userid=1205050496206&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=02WMA0HI2O3AXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
 
 #EXTINF:-1 tvg-name="GMA 7" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/c/c0/GMA_Network_Logo_Vector.svg/1280px-GMA_Network_Logo_Vector.svg.png" group-title="Entertainment",GMA 7
-http://136.158.97.2:6610/001/2/ch00000090990000001093/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMAoLvT86fM74ocVChyFS93HUsyK4TH4mOENKJ45mwOyS0g%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001214&contentid=ch00000000000000001214&videoid=ch00000090990000001093&recommendtype=0&userid=1438418816418&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=BLJMICF8T5XXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO&IASHttpSessionId=RR20448620260101155237367179&ispcode=55
+http://136.158.97.2:6610/001/2/ch00000090990000001093/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMAoLvT86fM74ocVChyFS93HUsyK4TH4mOENKJ45mwOyS0g%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001214&contentid=ch00000000000000001214&videoid=ch00000090990000001093&recommendtype=0&userid=1438418816418&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=BLJMICF8T5XXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
 
 #EXTINF:-1 tvg-name="TV5" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/philippines/tv5-ph.png" group-title="Entertainment",TV5
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=2615129ef2c846a9bbd43a641c7303ef:07c7f996b1734ea288641a68e1cfdc4d
-https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/tv5_hd/default1/index.mpd
+http://136.158.97.2:6610/001/2/ch00000090990000001088/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMAoh0xOsaoSFLqA0PEh9gVjisyK4TH4mOENKJ45mwOyS0g%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001213&contentid=ch00000000000000001213&videoid=ch00000090990000001088&recommendtype=0&userid=1099183361159&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=ZRUDOFEVUJOXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
 
 #EXTINF:-1 tvg-name="GTV" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/philippines/gtv-ph.png" group-title="Entertainment",GTV
 http://136.239.159.18:6610/001/2/ch00000090990000001143/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BrwAtJC%2BsmBQ5ARU076BdkhytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001313&contentid=ch00000000000000001313&videoid=ch00000090990000001143&recommendtype=0&userid=1590268675436&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=AAIUZ2MAG7XXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
@@ -25,10 +25,14 @@ http://136.239.159.18:6610/001/2/ch00000090990000001143/manifest.mpd?AuthInfo=v8
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=045d103180f64562b1db7c932741c3ba:c3380548b9075c767a6ae2006ef4bff8
-https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/kapatid_hd/default/index.mpd
+https://ucdn.mediaquest.com.ph/bpk-tv/kapatid_hd/default/index.mpd
 
 #EXTINF:-1 tvg-name="Cinema One" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/philippines/cinema-one-ph.png" group-title="Movies",Cinema One
-http://136.158.97.2:6610/001/2/ch00000090990000001283/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2Br2cQyuTRlDkHeiqeVidUqqytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001548&contentid=ch00000000000000001548&videoid=ch00000090990000001283&recommendtype=0&userid=1041236685526&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=852NEU8T1ZOXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=55eddd1e157e4c3b830866e4679e7032:525030e984567ba8df0af80660952368
+https://abslive.akamaized.net/dash/live/2027618/c1ph/manifest.mpd
 
 #EXTINF:-1 tvg-name="Cinema One Global" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/philippines/cinema-one-ph.png" group-title="Movies",Cinema One Global
 #KODIPROP:inputstream=inputstream.adaptive
@@ -113,10 +117,10 @@ http://212.102.60.231/STARZ/index.m3u8
 https://linearjitp-playback.astro.com.my/dash-wv/linear/2305/default_ott.mpd|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
 
 #EXTINF:-1 tvg-name="Star Movies" tvg-logo="https://en.wikipedia.org/wiki/Special:FilePath/Star_Movies_logo.svg?width=400" group-title="Movies",Star Movies
-https://converse.nathcreqtives.com/channels/starmovies/playlist.m3u8?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJtb29uIiwiaWF0IjoxNzc0MzkzMzI3LCJleHAiOjE3NzU2ODkzMjcsImFjY291bnRFeHBpcmVkIjpmYWxzZSwiYWNjb3VudEV4cGlyZXNBdCI6MTc3NTY4OTMyNywiYWxsb3dlZE9yaWdpbnMiOlsiaHR0cHM6Ly8zcnNuZXcucGFnZXMuZGV2IiwiaHR0cHM6Ly8zcnNyYWRpbzIucGFnZXMuZGV2IiwiaHR0cHM6Ly9pd2F0Y2h0di5pdHVuZXJ3b3JsZHdpZGUud29ya2Vycy5kZXYiLCJodHRwczovL2RyaXZlLmdvb2dsZS5jb20iXX0.mn8mBhboj_k17Ms5o_HU9qcW88tJR9SLmnYTn11vcBo
+http://103.175.242.10:8080/starmovies/index.m3u8
 
 #EXTINF:-1 tvg-name="Star Movies Select" tvg-logo="https://en.wikipedia.org/wiki/Special:FilePath/Star_Movies_Select_logo.png?width=400" group-title="Movies",Star Movies Select
-https://converse.nathcreqtives.com/channels/smselect/playlist.m3u8?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJtb29uIiwiaWF0IjoxNzc0MzkzMzI3LCJleHAiOjE3NzU2ODkzMjcsImFjY291bnRFeHBpcmVkIjpmYWxzZSwiYWNjb3VudEV4cGlyZXNBdCI6MTc3NTY4OTMyNywiYWxsb3dlZE9yaWdpbnMiOlsiaHR0cHM6Ly8zcnNuZXcucGFnZXMuZGV2IiwiaHR0cHM6Ly8zcnNyYWRpbzIucGFnZXMuZGV2IiwiaHR0cHM6Ly9pd2F0Y2h0di5pdHVuZXJ3b3JsZHdpZGUud29ya2Vycy5kZXYiLCJodHRwczovL2RyaXZlLmdvb2dsZS5jb20iXX0.mn8mBhboj_k17Ms5o_HU9qcW88tJR9SLmnYTn11vcBo
+http://93.119.105.61:80/play/live.php?mac=00:1A:79:00:14:3C&stream=441215&extension=ts&play_token=I6IiF0CvFf
 
 #EXTINF:-1 tvg-name="GMA Pinoy TV" tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_gma_pinoy_tv.webp" group-title="Entertainment",GMA Pinoy TV
 #KODIPROP:inputstream=inputstream.adaptive
@@ -224,14 +228,14 @@ https://linearjitp-playback.astro.com.my/dash-wv/linear/2110/default_primary.mpd
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=df81f15150f74c799fdde64ef49dfb75:05794a012ae74d77953f2b9fae6804c7
-https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Animalplanethd2/default/index.mpd
+http://161.49.17.2:6610/001/2/ch00000090990000001335/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMApMs3LsiO6wq83YHtJwM7wV2%2FjHNuou2Jtxin49X3LQKw%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001825&contentid=ch00000000000000001825&videoid=ch00000090990000001335&recommendtype=0&userid=1196740911215&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=87D9GXACFV2XXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
 
 #EXTINF:-1 tvg-name="Animax" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/animax-int.png" group-title="Anime",Animax
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=1e7b9d2c6a4f4d8c9f33b5c1a8d7e260:67336c0c5b24fb4b8caac248dad3c55d
-https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_animax_sd_new/default/index.mpd
+https://amg02159-amg02159c9-amgplt0352.playout.now3.amagi.tv/ts-eu-w1-n2/playlist/amg02159-amg02159c9-amgplt0352/playlist.m3u8
 
 #EXTINF:-1 tvg-name="Arirang" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/arirang-int.png" group-title="International",Arirang
 https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
@@ -269,7 +273,7 @@ https://linearjitp-playback.astro.com.my/dash-wv/linear/5020/default_ott.mpd|Use
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=d273c085f2ab4a248e7bfc375229007d:7932354c3a84f7fc1b80efa6bcea0615
-https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_buko_sd/default/index.mpd
+https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_buko_sd/default/index.mpd
 
 #EXTINF:-1 tvg-name="Cartoon Network" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/cartoon-network-int.png" group-title="Kids",Cartoon Network
 #KODIPROP:inputstream=inputstream.adaptive
@@ -290,7 +294,7 @@ https://ucdn.mediaquest.com.ph/bpk-tv/cartoonnetworkhd/default/index.mpd
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=0f8537d8412b11edb8780242ac120002:2ffd7230416150fd5196fd7ea71c36f3
-https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/celmovie_pinoy_sd/default/index.mpd
+http://136.239.158.30:6610/001/2/ch00000090990000001077/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMArHUpvQtyXgWxpVCozt4hcgsyK4TH4mOENKJ45mwOyS0g%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001136&contentid=ch00000000000000001136&videoid=ch00000090990000001077&recommendtype=0&userid=1058297419636&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=B8CE333QUH6XXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
 
 #EXTINF:-1 tvg-name="Celestial Movies" tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_celestial_movies.webp" group-title="Movies",Celestial Movies
 #KODIPROP:inputstream=inputstream.adaptive
@@ -321,7 +325,7 @@ https://linearjitp-playback.astro.com.my/dash-wv/linear/2111/default_ott.mpd|Use
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=0f853706412b11edb8780242ac120002:2157d6529d80a760f60a8b5350dbc4df
-https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/depedch_sd/default/index.mpd
+https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/depedch_sd/default/index.mpd
 
 #EXTINF:-1 tvg-name="Discovery Channel" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/australia/discovery-channel-au.png" group-title="Documentary",Discovery Channel
 #KODIPROP:inputstream=inputstream.adaptive
@@ -372,7 +376,7 @@ https://linearjitp-playback.astro.com.my/dash-wv/linear/604/default_primary.mpd|
 #KODIPROP:inputstream.adaptive.license_key=1fe92685a75844dc54c9dac124802510:36cb2063bf5338d18d31657371b15817
 https://linearjitp-playback.astro.com.my/dash-wv/linear/606/default_primary.mpd|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
 
-#EXTINF:-1 tvg-name="HITS Now" tvg-logo="https://en.wikipedia.org/wiki/Special:FilePath/HITS_Now_logo.png?width=400" group-title="Entertainment",HITS Now
+#EXTINF:-1 tvg-name="HITS Now" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-asia/hits-now-asi.png" group-title="Entertainment",HITS Now
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
@@ -394,7 +398,7 @@ http://linearjitp-playback.astro.com.my/dash-wv/linear/2306/default_ott.mpd|User
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=c9d4b7a18e2f4d6c9a103f5b7e1c2d88:7f3139092bf87d8aa51ee40e6294d376
-https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/kix_hd1/default/index.mpd
+http://136.239.159.20:6610/001/2/ch00000090990000001263/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BqszdaNqmegxz2VkIuTd%2B31ytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001583&contentid=ch00000000000000001583&videoid=ch00000090990000001263&recommendtype=0&userid=1319115127597&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=D4NMMH3RZQXXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
 
 #EXTINF:-1 tvg-name="Knowledge Channel" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/philippines/knowledge-channel-ph.png" group-title="Educational",Knowledge Channel
 http://136.239.158.10:6610/001/2/ch00000090990000001340/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BpqUIe1xo9fgdQj%2FdedKSTyytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001832&contentid=ch00000000000000001832&videoid=ch00000090990000001340&recommendtype=0&userid=1586131651828&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=1RR87QJ6AY2XXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
@@ -458,7 +462,7 @@ http://23.237.104.106:8080/USA_DISNEY_XD/index.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=2e6a9d7c1f4b4c8a8d33c7b1f0a5e924:4c71e178d090332fbfe72e023b59f6d2
-https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/onenews_hd1/default/index.mpd
+https://ucdn.mediaquest.com.ph/bpk-tv/onenews_hd1/default/index.mpd
 
 #EXTINF:-1 tvg-name="One PH" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/philippines/one-ph-ph.png" group-title="News",One PH
 #KODIPROP:inputstream=inputstream.adaptive
@@ -486,7 +490,7 @@ https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_pbarush_hd1/default/ind
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=dcbdaaa6662d4188bdf97f9f0ca5e830:31e752b441bd2972f2b98a4b1bc1c7a1
-https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/pbo_sd/default/index.mpd
+http://136.239.158.18:6610/001/2/ch00000090990000001078/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMAq9SZLE5HgafIcQ2VcLQB9EsyK4TH4mOENKJ45mwOyS0g%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001137&contentid=ch00000000000000001137&videoid=ch00000090990000001078&recommendtype=0&userid=1960500443734&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=8WK79ZSBXVGXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
 
 #EXTINF:-1 tvg-name="Premier Sports" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/philippines/premier-sports-ph.png" group-title="Sports",Premier Sports
 http://136.239.173.10:6610/001/2/ch00000090990000001135/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BoP1uzasPUQtxzHrrWIYilSytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001282&contentid=ch00000000000000001282&videoid=ch00000090990000001135&recommendtype=0&userid=1603895214902&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=ZGWMVRUB2AQXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
@@ -502,7 +506,7 @@ http://136.239.173.26:6610/001/2/ch00000090990000001086/manifest.mpd?AuthInfo=v8
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=1917f4caf2364e6d9b1507326a85ead6:a1340a251a5aa63a9b0ea5d9d7f67595
-https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cnn_rptv_prod_hd/default/index.mpd
+https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cnn_rptv_prod_hd/default/index.mpd
 
 #EXTINF:-1 tvg-name="Sari-Sari" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/philippines/sari-sari-channel-ph.png" group-title="Entertainment",Sari-Sari
 #KODIPROP:inputstream=inputstream.adaptive
@@ -533,7 +537,7 @@ https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_spotv2hd/default/index.
 https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_tapmovies_hd1/default/index.mpd
 
 #EXTINF:-1 tvg-name="Tap Sports" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/philippines/tap-sports-ph.png" group-title="Sports",Tap Sports
-http://136.239.173.3:6610/001/2/ch00000090990000001151/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BqvuCQC%2BfGfSFGYE2TZKWpbytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001321&contentid=ch00000000000000001321&videoid=ch00000090990000001151&recommendtype=0&userid=1148739009053&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=Z6EHYVCYR3XXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
+https://amg19223-amg19223c2-amgplt0351.playout.now3.amagi.tv/playlist/amg19223-amg19223c2-amgplt0351/playlist.m3u8
 
 #EXTINF:-1 tvg-name="THRILL" tvg-logo="https://en.wikipedia.org/wiki/Special:FilePath/THRILL_Channel_PH.png?width=400" group-title="Movies",THRILL
 http://136.239.173.10:6610/001/2/ch00000090990000001253/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2Bq7M3KTlp1dzcZcVVxlNmQdytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001563&contentid=ch00000000000000001563&videoid=ch00000090990000001253&recommendtype=0&userid=1896007622720&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=8LJ3RRPRMVYXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
@@ -574,7 +578,7 @@ https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_uaap_cplay_sd/default/i
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=07aa813bf2c147748046edd930f7736e:3bd6688b8b44e96201e753224adfc8fb
-https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/viva_sd/default/index.mpd
+http://136.239.159.20:6610/001/2/ch00000090990000001079/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMAoglCgy7TAZamPXsCV8PgebsyK4TH4mOENKJ45mwOyS0g%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001138&contentid=ch00000000000000001138&videoid=ch00000090990000001079&recommendtype=0&userid=1022847749017&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=LZTWKL0XP7XXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
 
 #EXTINF:-1 tvg-name="Warner TV" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/philippines/warner-tv-ph.png" group-title="Entertainment",Warner TV
 http://136.239.158.18:6610/001/2/ch00000090990000001096/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BqRhIO4pq%2FZNG%2BJhjsEpHHCytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001219&contentid=ch00000000000000001219&videoid=ch00000090990000001096&recommendtype=0&userid=1321207134399&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=0QVRZ4LBHCCXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
@@ -584,7 +588,7 @@ http://136.239.158.18:6610/001/2/ch00000090990000001096/manifest.mpd?AuthInfo=v8
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=b1773d6f982242cdb0f694546a3db26f:ae9a90dbea78f564eb98fe817909ec9a
-https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/wiltv/default/index.mpd
+https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/wiltv/default/index.mpd
 
 #EXTINF:-1 tvg-name="ABC Australia" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/australia/abc-au.png" group-title="International",ABC Australia
 #KODIPROP:inputstream=inputstream.adaptive
@@ -959,3 +963,191 @@ https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/pl_sdi9/default/index.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=63055a8904644407a64a57874703f71e:0fd611777d37a7ff8afce19d9cee2e91
 https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/pl_sdi10/default/index.mpd
+
+#EXTINF:-1 tvg-name="Game Show Central" tvg-logo="" group-title="Entertainment",Game Show Central
+https://dbrb49pjoymg4.cloudfront.net/10001/99991750/hls/playlist.m3u8?ads.xumo_channelId=99991750
+
+#EXTINF:-1 tvg-name="Aliw Channel 23" tvg-logo="" group-title="Entertainment",Aliw Channel 23
+http://136.239.173.3:6610/001/2/ch00000090990000001109/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2Bp%2BWYKp0pXQLOnfpLMLHi2tytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001234&contentid=ch00000000000000001234&videoid=ch00000090990000001109&recommendtype=0&userid=1657667082928&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=JK9HJ5J3VGXXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
+
+#EXTINF:-1 tvg-name="AMC" tvg-logo="https://en.wikipedia.org/wiki/Special:FilePath/AMC_logo_2016.svg?width=400" group-title="Entertainment",AMC
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=3290efe4c5cf67165e846a0742c22cd9:ddb94463c46af6037432fc026339c09d
+https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/clients/dash/enc/gyczo3tdxu/out/v1/4e9f7dd1b08a404581818c3923af9a93/cenc.mpd
+
+#EXTINF:-1 tvg-name="AMC+" tvg-logo="" group-title="Entertainment",AMC+
+https://bcovlive-a.akamaihd.net/ba853de442c140b7b3dc020001597c0a/us-east-1/6245817279001/playlist.m3u8
+
+#EXTINF:-1 tvg-name="Rock Entertainment" tvg-logo="" group-title="Entertainment",Rock Entertainment
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=e4ee0cf8ca9746f99af402ca6eed8dc7:be2a096403346bc1d0bb0f812822bb62
+https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/dr_rockentertainment/default/index.mpd
+
+#EXTINF:-1 tvg-name="SYFY" tvg-logo="" group-title="Entertainment",SYFY
+http://23.237.104.106:8080/USA_SYFY/index.m3u8
+
+#EXTINF:-1 tvg-name="Paramount Network" tvg-logo="" group-title="Entertainment",Paramount Network
+http://23.237.104.106:8080/USA_PARAMOUNT_NETWORK/index.m3u8
+
+#EXTINF:-1 tvg-name="Hallmark" tvg-logo="" group-title="Entertainment",Hallmark
+http://23.237.104.106:8080/USA_HALLMARK/index.m3u8
+
+#EXTINF:-1 tvg-name="E!" tvg-logo="" group-title="Entertainment",E!
+http://23.237.104.106:8080/USA_E/index.m3u8
+
+#EXTINF:-1 tvg-name="ION" tvg-logo="" group-title="Entertainment",ION
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01438-ewscrippscompan-ion-tablo/playlist.m3u8
+
+#EXTINF:-1 tvg-name="Fox" tvg-logo="" group-title="Entertainment",Fox
+http://mytvstream.net:8080/live/30550113/30550113/120750.m3u8
+
+#EXTINF:-1 tvg-name="ABC" tvg-logo="" group-title="Entertainment",ABC
+http://mytvstream.net:8080/live/30550113/30550113/121139.m3u8
+
+#EXTINF:-1 tvg-name="CBS" tvg-logo="" group-title="Entertainment",CBS
+http://mytvstream.net:8080/live/30550113/30550113/120749.m3u8
+
+#EXTINF:-1 tvg-name="Blast Movies" tvg-logo="" group-title="Movies",Blast Movies
+https://amg19223-amg19223c7-amgplt0351.playout.now3.amagi.tv/playlist/amg19223-amg19223c7-amgplt0351/playlist.m3u8
+
+#EXTINF:-1 tvg-name="Zee Sine" tvg-logo="https://en.wikipedia.org/wiki/Special:FilePath/Zee_Sine_logo.png?width=400" group-title="Movies",Zee Sine
+https://amg17931-zee-amg17931c9-samsung-ph-6528.playouts.now.amagi.tv/playlist/amg17931-asiatvusaltdfast-zeesine-samsungph/playlist.m3u8
+
+#EXTINF:-1 tvg-name="Tap Action Flix" tvg-logo="" group-title="Movies",Tap Action Flix
+http://161.49.17.2:6610/001/2/ch00000090990000001305/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMApahcUJJEYAxPtEef94INw12%2FjHNuou2Jtxin49X3LQKw%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001775&contentid=ch00000000000000001775&videoid=ch00000090990000001305&recommendtype=0&userid=1992031084771&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=HTEZZPU574PXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
+
+#EXTINF:-1 tvg-name="tvN Movies" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/tvn-movies-int.png" group-title="Movies",tvN Movies
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=8e269c8aa32ad77eb83068312343d610:d12ccebafbba2a535d88a3087f884252
+https://linearjitp-playback.astro.com.my/dash-wv/linear/2406/default_ott.mpd|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+
+#EXTINF:-1 tvg-name="FX Movie Channel" tvg-logo="" group-title="Movies",FX Movie Channel
+http://mytvstream.net:8080/live/30550113/30550113/10260.m3u8
+
+#EXTINF:-1 tvg-name="Sony Movies" tvg-logo="" group-title="Movies",Sony Movies
+https://a-cdn.klowdtv.com/live1/smc_720p/chunks.m3u8
+
+#EXTINF:-1 tvg-name="Nicktoons" tvg-logo="" group-title="Kids",Nicktoons
+http://212.102.60.231/NICKTOONS/index.m3u8
+
+#EXTINF:-1 tvg-name="Disney Channel US" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/disney-channel-int.png" group-title="Kids",Disney Channel US
+http://89.105.221.127/Disney/index.m3u8?token=test
+
+#EXTINF:-1 tvg-name="Pop" tvg-logo="" group-title="Kids",Pop
+https://amg01753-amg01753c6-samsung-au-6678.playouts.now.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-name="Animal Planet HD" tvg-logo="" group-title="Documentary",Animal Planet HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=df81f15150f74c799fdde64ef49dfb75:05794a012ae74d77953f2b9fae6804c7
+https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Animalplanethd2/default/index.mpd
+
+#EXTINF:-1 tvg-name="Discovery Science" tvg-logo="" group-title="Documentary",Discovery Science
+http://tv.diablotv.net:8080/eEiiLll09384Ecaiman34RtR/KTap2pdJx7/9822
+
+#EXTINF:-1 tvg-name="Smithsonian Channel" tvg-logo="" group-title="Documentary",Smithsonian Channel
+http://mytvstream.net:8080/live/30550113/30550113/31150.m3u8
+
+#EXTINF:-1 tvg-name="BBC Lifestyle" tvg-logo="" group-title="Lifestyle",BBC Lifestyle
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=f429292dc744f284355308561577ac10:b12e1f894129c517dc8845baaeebec8a
+https://linearjitp-playback.astro.com.my/dash-wv/linear/5050/default_ott.mpd|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+
+#EXTINF:-1 tvg-name="Travel Channel US" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/travel-channel-us.png" group-title="Lifestyle",Travel Channel US
+http://tv.diablotv.net:8080/eEiiLll09384Ecaiman34RtR/KTap2pdJx7/162595
+
+#EXTINF:-1 tvg-name="Outdoor" tvg-logo="" group-title="Lifestyle",Outdoor
+https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg00718-outdoorchannela-outdoortvnz-samsungnz/playlist.m3u8
+
+#EXTINF:-1 tvg-name="Tastemade" tvg-logo="" group-title="Lifestyle",Tastemade
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00047-tastemade-tastemadefreetv16-tablo/playlist.m3u8
+
+#EXTINF:-1 tvg-name="K-Pop by CJ ENM" tvg-logo="" group-title="Music",K-Pop by CJ ENM
+https://jmp2.uk/stvp-CA3900002PM
+
+#EXTINF:-1 tvg-name="Stingray Karaoke" tvg-logo="" group-title="Music",Stingray Karaoke
+https://lotus.stingray.com/manifest/karaoke-kar000-montreal/samsungtvplus/c92ba6bd-21aa-39b1-8f4a-8d02bef17886/3291200/manifest.m3u8
+
+#EXTINF:-1 tvg-name="France 24" tvg-logo="" group-title="News",France 24
+https://amg00106-amg00106c1-samsung-ph-4550.playouts.now.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-name="Fox News" tvg-logo="" group-title="News",Fox News
+https://starshare.st/live/P4B9TB9xR8/humongous2tonight/51.ts
+
+#EXTINF:-1 tvg-name="NHK World Premium" tvg-logo="" group-title="International",NHK World Premium
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=98817b144bcf19fd0ddca7fe54cee110:44b423a77dd34ace162db35cbb0fb6a3
+https://linearjitp-playback.astro.com.my/dash-wv/linear/5018/default_primary.mpd|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+
+#EXTINF:-1 tvg-name="Mnet" tvg-logo="" group-title="International",Mnet
+http://mnet.x10.mx/mnet.m3u8
+
+#EXTINF:-1 tvg-name="MBC" tvg-logo="" group-title="International",MBC
+https://setting.qkim.net/alive/api/url.m3u8?m=url&s=wavve&i=M01&q=FHD&apikey=TQDUYRMX4P&u=Y
+
+#EXTINF:-1 tvg-name="KBS2" tvg-logo="" group-title="International",KBS2
+https://setting.qkim.net/alive/api/url.m3u8?m=web_play&s=wavve&i=K02&q=HD&apikey=TQDUYRMX4P&u=Y
+
+#EXTINF:-1 tvg-name="CBS Sports Network" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cbs-sports-network-us.png" group-title="Sports",CBS Sports Network
+http://tv.diablotv.net:8080/eEiiLll09384Ecaiman34RtR/KTap2pdJx7/162524
+
+#EXTINF:-1 tvg-name="Fox Sports" tvg-logo="" group-title="Sports",Fox Sports
+https://d1jzu95oc8fgt3.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-zyqcok4bm0lgq/FOX_Sports.m3u8
+
+#EXTINF:-1 tvg-name="ESPN2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/espn2-us.png" group-title="Sports",ESPN2
+https://restream-live.realiptv.to/2879115/5077048/2581
+
+#EXTINF:-1 tvg-name="F1 TV | 1" tvg-logo="https://en.wikipedia.org/wiki/Special:FilePath/F1_logo.svg?width=400" group-title="Sports",F1 TV | 1
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=505616380de706936e493fdd1c25d0b6:5b313f49c63c682236eab3357400e216
+https://a184aivottlinear-a.akamaihd.net/OTTB/iad-nitro/live/clients/dash/enc/5fjow0mrvw/out/v1/f870533ee24b4f3bb98d2afe4b1e1bac/cenc.mpd
+
+#EXTINF:-1 tvg-name="F1 TV | 2" tvg-logo="https://en.wikipedia.org/wiki/Special:FilePath/F1_logo.svg?width=400" group-title="Sports",F1 TV | 2
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=609d795905904705028ef54653019af7:2c791eb611e57a7d7f203022bc1b9ba3
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/duqbirmk0d/out/v1/40f53c7cbc95498db3afd081c377d776/cenc.mpd
+
+#EXTINF:-1 tvg-name="TNA Wrestling" tvg-logo="https://en.wikipedia.org/wiki/Special:FilePath/TNA_Wrestling_Logo.png?width=400" group-title="Sports",TNA Wrestling
+https://amg00966-amg00966c1-freelivesports-emea-7712.playouts.now.amagi.tv/playlist/amg00966-anthem-tnawrestling-freelivesportsemea/playlist.m3u8
+
+#EXTINF:-1 tvg-name="Tennis Channel" tvg-logo="https://en.wikipedia.org/wiki/Special:FilePath/Tennis_Channel_logo.svg?width=400" group-title="Sports",Tennis Channel
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischnlintl-lggb/playlist.m3u8
+
+#EXTINF:-1 tvg-name="NASCAR" tvg-logo="https://en.wikipedia.org/wiki/Special:FilePath/NASCAR_logo.svg?width=400" group-title="Sports",NASCAR
+https://amg00115-amg00115c1-freelivesports-emea-11215.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg00115-nascar-nascar-freelivesportsemea/playlist.m3u8
+
+#EXTINF:-1 tvg-name="MTRSPT1" tvg-logo="" group-title="Sports",MTRSPT1
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg02873-kravemedia-mtrspt1-sportstribal/playlist.m3u8
+
+#EXTINF:-1 tvg-name="Motorvision TV" tvg-logo="https://en.wikipedia.org/wiki/Special:FilePath/Motorvision_TV_logo.png?width=400" group-title="Sports",Motorvision TV
+https://dbrb49pjoymg4.cloudfront.net/10001/99991325/hls/mv.m3u8?includeAssetTags=true&ads.xumo_channelId=99991325&ads._fw_ifa_type=&ads._fw_did=&ads.amznappId=&ads.lat=&ads.lon=&ads.os=&ads.osv=&ads.asnw=&ads.caid=Motorvision&ads.csid=xumo__Motorvision_ssai&ads._fw_is_lat=&ads._fw_us_privacy=&ads._fw_coppa=0&ads.genre=&ads._fw_content_category=&ads._fw_content_language=&ads._fw_content_genre=&ads._fw_content_rating=&ads.xumo_contentId=266&ads.xumo_contentName=Motorvision&ads.xumo_providerId=266&ads.xumo_providerName=Motorvision&ads._fw_deviceMake=&ads._fw_device_model=&ads.channelId=99991325&ads.xumo_platform=&ads.site_id=&ads.appName=xumo&ads.appVersion=&ads._fw_app_bundle=&ads._fw_app_store_url=
+
+#EXTINF:-1 tvg-name="Billiard TV" tvg-logo="" group-title="Sports",Billiard TV
+https://1621590671.rsc.cdn77.org/HLS/BILLIARDTV_SCTE.m3u8
+
+#EXTINF:-1 tvg-name="World Poker Tour" tvg-logo="https://en.wikipedia.org/wiki/Special:FilePath/World_Poker_Tour_logo.png?width=400" group-title="Sports",World Poker Tour
+https://dtqutq7lmcchv.cloudfront.net/10001/99991317/hls/playlist.m3u8?ads.xumo_channelId=99991317&ads._fw_ifa_type=&ads._fw_did=&ads.amznappId=&ads.lat=&ads.lon=&ads.os=&ads.osv=&ads.asnw=&ads.caid=WorldPokerTour&ads.csid=xumo__WorldPokerTour_ssai&ads._fw_is_lat=&ads._fw_us_privacy=&ads._fw_coppa=0&ads.genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_category=&ads._fw_content_language=&ads._fw_content_genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_rating=&ads.xumo_contentId=252&ads.xumo_contentName=WorldPokerTour&ads.xumo_providerId=252&ads.xumo_providerName=WorldPokerTour&ads._fw_deviceMake=&ads._fw_device_model=&ads.channelId=99991317&ads.xumo_platform=&ads.site_id=&ads.appName=xumo&ads.appVersion=&ads._fw_app_bundle=&ads._fw_app_store_url=
+
+#EXTINF:-1 tvg-name="Poker Night in America" tvg-logo="" group-title="Sports",Poker Night in America
+https://s1host5.localnow.api.cms.amdvids.com/v1/master/c189661feba961c19bc5fb60b57879ee9b84548a/config2/dist/localnow/1068/hls/master/playlist.m3u8?ads.cdnhost=s1host5.localnow.api.cms.amdvids.com&ads.playbackid=780DDE63-269A-4B71-A59D-CD0B3F56FD4A&ads.n1=rule_id&ads.v1=E7BB7BA1-D932-4E65-BD9F-93731E6E87C5-1744054592&ads.n3=qp_content_id&ads.v3=780DDE63-269A-4B71-A59D-CD0B3F56FD4A&ads.n4=content_name&ads.v4=Poker%20Night%20in%20America&ads.n21=channel_language&ads.v21=en&ads.n22=channel_brand_id&ads.v22=AMDB013678&ads.n23=h&ads.v23=1080&ads.n24=network_name&ads.v24=poker-night-in-america&ads.n25=channel_title&ads.v25=Poker%20Night%20in%20America&ads.n26=ifa_type&ads.v26=&ads.n27=channel_id&ads.v27=780DDE63-269A-4B71-A59D-CD0B3F56FD4A&ads.n28=channel_corp&ads.v28=acTVe%20Action%20Sports%20LLC&ads.n29=us_privacy&ads.v29=1YNY&ads.n30=device_make&ads.v30=&ads.n31=content_provider&ads.v31=poker-night-in-america&ads.n32=w&ads.v32=1920&ads.n33=gpp&ads.v33=&ads.n34=ua&ads.v34=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F122.0.0.0%20Safari%2F537.36&ads.n35=cust_devicename&ads.v35=desktop_web&ads.n36=channel_genre&ads.v36=Gaming&ads.n37=pos&ads.v37=midroll&ads.n38=content_custom_2_param&ads.v38=AMDB013678&ads.n39=content_livestream&ads.v39=1&ads.n40=channel_rating&ads.v40=TV-PG&ads.n41=ip&ads.v41=86.48.9.131&ads.n42=content_custom_3_param&ads.v42=channel&ads.n43=channel_name&ads.v43=Poker%20Night%20in%20America&ads.n44=app_store_url&ads.v44=&ads.n45=app_version&ads.v45=0.0.0&ads.n46=content_type&ads.v46=channel&ads.n47=content_producer_name&ads.v47=acTVe%20Action%20Sports%20LLC&ads.n48=channel_company_id&ads.v48=AMDP500526&ads.n49=device_type&ads.v49=&ads.n50=dnt&ads.v50=&ads.n51=url&ads.v51=https%25253A%25252F%25252Flocalnow.com%25252Fchannels%25252Fcbs-news-chicago-hyperlocal&ads.n52=app_bundle&ads.v52=&ads.n53=device_model&ads.v53=&ads.n54=content_custom_1_param&ads.v54=780DDE63-269A-4B71-A59D-CD0B3F56FD4A&ads.n55=app_name&ads.v55=&ads.n56=channel_ext_id&ads.v56=6120385a19bf6e60884b43c2&ads.n57=gpp_sid&ads.v57=&ads.n58=did&ads.v58=
+
+#EXTINF:-1 tvg-name="Redbull TV" tvg-logo="https://en.wikipedia.org/wiki/Special:FilePath/Red_Bull_TV_logo.png?width=400" group-title="Sports",Redbull TV
+https://jmp2.uk/rok-c5e8a74546771de365652cd053f73351.m3u8
+
+#EXTINF:-1 tvg-name="X Games TV" tvg-logo="https://en.wikipedia.org/wiki/Special:FilePath/X_Games_logo.svg?width=400" group-title="Sports",X Games TV
+https://jmp2.uk/rok-0128b5f756acf1e1c488509fd76b0a61.m3u8
