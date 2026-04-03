@@ -20,7 +20,11 @@ Auto-refreshes daily from live sources. Channels are never removed — only adde
 https://raw.githubusercontent.com/fjaee/fctv/master/channels-all.m3u
 ```
 
-> Copy this URL and paste it directly into **TiviMate**, **Kodi**, or any M3U-compatible IPTV player.
+```
+https://goo.su/tq6Et
+```
+
+> Copy either URL and paste it directly into **TiviMate**, **Kodi**, or any M3U-compatible IPTV player.
 
 ---
 
