@@ -2,7 +2,7 @@ import json
 import urllib.request
 import hashlib
 import sys
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 
 SOURCE_URL  = "https://raw.githubusercontent.com/eyhehez/ugh/refs/heads/main/zzzcha.json"
 BACKUP_FILE = "channels-backup.json"
@@ -228,7 +228,7 @@ def build_m3u_entry(ch):
     return "\n".join(lines)
 
 # ── 8. Build and save M3U files ───────────────────────────────────────────────
-timestamp  = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
+timestamp  = datetime.now(timezone.utc).astimezone(timezone(timedelta(hours=8))).strftime("%Y-%m-%d %H:%M:%S GMT+8")
 m3u_header = f'#EXTM3U\n# Last Updated: {timestamp}'
 
 m3u_all = [m3u_header] + [build_m3u_entry(ch) for ch in data]
@@ -239,6 +239,35 @@ with open("channels-all.m3u","w",encoding="utf-8") as f:
 with open(HASH_FILE, "w") as f:
     f.write(new_hash)
 
+# ── 10. Write commit message summary ─────────────────────────────────────────
+new_count     = len([ch for ch in data if ch["name"] not in {c["name"] for c in backup}])
+updated_count = len(data) - len(backup) - new_count + len(backup) - sum(
+    1 for ch in data
+    if ch["name"] in {c["name"] for c in backup}
+    and ch == next((c for c in backup if c["name"] == ch["name"]), ch)
+)
+
+# Simpler: count via fetched vs backup diff
+fetched_names  = {ch["name"] for ch in fetched}
+backup_names   = {ch["name"] for ch in backup}
+added_channels = fetched_names - backup_names
+updated_channels = [
+    ch["name"] for ch in fetched
+    if ch["name"] in backup_names and ch.get("streamUrl","") != next(
+        (c.get("streamUrl","") for c in backup if c["name"] == ch["name"]), ""
+    )
+]
+
+commit_msg = (
+    f"[{timestamp}]\n"
+    f"Total: {len(data)} channels | "
+    f"New: {len(added_channels)} | "
+    f"Updated: {len(updated_channels)}"
+)
+with open("commit_msg.txt", "w") as f:
+    f.write(commit_msg)
+
 print(f"channels-all.m3u  → {len(data)} channels")
+print(f"New: {len(added_channels)} | Updated: {len(updated_channels)}")
 print(f"Hash updated: {new_hash[:12]}...")
 print(f"Timestamp: {timestamp}")
