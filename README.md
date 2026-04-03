@@ -99,13 +99,13 @@ fctv/
 
 These entries are not available from the upstream source but are permanently kept locally:
 
-- Kapamilya Channel
-- One PH / One Sports / One Sports+
-- TVN Movies
-- F1 TV (1 & 2)
+- 𝗞𝗮𝗽𝗮𝗺𝗶𝗹𝘆𝗮 𝗖𝗵𝗮𝗻𝗻𝗲𝗹
+- 𝗢𝗻𝗲 𝗣𝗛 / 𝗢𝗻𝗲 𝗦𝗽𝗼𝗿𝘁𝘀 / 𝗢𝗻𝗲 𝗦𝗽𝗼𝗿𝘁𝘀+
+- 𝗧𝗩𝗡 𝗠𝗼𝘃𝗶𝗲𝘀
+- 𝗙𝟭 𝗧𝗩 (𝟭 & 𝟮)
 
 ---
 
 <div align="center">
-  <sub>Personal project · Auto-maintained by GitHub Actions · Not for redistribution</sub>
+  <sub>Personal project · Auto-maintained by GitHub Actions · Not for redistribution · For Personal Use Only</sub>
 </div>
