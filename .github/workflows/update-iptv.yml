@@ -2,27 +2,33 @@ name: Update IPTV M3U
 
 on:
   schedule:
-    - cron: '0 0,12 * * *'
-  workflow_dispatch:
+    - cron: "0 16 * * *"   # daily at midnight GMT+8 (16:00 UTC)
+  workflow_dispatch:        # allow manual trigger
 
 jobs:
-  build:
+  update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: "3.x"
 
-      - name: Run generator script
+      - name: Run generate script
         run: python generate.py
 
-      - name: Commit and push changes
+      - name: Commit and push if changed
         run: |
-          git config --global user.name 'GitHub Action Bot'
-          git config --global user.email 'action@github.com'
-          git add channels-all.m3u channels-drm.m3u channels-backup.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-updated IPTV M3U playlists" && git push)
+          git config --global user.name "GitHub Action Bot"
+          git config --global user.email "action@github.com"
+          git add channels-all.m3u channels-backup.json channels.hash
+          git diff --quiet && git diff --staged --quiet \
+            && echo "Nothing changed, skipping commit." \
+            || (
+              MSG=$(cat commit_msg.txt 2>/dev/null || echo "Auto-updated IPTV playlists")
+              git commit -m "$MSG"
+              git push
+            )
