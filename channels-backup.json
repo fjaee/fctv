@@ -162,7 +162,7 @@
     "logo": "https://raw.githubusercontent.com/noodtayo/app/main/images/ch_starz.webp",
     "category": "Movies",
     "dateAdded": "2026-03-19",
-    "streamUrl": "http://212.102.60.231/STARZ/index.m3u8",
+    "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/14915.m3u8",
     "logoLocal": "ch_starz"
   },
   {
@@ -188,13 +188,19 @@
     "name": "Star Movies",
     "logoLocal": "ch_star_movies",
     "category": "Movies",
-    "streamUrl": "http://103.175.242.10:8080/starmovies/index.m3u8"
+    "streamUrl": "http://103.185.24.134:3001/Star-Movies/tracks-v1a1/mono.m3u8",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
   },
   {
     "name": "Star Movies Select",
     "logoLocal": "ch_star_movies_select",
     "category": "Movies",
-    "streamUrl": "http://93.119.105.61:80/play/live.php?mac=00:1A:79:00:14:3C&stream=441215&extension=ts&play_token=I6IiF0CvFf"
+    "streamUrl": "http://103.185.24.134:3001/STAR-MOVIES-SEL-HD/tracks-v1a1/mono.m3u8",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
   },
   {
     "name": "GMA Pinoy TV",
@@ -1692,14 +1698,14 @@
     "logoLocal": "ch_syfy",
     "category": "Entertainment",
     "dateAdded": "2026-03-23",
-    "streamUrl": "http://23.237.104.106:8080/USA_SYFY/index.m3u8"
+    "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/10445.m3u8"
   },
   {
     "name": "Paramount Network",
     "logoLocal": "ch_paramount_network",
     "category": "Entertainment",
     "dateAdded": "2026-03-23",
-    "streamUrl": "http://23.237.104.106:8080/USA_PARAMOUNT_NETWORK/index.m3u8"
+    "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/10439.m3u8"
   },
   {
     "name": "Hallmark",
@@ -1780,7 +1786,7 @@
     "logoLocal": "ch_fx_movie_channel",
     "category": "Movies",
     "dateAdded": "2026-03-23",
-    "streamUrl": "http://mytvstream.net:8080/live/30550113/30550113/10260.m3u8"
+    "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/10401.m3u8"
   },
   {
     "name": "Sony Movies",
@@ -1824,14 +1830,14 @@
     "logoLocal": "ch_discovery_science",
     "category": "Documentary",
     "dateAdded": "2026-03-23",
-    "streamUrl": "http://tv.diablotv.net:8080/eEiiLll09384Ecaiman34RtR/KTap2pdJx7/9822"
+    "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/10389.m3u8"
   },
   {
     "name": "Smithsonian Channel",
     "logoLocal": "ch_smithsonian_channel",
     "category": "Documentary",
     "dateAdded": "2026-03-23",
-    "streamUrl": "http://mytvstream.net:8080/live/30550113/30550113/31150.m3u8"
+    "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/10442.m3u8"
   },
   {
     "name": "BBC Lifestyle",
@@ -2058,5 +2064,125 @@
     "category": "Movies",
     "dateAdded": "2026-04-03",
     "streamUrl": "https://9f8e2ffcd87f4c469be7194e48f84874.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-802-UK-SONYONECOMEDYHITS-LG_UK/playlist.m3u8"
+  },
+  {
+    "name": "Discovery Family",
+    "logo": "https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_discovery_family.webp",
+    "category": "Entertainment",
+    "dateAdded": "2026-04-04",
+    "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/10387.m3u8",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "MTV",
+    "logo": "https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_mtv.webp",
+    "category": "Entertainment",
+    "dateAdded": "2026-04-04",
+    "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/10426.m3u8",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "USA Network",
+    "logo": "https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_usa_network.webp",
+    "category": "Entertainment",
+    "dateAdded": "2026-04-04",
+    "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/10456.m3u8",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "truTV",
+    "logo": "https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_trutv.webp",
+    "category": "Entertainment",
+    "dateAdded": "2026-04-04",
+    "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/10453.m3u8",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "Horror by ALTER",
+    "logo": "https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_horror_by_alter.webp",
+    "category": "Entertainment",
+    "dateAdded": "2026-04-04",
+    "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/199299.m3u8",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "FilmRise Horror",
+    "logo": "https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_filmrise.webp",
+    "category": "Entertainment",
+    "dateAdded": "2026-04-04",
+    "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/199007.m3u8",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "HBO US",
+    "logoLocal": "ch_hbo",
+    "category": "Movies",
+    "dateAdded": "2026-04-04",
+    "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/13434.m3u8",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "HBO Hits US",
+    "logoLocal": "ch_hbo_hits",
+    "category": "Movies",
+    "dateAdded": "2026-04-04",
+    "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/13435.m3u8",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "HBO Comedy US",
+    "logo": "https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_hbo_comedy.webp",
+    "category": "Movies",
+    "dateAdded": "2026-04-04",
+    "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/13438.m3u8",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "HBO Drama US",
+    "logo": "https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_hbo_drama.webp",
+    "category": "Movies",
+    "dateAdded": "2026-04-04",
+    "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/13436.m3u8",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "Cooking Channel",
+    "logo": "https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_cooking_channel.webp",
+    "category": "Lifestyle",
+    "dateAdded": "2026-04-04",
+    "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/10381.m3u8",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "MTV Live",
+    "logo": "https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_mtv_live.webp",
+    "category": "Music",
+    "dateAdded": "2026-04-04",
+    "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/31498.m3u8",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
   }
 ]

@@ -1,5 +1,5 @@
 #EXTM3U
-# Last Updated: 2026-04-03 19:17:19 GMT+8
+# Last Updated: 2026-04-05 00:46:27 GMT+8
 
 #EXTINF:-1 tvg-name="Kapamilya Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Kapamilya_Channel_Logo_2020.svg/960px-Kapamilya_Channel_Logo_2020.svg.png" group-title="Entertainment",Kapamilya Channel
 http://136.239.173.2:6610/001/2/ch00000090990000001286/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2Bqw65FFCygtQMRRIUPF0xuXytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001694&contentid=ch00000000000000001694&videoid=ch00000090990000001286&recommendtype=0&userid=1004802317138&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=CCJLYZ04O9IXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
@@ -107,7 +107,7 @@ https://ucdn.mediaquest.com.ph/bpk-tv/cg_hbofam/default/index.mpd
 https://ucdn.mediaquest.com.ph/bpk-tv/cg_hbosign/default/index.mpd
 
 #EXTINF:-1 tvg-name="Starz" tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_starz.webp" group-title="Movies",Starz
-http://212.102.60.231/STARZ/index.m3u8
+http://bgdc.live:25461/live/allanphillips31/55446538/14915.m3u8
 
 #EXTINF:-1 tvg-name="HITS Movies" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-asia/hits-movies-asi.png" group-title="Movies",HITS Movies
 #KODIPROP:inputstream=inputstream.adaptive
@@ -117,10 +117,10 @@ http://212.102.60.231/STARZ/index.m3u8
 https://linearjitp-playback.astro.com.my/dash-wv/linear/2305/default_ott.mpd|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
 
 #EXTINF:-1 tvg-name="Star Movies" tvg-logo="https://en.wikipedia.org/wiki/Special:FilePath/Star_Movies_logo.svg?width=400" group-title="Movies",Star Movies
-http://103.175.242.10:8080/starmovies/index.m3u8
+http://103.185.24.134:3001/Star-Movies/tracks-v1a1/mono.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
 
 #EXTINF:-1 tvg-name="Star Movies Select" tvg-logo="https://en.wikipedia.org/wiki/Special:FilePath/Star_Movies_Select_logo.png?width=400" group-title="Movies",Star Movies Select
-http://93.119.105.61:80/play/live.php?mac=00:1A:79:00:14:3C&stream=441215&extension=ts&play_token=I6IiF0CvFf
+http://103.185.24.134:3001/STAR-MOVIES-SEL-HD/tracks-v1a1/mono.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
 
 #EXTINF:-1 tvg-name="GMA Pinoy TV" tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_gma_pinoy_tv.webp" group-title="Entertainment",GMA Pinoy TV
 #KODIPROP:inputstream=inputstream.adaptive
@@ -988,10 +988,10 @@ https://bcovlive-a.akamaihd.net/ba853de442c140b7b3dc020001597c0a/us-east-1/62458
 https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/dr_rockentertainment/default/index.mpd
 
 #EXTINF:-1 tvg-name="SYFY" tvg-logo="" group-title="Entertainment",SYFY
-http://23.237.104.106:8080/USA_SYFY/index.m3u8
+http://bgdc.live:25461/live/allanphillips31/55446538/10445.m3u8
 
 #EXTINF:-1 tvg-name="Paramount Network" tvg-logo="" group-title="Entertainment",Paramount Network
-http://23.237.104.106:8080/USA_PARAMOUNT_NETWORK/index.m3u8
+http://bgdc.live:25461/live/allanphillips31/55446538/10439.m3u8
 
 #EXTINF:-1 tvg-name="Hallmark" tvg-logo="" group-title="Entertainment",Hallmark
 http://23.237.104.106:8080/USA_HALLMARK/index.m3u8
@@ -1028,7 +1028,7 @@ http://161.49.17.2:6610/001/2/ch00000090990000001305/manifest.mpd?AuthInfo=v87HD
 https://linearjitp-playback.astro.com.my/dash-wv/linear/2406/default_ott.mpd|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
 
 #EXTINF:-1 tvg-name="FX Movie Channel" tvg-logo="" group-title="Movies",FX Movie Channel
-http://mytvstream.net:8080/live/30550113/30550113/10260.m3u8
+http://bgdc.live:25461/live/allanphillips31/55446538/10401.m3u8
 
 #EXTINF:-1 tvg-name="Sony Movies" tvg-logo="" group-title="Movies",Sony Movies
 https://a-cdn.klowdtv.com/live1/smc_720p/chunks.m3u8
@@ -1050,10 +1050,10 @@ https://amg01753-amg01753c6-samsung-au-6678.playouts.now.amagi.tv/playlist.m3u8
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Animalplanethd2/default/index.mpd
 
 #EXTINF:-1 tvg-name="Discovery Science" tvg-logo="" group-title="Documentary",Discovery Science
-http://tv.diablotv.net:8080/eEiiLll09384Ecaiman34RtR/KTap2pdJx7/9822
+http://bgdc.live:25461/live/allanphillips31/55446538/10389.m3u8
 
 #EXTINF:-1 tvg-name="Smithsonian Channel" tvg-logo="" group-title="Documentary",Smithsonian Channel
-http://mytvstream.net:8080/live/30550113/30550113/31150.m3u8
+http://bgdc.live:25461/live/allanphillips31/55446538/10442.m3u8
 
 #EXTINF:-1 tvg-name="BBC Lifestyle" tvg-logo="" group-title="Lifestyle",BBC Lifestyle
 #KODIPROP:inputstream=inputstream.adaptive
@@ -1160,3 +1160,39 @@ https://89514e758f814907be6d14bbc0aa66b7.mediatailor.us-west-2.amazonaws.com/v1/
 
 #EXTINF:-1 tvg-name="Sony One Comedy Hits" tvg-logo="" group-title="Movies",Sony One Comedy Hits
 https://9f8e2ffcd87f4c469be7194e48f84874.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-802-UK-SONYONECOMEDYHITS-LG_UK/playlist.m3u8
+
+#EXTINF:-1 tvg-name="Discovery Family" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_discovery_family.webp" group-title="Entertainment",Discovery Family
+http://bgdc.live:25461/live/allanphillips31/55446538/10387.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+
+#EXTINF:-1 tvg-name="MTV" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_mtv.webp" group-title="Entertainment",MTV
+http://bgdc.live:25461/live/allanphillips31/55446538/10426.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+
+#EXTINF:-1 tvg-name="USA Network" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_usa_network.webp" group-title="Entertainment",USA Network
+http://bgdc.live:25461/live/allanphillips31/55446538/10456.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+
+#EXTINF:-1 tvg-name="truTV" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_trutv.webp" group-title="Entertainment",truTV
+http://bgdc.live:25461/live/allanphillips31/55446538/10453.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+
+#EXTINF:-1 tvg-name="Horror by ALTER" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_horror_by_alter.webp" group-title="Entertainment",Horror by ALTER
+http://bgdc.live:25461/live/allanphillips31/55446538/199299.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+
+#EXTINF:-1 tvg-name="FilmRise Horror" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_filmrise.webp" group-title="Entertainment",FilmRise Horror
+http://bgdc.live:25461/live/allanphillips31/55446538/199007.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+
+#EXTINF:-1 tvg-name="HBO US" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/philippines/hbo-ph.png" group-title="Movies",HBO US
+http://bgdc.live:25461/live/allanphillips31/55446538/13434.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+
+#EXTINF:-1 tvg-name="HBO Hits US" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/philippines/hbo-hits-ph.png" group-title="Movies",HBO Hits US
+http://bgdc.live:25461/live/allanphillips31/55446538/13435.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+
+#EXTINF:-1 tvg-name="HBO Comedy US" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_hbo_comedy.webp" group-title="Movies",HBO Comedy US
+http://bgdc.live:25461/live/allanphillips31/55446538/13438.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+
+#EXTINF:-1 tvg-name="HBO Drama US" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_hbo_drama.webp" group-title="Movies",HBO Drama US
+http://bgdc.live:25461/live/allanphillips31/55446538/13436.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+
+#EXTINF:-1 tvg-name="Cooking Channel" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_cooking_channel.webp" group-title="Lifestyle",Cooking Channel
+http://bgdc.live:25461/live/allanphillips31/55446538/10381.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+
+#EXTINF:-1 tvg-name="MTV Live" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_mtv_live.webp" group-title="Music",MTV Live
+http://bgdc.live:25461/live/allanphillips31/55446538/31498.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
