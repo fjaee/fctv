@@ -1740,14 +1740,14 @@
     "logoLocal": "ch_abc",
     "category": "Entertainment",
     "dateAdded": "2026-03-23",
-    "streamUrl": "http://mytvstream.net:8080/live/30550113/30550113/121139.m3u8"
+    "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/10358.m3u8"
   },
   {
     "name": "CBS",
     "logoLocal": "ch_cbs",
     "category": "Entertainment",
     "dateAdded": "2026-03-23",
-    "streamUrl": "http://mytvstream.net:8080/live/30550113/30550113/120749.m3u8"
+    "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/10374.m3u8"
   },
   {
     "name": "Blast Movies",
@@ -1879,7 +1879,10 @@
     "category": "Music",
     "dateAdded": "2026-03-23",
     "type": "mpd",
-    "streamUrl": "https://jmp2.uk/stvp-CA3900002PM"
+    "streamUrl": "https://d1rj53ajbds2mt.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ajbgumr94jms9/f4acc9ba_daae_4ed0_b836_32126cead919/hls/playlist.m3u8",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
   },
   {
     "name": "Stingray Karaoke",
@@ -2181,6 +2184,23 @@
     "category": "Music",
     "dateAdded": "2026-04-04",
     "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/31498.m3u8",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "E! Entertainment",
+    "logoLocal": "ch_e",
+    "category": "Entertainment",
+    "dateAdded": "2026-03-23",
+    "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/10391.m3u8"
+  },
+  {
+    "name": "Miramax Movie Channel",
+    "logo": "https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_miramax_movie_channel.webp",
+    "category": "Movies",
+    "dateAdded": "2026-04-05",
+    "streamUrl": "https://linear-798.frequency.stream/mt/plex/798/hls/master/playlist.m3u8",
     "headers": {
       "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
     }
