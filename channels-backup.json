@@ -1046,7 +1046,7 @@
     "name": "MYX Global",
     "logoLocal": "ch_myx",
     "category": "Music",
-    "streamUrl": "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-myxnola-dash-abscbnono/28b644c3-4a05-4733-a518-50ae75ff8193/index.mpd",
+    "streamUrl": "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-myxnola-dash-abscbnono/index.mpd",
     "drm": {
       "f40a52a3ac9b4702bdd5b735d910fd2f": "35e4893c6e76546085941be3010932d4"
     },
@@ -1733,7 +1733,7 @@
     "logoLocal": "ch_fox",
     "category": "Entertainment",
     "dateAdded": "2026-03-23",
-    "streamUrl": "http://mytvstream.net:8080/live/30550113/30550113/120750.m3u8"
+    "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/10395.m3u8"
   },
   {
     "name": "ABC",
@@ -1957,7 +1957,7 @@
     "logoLocal": "ch_espn2",
     "category": "Sports",
     "dateAdded": "2026-03-23",
-    "streamUrl": "https://restream-live.realiptv.to/2879115/5077048/2581"
+    "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/38227.m3u8"
   },
   {
     "name": "F1 TV | 1",
@@ -2203,6 +2203,30 @@
     "streamUrl": "https://linear-798.frequency.stream/mt/plex/798/hls/master/playlist.m3u8",
     "headers": {
       "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "",
+    "logoLocal": "ch_espn",
+    "category": "Sports",
+    "streamUrl": "http://nor1live.win/livehttpplay?channel_id=23120"
+  },
+  {
+    "name": "F1 TV - 1",
+    "logoLocal": "ch_f1_tv",
+    "category": "Sports",
+    "streamUrl": "https://a184aivottlinear-a.akamaihd.net/OTTB/iad-nitro/live/clients/dash/enc/5fjow0mrvw/out/v1/f870533ee24b4f3bb98d2afe4b1e1bac/cenc.mpd",
+    "drm": {
+      "505616380de706936e493fdd1c25d0b6": "5b313f49c63c682236eab3357400e216"
+    }
+  },
+  {
+    "name": "F1 TV - 2",
+    "logoLocal": "ch_f1_tv",
+    "category": "Sports",
+    "streamUrl": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/duqbirmk0d/out/v1/40f53c7cbc95498db3afd081c377d776/cenc.mpd",
+    "drm": {
+      "609d795905904705028ef54653019af7": "2c791eb611e57a7d7f203022bc1b9ba3"
     }
   }
 ]

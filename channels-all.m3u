@@ -1,5 +1,5 @@
 #EXTM3U
-# Last Updated: 2026-04-06 00:47:43 GMT+8
+# Last Updated: 2026-04-07 00:58:34 GMT+8
 
 #EXTINF:-1 tvg-name="Kapamilya Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Kapamilya_Channel_Logo_2020.svg/960px-Kapamilya_Channel_Logo_2020.svg.png" group-title="Entertainment",Kapamilya Channel
 http://136.239.173.2:6610/001/2/ch00000090990000001286/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2Bqw65FFCygtQMRRIUPF0xuXytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001694&contentid=ch00000000000000001694&videoid=ch00000090990000001286&recommendtype=0&userid=1004802317138&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=CCJLYZ04O9IXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
@@ -633,7 +633,7 @@ http://136.158.97.2:6610/001/2/ch00000090990000001252/manifest.mpd?AuthInfo=v87H
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=f40a52a3ac9b4702bdd5b735d910fd2f:35e4893c6e76546085941be3010932d4
-https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-myxnola-dash-abscbnono/28b644c3-4a05-4733-a518-50ae75ff8193/index.mpd|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36&Referer=https://www.iwanttfc.com/&Origin=https://www.iwanttfc.com
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-myxnola-dash-abscbnono/index.mpd|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36&Referer=https://www.iwanttfc.com/&Origin=https://www.iwanttfc.com
 
 #EXTINF:-1 tvg-name="Jeepney TV" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/philippines/jeepney-tv-ph.png" group-title="Entertainment",Jeepney TV
 #KODIPROP:inputstream=inputstream.adaptive
@@ -1003,7 +1003,7 @@ http://23.237.104.106:8080/USA_E/index.m3u8
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01438-ewscrippscompan-ion-tablo/playlist.m3u8
 
 #EXTINF:-1 tvg-name="Fox" tvg-logo="" group-title="Entertainment",Fox
-http://mytvstream.net:8080/live/30550113/30550113/120750.m3u8
+http://bgdc.live:25461/live/allanphillips31/55446538/10395.m3u8
 
 #EXTINF:-1 tvg-name="ABC" tvg-logo="" group-title="Entertainment",ABC
 http://bgdc.live:25461/live/allanphillips31/55446538/10358.m3u8
@@ -1106,7 +1106,7 @@ http://tv.diablotv.net:8080/eEiiLll09384Ecaiman34RtR/KTap2pdJx7/162524
 https://d1jzu95oc8fgt3.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-zyqcok4bm0lgq/FOX_Sports.m3u8
 
 #EXTINF:-1 tvg-name="ESPN2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/espn2-us.png" group-title="Sports",ESPN2
-https://restream-live.realiptv.to/2879115/5077048/2581
+http://bgdc.live:25461/live/allanphillips31/55446538/38227.m3u8
 
 #EXTINF:-1 tvg-name="F1 TV | 1" tvg-logo="https://en.wikipedia.org/wiki/Special:FilePath/F1_logo.svg?width=400" group-title="Sports",F1 TV | 1
 #KODIPROP:inputstream=inputstream.adaptive
@@ -1202,3 +1202,20 @@ http://bgdc.live:25461/live/allanphillips31/55446538/10391.m3u8
 
 #EXTINF:-1 tvg-name="Miramax Movie Channel" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_miramax_movie_channel.webp" group-title="Movies",Miramax Movie Channel
 https://linear-798.frequency.stream/mt/plex/798/hls/master/playlist.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+
+#EXTINF:-1 tvg-name="" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/espn-us.png" group-title="Sports",
+http://nor1live.win/livehttpplay?channel_id=23120
+
+#EXTINF:-1 tvg-name="F1 TV - 1" tvg-logo="https://en.wikipedia.org/wiki/Special:FilePath/F1_logo.svg?width=400" group-title="Sports",F1 TV - 1
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=505616380de706936e493fdd1c25d0b6:5b313f49c63c682236eab3357400e216
+https://a184aivottlinear-a.akamaihd.net/OTTB/iad-nitro/live/clients/dash/enc/5fjow0mrvw/out/v1/f870533ee24b4f3bb98d2afe4b1e1bac/cenc.mpd
+
+#EXTINF:-1 tvg-name="F1 TV - 2" tvg-logo="https://en.wikipedia.org/wiki/Special:FilePath/F1_logo.svg?width=400" group-title="Sports",F1 TV - 2
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=609d795905904705028ef54653019af7:2c791eb611e57a7d7f203022bc1b9ba3
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/duqbirmk0d/out/v1/40f53c7cbc95498db3afd081c377d776/cenc.mpd
