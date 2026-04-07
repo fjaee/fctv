@@ -1,5 +1,5 @@
 #EXTM3U
-# Last Updated: 2026-04-07 00:58:34 GMT+8
+# Last Updated: 2026-04-08 01:10:43 GMT+8
 
 #EXTINF:-1 tvg-name="Kapamilya Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Kapamilya_Channel_Logo_2020.svg/960px-Kapamilya_Channel_Logo_2020.svg.png" group-title="Entertainment",Kapamilya Channel
 http://136.239.173.2:6610/001/2/ch00000090990000001286/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2Bqw65FFCygtQMRRIUPF0xuXytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001694&contentid=ch00000000000000001694&videoid=ch00000090990000001286&recommendtype=0&userid=1004802317138&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=CCJLYZ04O9IXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
@@ -1214,6 +1214,42 @@ http://nor1live.win/livehttpplay?channel_id=23120
 https://a184aivottlinear-a.akamaihd.net/OTTB/iad-nitro/live/clients/dash/enc/5fjow0mrvw/out/v1/f870533ee24b4f3bb98d2afe4b1e1bac/cenc.mpd
 
 #EXTINF:-1 tvg-name="F1 TV - 2" tvg-logo="https://en.wikipedia.org/wiki/Special:FilePath/F1_logo.svg?width=400" group-title="Sports",F1 TV - 2
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=609d795905904705028ef54653019af7:2c791eb611e57a7d7f203022bc1b9ba3
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/duqbirmk0d/out/v1/40f53c7cbc95498db3afd081c377d776/cenc.mpd
+
+#EXTINF:-1 tvg-name="Zee One" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_zee_one.webp" group-title="Entertainment",Zee One
+https://amg17931-zee-amg17931c6-samsung-au-8872.playouts.now.amagi.tv/playlist/amg17931-asiatvusaltdfast-zeeworld-samsungau/playlist.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+
+#EXTINF:-1 tvg-name="FilmRise Anime" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_filmrise_anime.webp" group-title="Anime",FilmRise Anime
+https://dvu7aia8rjlfm.cloudfront.net/master.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+
+#EXTINF:-1 tvg-name="Retro Crush" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_retro_crush.webp" group-title="Anime",Retro Crush
+https://linear-899.frequency.stream/dist/cineverse/899/hls/master/playlist.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+
+#EXTINF:-1 tvg-name="Curiosity Now" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_curiosity_now.webp" group-title="Documentary",Curiosity Now
+https://amg00170-curiositystream-amg00170c3-rakuten-us-2289.playouts.now.amagi.tv/playlist/amg00170-curiositystreamllcfast-curiositynowrow-rakutenus/playlist.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+
+#EXTINF:-1 tvg-name="Euronews" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_euronews.webp" group-title="News",Euronews
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=6a245775c8e8479789fee5754b12d409:3c5dd5328315d0c9cc360b724045afe2
+https://abslive.akamaized.net/dash/live/2027618/euronews/manifest.mpd
+
+#EXTINF:-1 tvg-name="ESPNU" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_espnu.webp" group-title="Sports",ESPNU
+http://bgdc.live:25461/live/allanphillips31/55446538/38228.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+
+#EXTINF:-1 tvg-name="F1 TV • 1" tvg-logo="https://en.wikipedia.org/wiki/Special:FilePath/F1_logo.svg?width=400" group-title="Sports",F1 TV • 1
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=505616380de706936e493fdd1c25d0b6:5b313f49c63c682236eab3357400e216
+https://a184aivottlinear-a.akamaihd.net/OTTB/iad-nitro/live/clients/dash/enc/5fjow0mrvw/out/v1/f870533ee24b4f3bb98d2afe4b1e1bac/cenc.mpd
+
+#EXTINF:-1 tvg-name="F1 TV • 2" tvg-logo="https://en.wikipedia.org/wiki/Special:FilePath/F1_logo.svg?width=400" group-title="Sports",F1 TV • 2
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey

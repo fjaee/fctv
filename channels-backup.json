@@ -2228,5 +2228,83 @@
     "drm": {
       "609d795905904705028ef54653019af7": "2c791eb611e57a7d7f203022bc1b9ba3"
     }
+  },
+  {
+    "name": "Zee One",
+    "logo": "https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_zee_one.webp",
+    "category": "Entertainment",
+    "dateAdded": "2026-04-07",
+    "streamUrl": "https://amg17931-zee-amg17931c6-samsung-au-8872.playouts.now.amagi.tv/playlist/amg17931-asiatvusaltdfast-zeeworld-samsungau/playlist.m3u8",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "FilmRise Anime",
+    "logo": "https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_filmrise_anime.webp",
+    "category": "Anime",
+    "dateAdded": "2026-04-07",
+    "streamUrl": "https://dvu7aia8rjlfm.cloudfront.net/master.m3u8",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "Retro Crush",
+    "logo": "https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_retro_crush.webp",
+    "category": "Anime",
+    "dateAdded": "2026-04-07",
+    "streamUrl": "https://linear-899.frequency.stream/dist/cineverse/899/hls/master/playlist.m3u8",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "Curiosity Now",
+    "logo": "https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_curiosity_now.webp",
+    "category": "Documentary",
+    "dateAdded": "2026-04-07",
+    "streamUrl": "https://amg00170-curiositystream-amg00170c3-rakuten-us-2289.playouts.now.amagi.tv/playlist/amg00170-curiositystreamllcfast-curiositynowrow-rakutenus/playlist.m3u8",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "Euronews",
+    "logo": "https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_euronews.webp",
+    "category": "News",
+    "dateAdded": "2026-04-07",
+    "streamUrl": "https://abslive.akamaized.net/dash/live/2027618/euronews/manifest.mpd",
+    "drm": {
+      "6a245775c8e8479789fee5754b12d409": "3c5dd5328315d0c9cc360b724045afe2"
+    }
+  },
+  {
+    "name": "ESPNU",
+    "logo": "https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_espnu.webp",
+    "category": "Sports",
+    "dateAdded": "2026-04-07",
+    "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/38228.m3u8",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "F1 TV • 1",
+    "logoLocal": "ch_f1_tv",
+    "category": "Sports",
+    "streamUrl": "https://a184aivottlinear-a.akamaihd.net/OTTB/iad-nitro/live/clients/dash/enc/5fjow0mrvw/out/v1/f870533ee24b4f3bb98d2afe4b1e1bac/cenc.mpd",
+    "drm": {
+      "505616380de706936e493fdd1c25d0b6": "5b313f49c63c682236eab3357400e216"
+    }
+  },
+  {
+    "name": "F1 TV • 2",
+    "logoLocal": "ch_f1_tv",
+    "category": "Sports",
+    "streamUrl": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/duqbirmk0d/out/v1/40f53c7cbc95498db3afd081c377d776/cenc.mpd",
+    "drm": {
+      "609d795905904705028ef54653019af7": "2c791eb611e57a7d7f203022bc1b9ba3"
+    }
   }
 ]
