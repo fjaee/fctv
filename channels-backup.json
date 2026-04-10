@@ -2076,7 +2076,8 @@
     "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/10387.m3u8",
     "headers": {
       "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
-    }
+    },
+    "logoLocal": "ch_discovery_family"
   },
   {
     "name": "MTV",
@@ -2086,7 +2087,8 @@
     "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/10426.m3u8",
     "headers": {
       "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
-    }
+    },
+    "logoLocal": "ch_mtv"
   },
   {
     "name": "USA Network",
@@ -2096,7 +2098,8 @@
     "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/10456.m3u8",
     "headers": {
       "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
-    }
+    },
+    "logoLocal": "ch_usa_network"
   },
   {
     "name": "truTV",
@@ -2106,7 +2109,8 @@
     "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/10453.m3u8",
     "headers": {
       "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
-    }
+    },
+    "logoLocal": "ch_trutv"
   },
   {
     "name": "Horror by ALTER",
@@ -2116,7 +2120,8 @@
     "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/199299.m3u8",
     "headers": {
       "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
-    }
+    },
+    "logoLocal": "ch_horror_by_alter"
   },
   {
     "name": "FilmRise Horror",
@@ -2126,7 +2131,8 @@
     "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/199007.m3u8",
     "headers": {
       "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
-    }
+    },
+    "logoLocal": "ch_filmrise"
   },
   {
     "name": "HBO US",
@@ -2156,7 +2162,8 @@
     "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/13438.m3u8",
     "headers": {
       "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
-    }
+    },
+    "logoLocal": "ch_hbo_comedy"
   },
   {
     "name": "HBO Drama US",
@@ -2166,7 +2173,8 @@
     "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/13436.m3u8",
     "headers": {
       "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
-    }
+    },
+    "logoLocal": "ch_hbo_drama"
   },
   {
     "name": "Cooking Channel",
@@ -2176,7 +2184,8 @@
     "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/10381.m3u8",
     "headers": {
       "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
-    }
+    },
+    "logoLocal": "ch_cooking_channel"
   },
   {
     "name": "MTV Live",
@@ -2186,7 +2195,8 @@
     "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/31498.m3u8",
     "headers": {
       "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
-    }
+    },
+    "logoLocal": "ch_mtv_live"
   },
   {
     "name": "E! Entertainment",
@@ -2203,7 +2213,8 @@
     "streamUrl": "https://linear-798.frequency.stream/mt/plex/798/hls/master/playlist.m3u8",
     "headers": {
       "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
-    }
+    },
+    "logoLocal": "ch_miramax_movie_channel"
   },
   {
     "name": "",
@@ -2237,7 +2248,8 @@
     "streamUrl": "https://amg17931-zee-amg17931c6-samsung-au-8872.playouts.now.amagi.tv/playlist/amg17931-asiatvusaltdfast-zeeworld-samsungau/playlist.m3u8",
     "headers": {
       "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
-    }
+    },
+    "logoLocal": "ch_zee_one"
   },
   {
     "name": "FilmRise Anime",
@@ -2247,7 +2259,8 @@
     "streamUrl": "https://dvu7aia8rjlfm.cloudfront.net/master.m3u8",
     "headers": {
       "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
-    }
+    },
+    "logoLocal": "ch_filmrise_anime"
   },
   {
     "name": "Retro Crush",
@@ -2257,7 +2270,8 @@
     "streamUrl": "https://linear-899.frequency.stream/dist/cineverse/899/hls/master/playlist.m3u8",
     "headers": {
       "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
-    }
+    },
+    "logoLocal": "ch_retro_crush"
   },
   {
     "name": "Curiosity Now",
@@ -2267,7 +2281,8 @@
     "streamUrl": "https://amg00170-curiositystream-amg00170c3-rakuten-us-2289.playouts.now.amagi.tv/playlist/amg00170-curiositystreamllcfast-curiositynowrow-rakutenus/playlist.m3u8",
     "headers": {
       "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
-    }
+    },
+    "logoLocal": "ch_curiosity_now"
   },
   {
     "name": "Euronews",
@@ -2277,7 +2292,8 @@
     "streamUrl": "https://abslive.akamaized.net/dash/live/2027618/euronews/manifest.mpd",
     "drm": {
       "6a245775c8e8479789fee5754b12d409": "3c5dd5328315d0c9cc360b724045afe2"
-    }
+    },
+    "logoLocal": "ch_euronews"
   },
   {
     "name": "ESPNU",
@@ -2287,7 +2303,8 @@
     "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/38228.m3u8",
     "headers": {
       "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
-    }
+    },
+    "logoLocal": "ch_espnu"
   },
   {
     "name": "F1 TV • 1",
@@ -2313,5 +2330,29 @@
     "category": "Entertainment",
     "type": "youtube",
     "streamUrl": "EkIfxAHlgJA"
+  },
+  {
+    "name": "BINI @ Coachella",
+    "logo": "https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_bini.webp",
+    "category": "Entertainment",
+    "dateAdded": "2026-04-10",
+    "type": "youtube",
+    "streamUrl": "EkIfxAHlgJA"
+  },
+  {
+    "name": "Kapamilya Online Live",
+    "logoLocal": "ch_kapamilya_online_live",
+    "category": "Entertainment",
+    "dateAdded": "2026-04-10",
+    "type": "youtube-channel",
+    "streamUrl": "@abscbnentertainment"
+  },
+  {
+    "name": "Kapuso Stream",
+    "logoLocal": "ch_kapuso_stream",
+    "category": "Entertainment",
+    "dateAdded": "2026-04-10",
+    "type": "youtube-channel",
+    "streamUrl": "@gmanetwork"
   }
 ]
