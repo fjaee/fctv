@@ -1,5 +1,5 @@
 #EXTM3U
-# Last Updated: 2026-04-11 00:58:20 GMT+8
+# Last Updated: 2026-04-12 00:48:39 GMT+8
 
 #EXTINF:-1 tvg-name="Kapamilya Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Kapamilya_Channel_Logo_2020.svg/960px-Kapamilya_Channel_Logo_2020.svg.png" group-title="Entertainment",Kapamilya Channel
 http://136.239.173.2:6610/001/2/ch00000090990000001286/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2Bqw65FFCygtQMRRIUPF0xuXytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001694&contentid=ch00000000000000001694&videoid=ch00000090990000001286&recommendtype=0&userid=1004802317138&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=CCJLYZ04O9IXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
@@ -1260,7 +1260,7 @@ https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/duqbirmk0d/out/v1
 EkIfxAHlgJA
 
 #EXTINF:-1 tvg-name="BINI @ Coachella" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_bini.webp" group-title="Entertainment",BINI @ Coachella
-EkIfxAHlgJA
+HJVG2Ck3uuk
 
 #EXTINF:-1 tvg-name="Kapamilya Online Live" tvg-logo="" group-title="Entertainment",Kapamilya Online Live
 @abscbnentertainment
