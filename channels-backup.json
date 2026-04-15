@@ -2117,7 +2117,7 @@
     "logo": "https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_horror_by_alter.webp",
     "category": "Entertainment",
     "dateAdded": "2026-04-04",
-    "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/199299.m3u8",
+    "streamUrl": "https://live-manifest.production-public.tubi.io/live/c12f35bf-6465-4e44-b5f7-04ec645689c7/playlist.m3u8",
     "headers": {
       "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
     },
@@ -2128,7 +2128,7 @@
     "logo": "https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_filmrise.webp",
     "category": "Entertainment",
     "dateAdded": "2026-04-04",
-    "streamUrl": "http://bgdc.live:25461/live/allanphillips31/55446538/199007.m3u8",
+    "streamUrl": "https://live-manifest.production-public.tubi.io/live/4c82889c-7b9c-4f06-bc61-8f18fd23a49a/playlist.m3u8",
     "headers": {
       "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
     },
@@ -2362,5 +2362,96 @@
     "dateAdded": "2026-04-12",
     "type": "youtube",
     "streamUrl": "2NA7XUw51oo"
+  },
+  {
+    "name": "CLTV36",
+    "logoLocal": "ch_cltv36",
+    "category": "Entertainment",
+    "dateAdded": "2026-04-15",
+    "streamUrl": "http://136.239.159.20:6610/001/2/ch00000090990000001314/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2Bp7Iya5QVRTA1RELFN4tQIJytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001814&contentid=ch00000000000000001814&videoid=ch00000090990000001314&recommendtype=0&userid=1863730940752&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=689D0763BF7XXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO"
+  },
+  {
+    "name": "Tap Edge",
+    "logoLocal": "ch_tap_edge",
+    "category": "Entertainment",
+    "dateAdded": "2026-04-15",
+    "streamUrl": "http://136.158.97.2:6610/001/2/ch00000090990000001150/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2Bq%2B2uVbDOBwGF5t4YHKR5dbytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001320&contentid=ch00000000000000001320&videoid=ch00000090990000001150&recommendtype=0&userid=1305735838223&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=NUZJDSE8GBEXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO"
+  },
+  {
+    "name": "CGTN Documentary",
+    "logoLocal": "ch_cgtn_documentary",
+    "category": "Documentary",
+    "dateAdded": "2026-04-15",
+    "streamUrl": "https://english-livebkali.cgtn.com/live/doccgtn.m3u8"
+  },
+  {
+    "name": "RT Documentary",
+    "logoLocal": "ch_rt_documentary",
+    "category": "Documentary",
+    "dateAdded": "2026-04-15",
+    "streamUrl": "https://rt-rtd.rttv.com/dvr/rtdoc/playlist.m3u8"
+  },
+  {
+    "name": "Sky News",
+    "logoLocal": "ch_sky_news",
+    "category": "News",
+    "dateAdded": "2026-04-15",
+    "type": "youtube",
+    "streamUrl": "YDvsBbKfLPA"
+  },
+  {
+    "name": "DW English",
+    "logoLocal": "ch_dw_english",
+    "category": "News",
+    "dateAdded": "2026-04-15",
+    "streamUrl": "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8"
+  },
+  {
+    "name": "CGTN",
+    "logoLocal": "ch_cgtn",
+    "category": "News",
+    "dateAdded": "2026-04-15",
+    "streamUrl": "https://linearjitp-playback.astro.com.my/dash-wv/linear/5019/default_primary.mpd",
+    "drm": {
+      "fc66ef0ee35b5ba639dc0e13c5f8a910": "9e706161f02fb99cb692d2965470494e"
+    },
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "TRT World",
+    "logoLocal": "ch_trt_world",
+    "category": "News",
+    "dateAdded": "2026-04-15",
+    "streamUrl": "https://tv-trtworld.medya.trt.com.tr/master.m3u8"
+  },
+  {
+    "name": "WION",
+    "logoLocal": "ch_wion",
+    "category": "News",
+    "dateAdded": "2026-04-15",
+    "streamUrl": "https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8"
+  },
+  {
+    "name": "Press TV",
+    "logoLocal": "ch_press_tv",
+    "category": "News",
+    "dateAdded": "2026-04-15",
+    "streamUrl": "https://live.presstv.ir/hls/presstv_5_482/index.m3u8"
+  },
+  {
+    "name": "Hallypop",
+    "logoLocal": "ch_hallypop",
+    "category": "International",
+    "dateAdded": "2026-04-15",
+    "streamUrl": "http://136.239.173.26:6610/001/2/ch00000090990000001152/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BrQQqEzMGzqacd7xs%2FVYEXbytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001373&contentid=ch00000000000000001373&videoid=ch00000090990000001152&recommendtype=0&userid=1181864451786&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=9VC3RX5W7QLXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO"
+  },
+  {
+    "name": "Edge Sport",
+    "logoLocal": "ch_edge_sport",
+    "category": "Sports",
+    "dateAdded": "2026-04-15",
+    "streamUrl": "http://136.239.158.18:6610/001/2/ch00000090990000001406/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BrD3MimqPOP6OVIBIcXmXdDytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001926&contentid=ch00000000000000001926&videoid=ch00000090990000001406&recommendtype=0&userid=1198953858973&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=KQCW8SZJ4IXXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO"
   }
 ]
