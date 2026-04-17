@@ -1,5 +1,5 @@
 #EXTM3U
-# Last Updated: 2026-04-17 01:23:49 GMT+8
+# Last Updated: 2026-04-18 01:00:57 GMT+8
 
 #EXTINF:-1 tvg-name="Kapamilya Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Kapamilya_Channel_Logo_2020.svg/960px-Kapamilya_Channel_Logo_2020.svg.png" group-title="Entertainment",Kapamilya Channel
 http://136.239.173.2:6610/001/2/ch00000090990000001286/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2Bqw65FFCygtQMRRIUPF0xuXytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001694&contentid=ch00000000000000001694&videoid=ch00000090990000001286&recommendtype=0&userid=1004802317138&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=CCJLYZ04O9IXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
@@ -770,7 +770,7 @@ http://23.237.104.106:8080/USA_BOOMERANG/index.m3u8
 https://amg19223-amg19223c9-amgplt0019.playout.now3.amagi.tv/playlist/amg19223-amg19223c9-amgplt0019/playlist.m3u8
 
 #EXTINF:-1 tvg-name="Comedy Central" tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_comedy_central.webp" group-title="Entertainment",Comedy Central
-http://23.237.104.106:8080/USA_COMEDY_CENTRAL/index.m3u8
+http://nor1live.win/livehttpplay?channel_id=23070
 
 #EXTINF:-1 tvg-name="Astro Showcase" tvg-logo="https://raw.githubusercontent.com/noodtayo/app/main/images/ch_astro_showcase.webp" group-title="Movies",Astro Showcase
 #KODIPROP:inputstream=inputstream.adaptive
@@ -826,8 +826,8 @@ https://hls.iill.top/api/beIN-Sports-3/index.m3u8
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=0c39778fe8fb4f9f8574016b3d4ae2ed:232b1f450f2e37f47fdd5b678a8a546d
-https://bks400-tol-110.quieroxview.com.mx/bpk-tv/nba_tv_hd/default/index.mpd
+#KODIPROP:inputstream.adaptive.license_key=4ee9b41e5053ef434c13dbb783df9e32:a275236600bfaedf230286f7b71b0a99
+https://live-pv-ta.amazon.fastly-edge.com/iad-nitro/live/clients/dash/enc/vgkshf22lc/out/v1/9dbd7e519cf34fe2a53a85ee85bc407f/cenc.mpd
 
 #EXTINF:-1 tvg-name="NFL Network" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/nfl-network-us.png" group-title="Sports",NFL Network
 #KODIPROP:inputstream=inputstream.adaptive
@@ -991,10 +991,10 @@ https://cdn10jtedge.indihometv.com/atm/DASH/rock_entertainment/manifest.mpd|User
 http://nor1live.win/livehttpplay?channel_id=23071
 
 #EXTINF:-1 tvg-name="Paramount Network" tvg-logo="" group-title="Entertainment",Paramount Network
-http://bgdc.live:25461/live/allanphillips31/55446538/10439.m3u8
+http://nor1live.win/livehttpplay?channel_id=23082
 
 #EXTINF:-1 tvg-name="Hallmark" tvg-logo="" group-title="Entertainment",Hallmark
-http://23.237.104.106:8080/USA_HALLMARK/index.m3u8
+http://nor1live.win/livehttpplay?channel_id=23057
 
 #EXTINF:-1 tvg-name="E!" tvg-logo="" group-title="Entertainment",E!
 http://23.237.104.106:8080/USA_E/index.m3u8
@@ -1009,7 +1009,7 @@ http://bgdc.live:25461/live/allanphillips31/55446538/10395.m3u8
 http://bgdc.live:25461/live/allanphillips31/55446538/10358.m3u8
 
 #EXTINF:-1 tvg-name="CBS" tvg-logo="" group-title="Entertainment",CBS
-http://bgdc.live:25461/live/allanphillips31/55446538/10374.m3u8
+http://nor1live.win/livehttpplay?channel_id=23014
 
 #EXTINF:-1 tvg-name="Blast Movies" tvg-logo="" group-title="Movies",Blast Movies
 https://amg19223-amg19223c7-amgplt0351.playout.now3.amagi.tv/playlist/amg19223-amg19223c7-amgplt0351/playlist.m3u8
@@ -1063,7 +1063,7 @@ http://bgdc.live:25461/live/allanphillips31/55446538/10442.m3u8
 https://linearjitp-playback.astro.com.my/dash-wv/linear/5050/default_ott.mpd|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
 
 #EXTINF:-1 tvg-name="Travel Channel US" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/travel-channel-us.png" group-title="Lifestyle",Travel Channel US
-http://tv.diablotv.net:8080/eEiiLll09384Ecaiman34RtR/KTap2pdJx7/162595
+http://nor1live.win/livehttpplay?channel_id=23150
 
 #EXTINF:-1 tvg-name="Outdoor" tvg-logo="" group-title="Lifestyle",Outdoor
 https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg00718-outdoorchannela-outdoortvnz-samsungnz/playlist.m3u8
@@ -1106,7 +1106,7 @@ http://tv.diablotv.net:8080/eEiiLll09384Ecaiman34RtR/KTap2pdJx7/162524
 https://d1jzu95oc8fgt3.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-zyqcok4bm0lgq/FOX_Sports.m3u8
 
 #EXTINF:-1 tvg-name="ESPN2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/espn2-us.png" group-title="Sports",ESPN2
-http://bgdc.live:25461/live/allanphillips31/55446538/38227.m3u8
+http://nor1live.win/livehttpplay?channel_id=23123
 
 #EXTINF:-1 tvg-name="F1 TV | 1" tvg-logo="https://en.wikipedia.org/wiki/Special:FilePath/F1_logo.svg?width=400" group-title="Sports",F1 TV | 1
 #KODIPROP:inputstream=inputstream.adaptive
@@ -1165,10 +1165,10 @@ https://9f8e2ffcd87f4c469be7194e48f84874.mediatailor.us-west-2.amazonaws.com/v1/
 http://bgdc.live:25461/live/allanphillips31/55446538/10387.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
 
 #EXTINF:-1 tvg-name="MTV" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_mtv.webp" group-title="Entertainment",MTV
-http://bgdc.live:25461/live/allanphillips31/55446538/10426.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+http://nor1live.win/livehttpplay?channel_id=23018|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
 
 #EXTINF:-1 tvg-name="USA Network" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_usa_network.webp" group-title="Entertainment",USA Network
-http://bgdc.live:25461/live/allanphillips31/55446538/10456.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+http://nor1live.win/livehttpplay?channel_id=23112|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
 
 #EXTINF:-1 tvg-name="truTV" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_trutv.webp" group-title="Entertainment",truTV
 http://bgdc.live:25461/live/allanphillips31/55446538/10453.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
@@ -1180,22 +1180,38 @@ https://live-manifest.production-public.tubi.io/live/c12f35bf-6465-4e44-b5f7-04e
 https://live-manifest.production-public.tubi.io/live/4c82889c-7b9c-4f06-bc61-8f18fd23a49a/playlist.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
 
 #EXTINF:-1 tvg-name="HBO US" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/philippines/hbo-ph.png" group-title="Movies",HBO US
-http://bgdc.live:25461/live/allanphillips31/55446538/13434.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=0b380bec87af5c16ee145bbf8cd7d65e:edcb65d1269bd76f166d6bc56114211f
+https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/clients/dash/enc/u7xfabrc5b/out/v1/67371e988d6649afbde43ba1e9747550/cenc.mpd|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
 
 #EXTINF:-1 tvg-name="HBO Hits US" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/philippines/hbo-hits-ph.png" group-title="Movies",HBO Hits US
-http://bgdc.live:25461/live/allanphillips31/55446538/13435.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=e8c6a262b77b153530a6caaf2e07944a:81071cf5808c0387adab93d8ff9b1f09
+https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/clients/dash/enc/zilmviiwo5/out/v1/fe78320a319045d99299fb05208d90af/cenc.mpd|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
 
 #EXTINF:-1 tvg-name="HBO Comedy US" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_hbo_comedy.webp" group-title="Movies",HBO Comedy US
-http://bgdc.live:25461/live/allanphillips31/55446538/13438.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=217624a3983b3593ca7d1f3b01042d4f:fecaa3486d9deef3f7f0e1a95b662cb7
+https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/clients/dash/enc/f6ns8qsqde/out/v1/0827e077a8224107a1e6137627cc8198/cenc.mpd|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
 
 #EXTINF:-1 tvg-name="HBO Drama US" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_hbo_drama.webp" group-title="Movies",HBO Drama US
-http://bgdc.live:25461/live/allanphillips31/55446538/13436.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=2742f4791f17231bdb933844dabfb5bc:3c49eb8a723248f87fb8c3722874557e
+https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/clients/dash/enc/o6rq3swwr4/out/v1/6a362c145af241e5a6eb45e0729ce5e6/cenc.mpd|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
 
 #EXTINF:-1 tvg-name="Cooking Channel" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_cooking_channel.webp" group-title="Lifestyle",Cooking Channel
 http://bgdc.live:25461/live/allanphillips31/55446538/10381.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
 
 #EXTINF:-1 tvg-name="MTV Live" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_mtv_live.webp" group-title="Music",MTV Live
-http://bgdc.live:25461/live/allanphillips31/55446538/31498.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+http://nor1live.win/livehttpplay?channel_id=23081|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
 
 #EXTINF:-1 tvg-name="E! Entertainment" tvg-logo="" group-title="Entertainment",E! Entertainment
 http://bgdc.live:25461/live/allanphillips31/55446538/10391.m3u8
@@ -1240,7 +1256,7 @@ https://amg00170-curiositystream-amg00170c3-rakuten-us-2289.playouts.now.amagi.t
 https://abslive.akamaized.net/dash/live/2027618/euronews/manifest.mpd
 
 #EXTINF:-1 tvg-name="ESPNU" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_espnu.webp" group-title="Sports",ESPNU
-http://bgdc.live:25461/live/allanphillips31/55446538/38228.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+http://nor1live.win/livehttpplay?channel_id=23122|User-Agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
 
 #EXTINF:-1 tvg-name="F1 TV • 1" tvg-logo="https://en.wikipedia.org/wiki/Special:FilePath/F1_logo.svg?width=400" group-title="Sports",F1 TV • 1
 #KODIPROP:inputstream=inputstream.adaptive
@@ -1256,8 +1272,8 @@ https://a184aivottlinear-a.akamaihd.net/OTTB/iad-nitro/live/clients/dash/enc/5fj
 #KODIPROP:inputstream.adaptive.license_key=609d795905904705028ef54653019af7:2c791eb611e57a7d7f203022bc1b9ba3
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/duqbirmk0d/out/v1/40f53c7cbc95498db3afd081c377d776/cenc.mpd
 
-#EXTINF:-1 tvg-name="." tvg-logo="" group-title="Entertainment",.
-EkIfxAHlgJA
+#EXTINF:-1 tvg-name="." tvg-logo="" group-title="Sports",.
+rtmp://210.4.112.99:1935/tapdmv/TVN_movies
 
 #EXTINF:-1 tvg-name="BINI @ Coachella" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_bini.webp" group-title="Entertainment",BINI @ Coachella
 HJVG2Ck3uuk
@@ -1310,3 +1326,60 @@ http://136.239.173.26:6610/001/2/ch00000090990000001152/manifest.mpd?AuthInfo=v8
 
 #EXTINF:-1 tvg-name="Edge Sport" tvg-logo="" group-title="Sports",Edge Sport
 http://136.239.158.18:6610/001/2/ch00000090990000001406/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BrD3MimqPOP6OVIBIcXmXdDytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001926&contentid=ch00000000000000001926&videoid=ch00000090990000001406&recommendtype=0&userid=1198953858973&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=KQCW8SZJ4IXXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
+
+#EXTINF:-1 tvg-name="IFC" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_ifc.webp" group-title="Entertainment",IFC
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=a15171a08a7c09585d6588b49d031252:33270126ea0cbba11461c2189031f2d3
+https://live-pv-ta.amazon.fastly-edge.com/iad-nitro/live/clients/dash/enc/fuumlkaqoa/out/v1/a8db1b7acf8c48a48dc34a6cd5df45a1/cenc.mpd
+
+#EXTINF:-1 tvg-name="FOX" tvg-logo="" group-title="Entertainment",FOX
+http://bgdc.live:25461/live/allanphillips31/55446538/10395.m3u8
+
+#EXTINF:-1 tvg-name="NBC" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_nbc.webp" group-title="Entertainment",NBC
+http://bgdc.live:25461/live/allanphillips31/55446538/10430.m3u8
+
+#EXTINF:-1 tvg-name="Cinemax Hits" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_cinemax_hits.webp" group-title="Movies",Cinemax Hits
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=046c374a3db594dfb32cba86d2e4f72f:04c00a6ed0fc4ce37841210a42eeeb35
+https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/clients/dash/enc/bw5g1vx3k9/out/v1/6913f190498b44c8a705e91728401769/cenc.mpd
+
+#EXTINF:-1 tvg-name="Universal Movies" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_universal_movies.webp" group-title="Movies",Universal Movies
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=5140ef6622446b7f26bacb12f7d7a1ec:ad6be1a83d188dc4bc7782b29a7ffb59
+https://bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash/enc/sxwo5bmuz5/out/v1/3a73b7f0ef1947bc93027ec75a92cbfa/cenc.mpd
+
+#EXTINF:-1 tvg-name="Crunchyroll" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_crunchyroll.webp" group-title="Anime",Crunchyroll
+https://wurlgameshownetwork.global.transmit.live/hls/68d1741991b992ec0d46bfea/v1/gsn_crunchyroll_1/lg_us/latest/main/hls/playlist.m3u8
+
+#EXTINF:-1 tvg-name="Animation+" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_animationplus.webp" group-title="Anime",Animation+
+https://epg.provider.plex.tv/library/parts/5e20b730f2f8d5003d739db7-674f6a6cf44561420465f9f3/?X-Plex-Token=yWJ7MeWyykqkzgRRo6Kx
+
+#EXTINF:-1 tvg-name="Nat Geo History" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_nat_geo_history.webp" group-title="Documentary",Nat Geo History
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=a7bc01ff11a011cdc47a27cd8ea5f3a3:64c22630a86bf1fbe3b3629cea6bc994
+https://live-pv-ta.amazon.fastly-edge.com/iad-nitro/live/clients/dash/enc/f56pkqphvu/out/v1/fc598dca849d4b579c7ad15031ba7633/cenc.mpd
+
+#EXTINF:-1 tvg-name="Nat Geo Travel" tvg-logo="https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_nat_geo_travel.webp" group-title="Lifestyle",Nat Geo Travel
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=ffd0695416ec170799092de842ee3476:92c351fd9179bbdd7e65b13d49a221cf
+https://live-pv-ta.amazon.fastly-edge.com/iad-nitro/live/clients/dash/enc/tsn0r83bmq/out/v1/a98a628106534243929c64de7da5fbc6/cenc.mpd
+
+#EXTINF:-1 tvg-name="CBS Sports" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cbs-sports-network-us.png" group-title="Sports",CBS Sports
+http://nor1live.win/livehttpplay?channel_id=23132
+
+#EXTINF:-1 tvg-name="UFC" tvg-logo="" group-title="Sports",UFC
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=a49085f8da5e65af1efff0edac830b1f:4659bc58a85c062e3fe0c039a446fe47
+https://live-pv-ta.amazon.fastly-edge.com/iad-nitro/live/clients/dash/enc/8mxwjnh2te/out/v1/356704796c0c4bed81f67cd3518d0c8a/cenc.mpd
