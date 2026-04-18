@@ -2562,5 +2562,13 @@
     "drm": {
       "a49085f8da5e65af1efff0edac830b1f": "4659bc58a85c062e3fe0c039a446fe47"
     }
+  },
+  {
+    "name": "BINI @ Coachella Weekend 2",
+    "logo": "https://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_bini.webp",
+    "category": "Entertainment",
+    "dateAdded": "2026-04-18",
+    "type": "youtube",
+    "streamUrl": "cYT79Dp0Wuk"
   }
 ]
