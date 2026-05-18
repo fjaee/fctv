@@ -4,7 +4,7 @@ import hashlib
 import sys
 from datetime import datetime, timezone, timedelta
 
-SOURCE_URL  = "https://raw.githubusercontent.com/eyhehez/ugh/refs/heads/main/zzzcha.json"
+SOURCE_URL  = "https://raw.githubusercontent.com/eyhehez/ugh/refs/heads/main/zx.json"
 BACKUP_FILE = "channels-backup.json"
 HASH_FILE   = "channels.hash"
 
