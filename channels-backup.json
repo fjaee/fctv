@@ -1425,7 +1425,10 @@
     "name": "Sky Sports F1",
     "logoLocal": "ch_sky_sports_f1",
     "category": "Sports",
-    "streamUrl": "http://xxip9.top:8080/live/MpZcA6/367825/53704.m3u8"
+    "streamUrl": "https://vod-cua-orbit3-s1.izzigo.tv/out/u/startover/dash/F1-HD/default.mpd",
+    "drm": {
+      "a839dc5a88ce62da1fcc7ba78161abc2": "30a2f0d4408d38aa5968f08a784c37ad"
+    }
   },
   {
     "name": "BeIN Sports 1",
@@ -3279,7 +3282,10 @@
     "logoLocal": "ch_mono_29",
     "category": "International",
     "dateAdded": "2026-04-27",
-    "streamUrl": "https://monomax-uiripn.cdn.byteark.com/plain/th/1080p/index.m3u8"
+    "streamUrl": "https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/29/29.mpd",
+    "drm": {
+      "96a14b36335645b391bbbb48c424fec7": "e6971b27837a4822832d8215156bb516"
+    }
   },
   {
     "name": "Xing Kong",
@@ -3506,7 +3512,8 @@
     "streamUrl": "https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/tmpzbbdj9y/out/v1/962736723a534ba294e7592fef49827b/cenc.mpd",
     "drm": {
       "5466ebd70704bdeb657f0abf3c5ca4ef": "bdd79b72d8e48ed483aa623cc38a8a16"
-    }
+    },
+    "logoLocal": "ch_fs1"
   },
   {
     "name": "Fox Sports 2",
@@ -3516,6 +3523,27 @@
     "streamUrl": "https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/awxnrqkbo5/out/v1/716529a4091947b0877e6cb80dbd6ccb/cenc.mpd",
     "drm": {
       "09453ce820d65fbc675de3185f9e454c": "98cff9600995fa381c76fdacf3c7edae"
+    },
+    "logoLocal": "ch_fs2"
+  },
+  {
+    "name": "GMM25",
+    "logoLocal": "ch_gmm25",
+    "category": "International",
+    "dateUpdated": "2026-06-09",
+    "streamUrl": "https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/25/25.mpd",
+    "drm": {
+      "ae986b6dd3d84b2bb868c8765c604815": "89bf3c85580249d5bac4d3edaec019ec"
+    }
+  },
+  {
+    "name": "One31",
+    "logoLocal": "ch_one31",
+    "category": "International",
+    "dateUpdated": "2026-06-09",
+    "streamUrl": "https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/31/31.mpd",
+    "drm": {
+      "6529c8cd99db4489bd237f616f37124b": "b9d299ba9ea94fd2ac4a77e8966dd91e"
     }
   }
 ]
