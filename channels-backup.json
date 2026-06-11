@@ -2745,9 +2745,9 @@
   {
     "name": "TBS",
     "logoLocal": "ch_tbs_us",
-    "category": "Entertainment",
+    "category": "International",
     "dateAdded": "2026-05-03",
-    "streamUrl": "http://kstv.us:8080/live/EaJA7HJ40g/3854700321/15954.m3u8",
+    "streamUrl": "http://akariko.netgenx.site/stream/jp/TBS/stream-output.m3u8?mode=hls",
     "standbyUrls": [
       "http://kstv.us:8080/live/GsPDfRs2H/Grade100/15954.m3u8",
       "http://kstv.us:8080/live/s66CwphxKj/Megalodon1031/15954.m3u8",
@@ -2947,7 +2947,7 @@
     "logoLocal": "ch_wowow_prime",
     "category": "Entertainment",
     "dateAdded": "2026-04-20",
-    "streamUrl": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs12"
+    "streamUrl": "http://akariko.netgenx.site/stream/jp/wowow_prime/stream-output.m3u8?mode=hls"
   },
   {
     "name": "Tapsilog",
@@ -3068,7 +3068,7 @@
     "logoLocal": "ch_wowow_cinema",
     "category": "Movies",
     "dateAdded": "2026-04-20",
-    "streamUrl": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs07"
+    "streamUrl": "http://akariko.netgenx.site/stream/jp/wowow_cinema/stream-output.m3u8?mode=hls"
   },
   {
     "name": "History TV18",
@@ -3268,7 +3268,7 @@
     "logoLocal": "ch_wowow_live",
     "category": "International",
     "dateAdded": "2026-04-20",
-    "streamUrl": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs20"
+    "streamUrl": "http://akariko.netgenx.site/stream/jp/wowow_live/stream-output.m3u8?mode=hls"
   },
   {
     "name": "BBC One",
@@ -3545,5 +3545,33 @@
     "drm": {
       "6529c8cd99db4489bd237f616f37124b": "b9d299ba9ea94fd2ac4a77e8966dd91e"
     }
+  },
+  {
+    "name": "TBS US",
+    "logoLocal": "ch_tbs_us",
+    "category": "Entertainment",
+    "dateAdded": "2026-05-03",
+    "streamUrl": "http://kstv.us:8080/live/EaJA7HJ40g/3854700321/15954.m3u8",
+    "standbyUrls": [
+      "http://kstv.us:8080/live/GsPDfRs2H/Grade100/15954.m3u8",
+      "http://kstv.us:8080/live/s66CwphxKj/Megalodon1031/15954.m3u8",
+      "http://kstv.us:8080/live/jsdaniels74/1836272615/15954.m3u8",
+      "http://kstv.us:8080/live/6rk80svXKE/44886815569/15954.m3u8",
+      "http://kstv.us:8080/live/hwilliamsw1/0938999941/15954.m3u8",
+      "http://kstv.us:8080/live/curtdog66/58400050484/15954.m3u8",
+      "http://kstv.us:8080/live/XCw0daKptJ/74486665872/15954.m3u8",
+      "http://kstv.us:8080/live/MeZyl1987/9735100903/15954.m3u8",
+      "http://kstv.us:8080/live/PrettyTony/3681111097/15954.m3u8",
+      "http://kstv.us:8080/live/5g6pBW70Cd/3049898118/15954.m3u8",
+      "http://kstv.us:8080/live/Everocadd3/5493154841/15954.m3u8",
+      "http://kstv.us:8080/live/HDH5UREEYP/42660591264/15954.m3u8",
+      "http://kstv.us:8080/live/4abYcSzugD/7732488130/15954.m3u8",
+      "http://kstv.us:8080/live/Lupillo13/Emilio13/15954.m3u8",
+      "http://kstv.us:8080/live/jQQ98v5kER/1962045738/15954.m3u8",
+      "http://kstv.us:8080/live/P6YPNCrcgG/7329973937/15954.m3u8",
+      "http://kstv.us:8080/live/grijalva28/Infiniti08/15954.m3u8",
+      "http://kstv.us:8080/live/7GKJ04vg3r/1066255851/15954.m3u8",
+      "http://kstv.us:8080/live/RichardW/92565393518/15954.m3u8"
+    ]
   }
 ]

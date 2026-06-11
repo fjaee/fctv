@@ -1,5 +1,5 @@
 #EXTM3U
-# Last Updated: 2026-06-10 01:03:49 GMT+8
+# Last Updated: 2026-06-12 01:24:23 GMT+8
 
 #EXTINF:-1 tvg-name="Kapamilya Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Kapamilya_Channel_Logo_2020.svg/960px-Kapamilya_Channel_Logo_2020.svg.png" group-title="Entertainment",Kapamilya Channel
 http://136.239.173.2:6610/001/2/ch00000090990000001286/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2Bqw65FFCygtQMRRIUPF0xuXytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001694&contentid=ch00000000000000001694&videoid=ch00000090990000001286&recommendtype=0&userid=1004802317138&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=CCJLYZ04O9IXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
@@ -1451,8 +1451,8 @@ http://kstv.us:8080/live/HDH5UREEYP/42660591264/22562.m3u8
 #EXTINF:-1 tvg-name="TNT" tvg-logo="" group-title="Entertainment",TNT
 http://kstv.us:8080/live/PrettyTony/3681111097/15955.m3u8
 
-#EXTINF:-1 tvg-name="TBS" tvg-logo="" group-title="Entertainment",TBS
-http://kstv.us:8080/live/EaJA7HJ40g/3854700321/15954.m3u8
+#EXTINF:-1 tvg-name="TBS" tvg-logo="" group-title="International",TBS
+http://akariko.netgenx.site/stream/jp/TBS/stream-output.m3u8?mode=hls
 
 #EXTINF:-1 tvg-name="Showtime" tvg-logo="" group-title="Entertainment",Showtime
 http://kstv.us:8080/live/6rk80svXKE/44886815569/23255.m3u8
@@ -1482,7 +1482,7 @@ http://xxip9.top:8080/live/6QMk9P/387737/46698.m3u8
 http://xxip9.top:8080/live/2132135/6953214/53754.m3u8
 
 #EXTINF:-1 tvg-name="WOWOW Prime" tvg-logo="" group-title="Entertainment",WOWOW Prime
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs12
+http://akariko.netgenx.site/stream/jp/wowow_prime/stream-output.m3u8?mode=hls
 
 #EXTINF:-1 tvg-name="Tapsilog" tvg-logo="" group-title="Movies",Tapsilog
 rtmp://210.4.112.99:1935/tapdmv/TVN_movies
@@ -1554,7 +1554,7 @@ https://linearjitp-playback.astro.com.my/dash-wv/linear/5186/default_primary.mpd
 https://mytime-tcl.amagi.tv/playlist.m3u8
 
 #EXTINF:-1 tvg-name="WOWOW Cinema" tvg-logo="" group-title="Movies",WOWOW Cinema
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs07
+http://akariko.netgenx.site/stream/jp/wowow_cinema/stream-output.m3u8?mode=hls
 
 #EXTINF:-1 tvg-name="History TV18" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/history-us.png" group-title="Documentary",History TV18
 https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/HistoryTV18HD.m3u8
@@ -1611,7 +1611,7 @@ https://dbrb49pjoymg4.cloudfront.net/10001/99951517/hls/master.m3u8?ads.xumo_cha
 https://d4whmvwm0rdvi.cloudfront.net/10007/99991247/hls/master.m3u8?ads.xumo_channelId=99991247&ads.asnw=169843&ads.afid=137704898&ads.sfid=16772607&ads.csid=xumo_[PLATFORM]_NBCNewsNOW_ssai_cro&ads._fw_is_lat=[IS_LAT]&ads._fw_us_privacy=[CCPA_Value]&ads._fw_coppa=0&ads._fw_did=[IFA]&ads._fw_vcid2=512116:[IFA]&ads._fw_app_bundle=[app_bundle]&ads._fw_app_store_url=[app_store_url]&ads._fw_content_category=[IAB_content_category]&ads._fw_content_genre=News,N,DN,Local,LocalNews,News-Local&ads._fw_content_language=[content_language]&ads._fw_content_rating=[content_rating]&ads._fw_deviceMake=[device_make]&ads._fw_device_model=[device_model]&ads._fw_deviceType=3-Connected_TV&ads.appVersion=[APP_VERSION]&ads.appName=XumoPlay&ads.xumo_contentId=1828&ads.xumo_contentName=NBCNewsNOW&ads.xumo_providerId=1828&ads.xumo_providerName=NBCNewsNOW&ads.channelId=99991247&ads._fw_ifa_type=[IFA_TYPE]
 
 #EXTINF:-1 tvg-name="WOWOW Live" tvg-logo="" group-title="International",WOWOW Live
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs20
+http://akariko.netgenx.site/stream/jp/wowow_live/stream-output.m3u8?mode=hls
 
 #EXTINF:-1 tvg-name="BBC One" tvg-logo="" group-title="International",BBC One
 http://41.223.30.230/BBCONE/index.m3u8
@@ -1729,3 +1729,6 @@ https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/25/25.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=6529c8cd99db4489bd237f616f37124b:b9d299ba9ea94fd2ac4a77e8966dd91e
 https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/31/31.mpd
+
+#EXTINF:-1 tvg-name="TBS US" tvg-logo="" group-title="Entertainment",TBS US
+http://kstv.us:8080/live/EaJA7HJ40g/3854700321/15954.m3u8
