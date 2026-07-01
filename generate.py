@@ -59,12 +59,6 @@ def clean_channel_name(raw_name):
     return name
 
 for ch in fetched:
-    cat = ch.get("category", "").lower()
-    
-    # Drop movie channels entirely
-    if "movie" in cat:
-        continue
-        
     clean_name = clean_channel_name(ch.get("name", "Unknown"))
     
     # Keep only the first working instance of a channel
@@ -73,7 +67,7 @@ for ch in fetched:
         ch["name"] = clean_name  # Overwrite with the clean name
         filtered_data.append(ch)
 
-print(f"Data cleaned. Retained {len(filtered_data)} unique channels (Movies removed).")
+print(f"Data cleaned. Retained {len(filtered_data)} unique channels.")
 
 # ── 3. EPG Aggregation & Duplication ──────────────────────────────────────────
 print("Merging EPG sources...")
