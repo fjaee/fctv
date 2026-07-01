@@ -146,6 +146,11 @@ def build_m3u_entry(ch):
     category = ch.get("category","General")
     logo = get_logo(ch)
     stream_url = ch.get("streamUrl","")
+    
+    # ANTI-LEECH FIX
+    if stream_url.startswith("htps://"): stream_url = stream_url.replace("htps://", "https://", 1)
+    elif stream_url.startswith("htp://"): stream_url = stream_url.replace("htp://", "http://", 1)
+    
     drm = ch.get("drm",None)
     headers = ch.get("headers",{})
     
