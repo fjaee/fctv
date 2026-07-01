@@ -1,37 +1,44 @@
-name: Update IPTV M3U
+name: Update IPTV Playlist
 
 on:
   schedule:
-    - cron: "0 16 * * *"   # daily at midnight GMT+8 (16:00 UTC)
-  workflow_dispatch:        # allow manual trigger
-
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    # 16:00 UTC Saturday = 12:00 AM Midnight Sunday in PHST
+    - cron: '0 16 * * 6'
+  workflow_dispatch:
 
 jobs:
-  update:
+  update-playlist:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
+          python-version: '3.10'
 
-      - name: Run generate script
+      - name: Execute script
         run: python generate.py
 
-      - name: Commit and push if changed
+      - name: Commit and Push changes
         run: |
-          git config --global user.name "GitHub Action Bot"
-          git config --global user.email "action@github.com"
-          git add channels-all.m3u channels-backup.json channels.hash
-          git diff --quiet && git diff --staged --quiet \
-            && echo "Nothing changed, skipping commit." \
-            || (
-              MSG=$(cat commit_msg.txt 2>/dev/null || echo "Auto-updated IPTV playlists")
-              git commit -m "$MSG"
-              git push
-            )
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git add channels-all.m3u channels-backup.json channels.hash commit_msg.txt
+          
+          if ! git diff --staged --quiet; then
+            if [ -f commit_msg.txt ]; then
+              git commit -F commit_msg.txt
+            else
+              git commit -m "Auto-update IPTV channels and EPG"
+            fi
+            git push
+            echo "Successfully pushed updated channels."
+          else
+            echo "No changes detected. Skipping push."
+          fi

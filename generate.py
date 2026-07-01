@@ -2,55 +2,92 @@ import json
 import urllib.request
 import hashlib
 import sys
+import os
 from datetime import datetime, timezone, timedelta
 
-SOURCE_URL  = "https://raw.githubusercontent.com/eyhehez/ugh/refs/heads/main/zx.json"
-BACKUP_FILE = "channels-backup.json"
-HASH_FILE   = "channels.hash"
+# ── 0. Configuration ────────────────────────────────────────────────────────────
+SOURCES = [
+    "https://raw.githubusercontent.com/eyhehez/ugh/main/zxnew.json",
+    "https://raw.githubusercontent.com/eyhehez/ugh/main/zzzzteevee.json",
+    "https://raw.githubusercontent.com/eyhehez/ugh/main/zhy.json",
+    "https://raw.githubusercontent.com/eyhehez/ugh/main/tgdb.json",
+    "https://raw.githubusercontent.com/eyhehez/ugh/main/zradio.json"
+]
 
-# ── 1. Load backup (always exists in repo) ────────────────────────────────────
-with open(BACKUP_FILE, "r", encoding="utf-8") as f:
-    backup = json.load(f)
+# TiviMate accepts multiple EPGs if comma-separated. We list the raw URLs here.
+EPG_URLS = [
+    "https://raw.githubusercontent.com/eyhehez/ugh/main/epg/alltv2.xml",
+    "https://raw.githubusercontent.com/eyhehez/ugh/main/epg/kol.xml",
+    "https://raw.githubusercontent.com/eyhehez/ugh/main/epg/kcha.xml",
+    "https://raw.githubusercontent.com/eyhehez/ugh/main/epg/kapusostream.xml"
+]
+
+BACKUP_FILE = "channels-backup.json"
+HASH_FILE = "channels.hash"
+LOGOS_FILE = "logos.json"
+
+# ── 1. Load Backup ────────────────────────────────────────────────────────────
+backup = []
+if os.path.exists(BACKUP_FILE):
+    with open(BACKUP_FILE, "r", encoding="utf-8") as f:
+        backup = json.load(f)
 print(f"Backup loaded: {len(backup)} channels.")
 
-# ── 2. Try fetching source ────────────────────────────────────────────────────
-fetched = []
-try:
-    req = urllib.request.Request(SOURCE_URL, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req, timeout=10) as resp:
-        raw = json.loads(resp.read().decode("utf-8"))
-        fetched = raw.get("channels", raw) if isinstance(raw, dict) else raw
-    print(f"Source fetched: {len(fetched)} channels.")
-except Exception as e:
-    print(f"Source unavailable ({e}). Using backup only.")
+# ── 2. Load Logos ─────────────────────────────────────────────────────────────
+tv_logo_map = {}
+wiki_file_map = {}
+if os.path.exists(LOGOS_FILE):
+    with open(LOGOS_FILE, "r", encoding="utf-8") as f:
+        logos = json.load(f)
+        tv_logo_map = logos.get("TV_LOGO_MAP", {})
+        wiki_file_map = logos.get("WIKI_FILE_MAP", {})
+else:
+    print(f"Warning: {LOGOS_FILE} not found. Logos may not render.")
 
-# ── 3. Merge logic: NEVER delete, only add/update ────────────────────────────
+# ── 3. Fetch All New Sources ──────────────────────────────────────────────────
+fetched = []
+for url in SOURCES:
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            raw = json.loads(resp.read().decode("utf-8"))
+            data = raw.get("channels", raw) if isinstance(raw, dict) else raw
+            
+            if isinstance(data, list):
+                fetched.extend(data)
+                print(f" [OK] Fetched {len(data)} channels from {url.split('/')[-1]}")
+            else:
+                print(f" [WARN] Invalid format in {url.split('/')[-1]}")
+    except Exception as e:
+        print(f" [FAIL] Could not fetch {url.split('/')[-1]}: {e}")
+
+if not fetched:
+    print("All sources unavailable. Using backup only.")
+else:
+    print(f"Total source channels fetched: {len(fetched)}.")
+
+# ── 4. Merge Logic ────────────────────────────────────────────────────────────
 def merge_channels(fetched, backup):
     merged = {ch["name"]: ch for ch in backup}
     for ch in fetched:
         name = ch["name"]
         if name in merged:
-            if ch.get("streamUrl"):
-                merged[name]["streamUrl"] = ch["streamUrl"]
-            if "drm" in ch:
-                merged[name]["drm"] = ch["drm"]
-            if "headers" in ch:
-                merged[name]["headers"] = ch["headers"]
+            if ch.get("streamUrl"): merged[name]["streamUrl"] = ch["streamUrl"]
+            if "drm" in ch: merged[name]["drm"] = ch["drm"]
+            if "headers" in ch: merged[name]["headers"] = ch["headers"]
             if "logoLocal" in ch and "logoLocal" not in merged[name]:
                 merged[name]["logoLocal"] = ch["logoLocal"]
-            if "category" in ch:
-                merged[name]["category"] = ch["category"]
+            if "category" in ch: merged[name]["category"] = ch["category"]
         else:
             merged[name] = ch
-            print(f"  [NEW] {name}")
+            print(f" [NEW] {name}")
     return list(merged.values())
 
 data = merge_channels(fetched, backup)
-print(f"Merged total: {len(data)} channels (backup: {len(backup)}, fetched: {len(fetched)}).")
+print(f"Merged total: {len(data)} channels.")
 
-# ── 4. Hash check — skip everything if no real changes ───────────────────────
+# ── 5. Hash Check ─────────────────────────────────────────────────────────────
 def compute_hash(channels):
-    # Hash only meaningful fields: name, streamUrl, drm, headers
     fingerprint = json.dumps(
         sorted([
             {
@@ -58,8 +95,7 @@ def compute_hash(channels):
                 "u": ch.get("streamUrl",""),
                 "d": ch.get("drm",""),
                 "h": ch.get("headers",""),
-            }
-            for ch in channels
+            } for ch in channels
         ], key=lambda x: x["n"]),
         sort_keys=True, separators=(",",":")
     )
@@ -79,134 +115,34 @@ if new_hash == old_hash:
 
 print(f"Changes detected! Regenerating M3U files...")
 
-# ── 5. Update backup with merged result (persists to repo) ───────────────────
+# ── 6. Update Backup ──────────────────────────────────────────────────────────
 if fetched:
     with open(BACKUP_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
     print("Backup updated with latest merged data.")
-else:
-    print("Source was empty/unavailable — backup unchanged, no channels removed.")
 
-# ── 6. Logo maps ──────────────────────────────────────────────────────────────
-BASE_TVLOGO   = "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/"
-PH  = BASE_TVLOGO + "philippines/"
-INT = BASE_TVLOGO + "international/"
-AU  = BASE_TVLOGO + "australia/"
-UK  = BASE_TVLOGO + "united-kingdom/"
-US  = BASE_TVLOGO + "united-states/"
-CA  = BASE_TVLOGO + "canada/"
-MY  = BASE_TVLOGO + "malaysia/"
-ASI = BASE_TVLOGO + "world-asia/"
-
-TV_LOGO_MAP = {
-    "ch_kapamilya_channel":  "https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Kapamilya_Channel_Logo_2020.svg/960px-Kapamilya_Channel_Logo_2020.svg.png",
-    "ch_alltv2":             "https://static.wikia.nocookie.net/abscbn/images/9/94/Kapamilya_Channel_sa_ALLTV2.png/revision/latest/scale-to-width-down/1000?cb=20260110141630",
-    "ch_gma7":               "https://upload.wikimedia.org/wikipedia/en/thumb/c/c0/GMA_Network_Logo_Vector.svg/1280px-GMA_Network_Logo_Vector.svg.png",
-    "ch_kapatid_channel":    "https://static.wikia.nocookie.net/tv5network/images/8/8b/Kapatid_Channel_%282025%29.png/revision/latest/scale-to-width-down/1200?cb=20260129063212",
-    "ch_pilipinas_live":     "https://pilipinaslive.com/assets/images/logo/pilipinaslive-logo-wbg.png",
-    "ch_tv5":PH+"tv5-ph.png","ch_gtv":PH+"gtv-ph.png","ch_a2z":PH+"a2z-ph.png",
-    "ch_ibc":PH+"ibc-ph.png","ch_ptv":PH+"ptv-ph.png","ch_net25":PH+"net25-ph.png",
-    "ch_untv":PH+"untv-ph.png","ch_inctv":PH+"inc-tv-ph.png","ch_ewtn":PH+"ewtn-ph.png",
-    "ch_smni":PH+"smni-ph.png","ch_rjtv_29":PH+"rj-tv-ph.png","ch_dzrh_tv":PH+"dzrh-tv-ph.png",
-    "ch_cinema_one":PH+"cinema-one-ph.png","ch_cinemo":PH+"cine-mo-ph.png","ch_cinemax":PH+"cinemax-ph.png",
-    "ch_hbo":PH+"hbo-ph.png","ch_hbo_hits":PH+"hbo-hits-ph.png","ch_hbo_family":PH+"hbo-family-ph.png",
-    "ch_hbo_signature":PH+"hbo-signature-ph.png","ch_anc":PH+"anc-ph.png",
-    "ch_dzmm_teleradyo":PH+"dzmm-teleradyo-ph.png","ch_one_news":PH+"one-news-ph.png",
-    "ch_one_ph":PH+"one-ph-ph.png","ch_one_sports":PH+"one-sports-ph.png",
-    "ch_one_sports_plus":PH+"one-sports-plus-ph.png","ch_pba_rush":PH+"pba-rush-ph.png",
-    "ch_pbo":PH+"pinoy-box-office-ph.png","ch_premier_sports":PH+"premier-sports-ph.png",
-    "ch_premier_sports_2":PH+"premier-sports-2-ph.png","ch_rptv":PH+"rptv-ph.png",
-    "ch_sari_sari":PH+"sari-sari-channel-ph.png","ch_spotv":PH+"spotv-ph.png",
-    "ch_spotv2":PH+"spotv2-ph.png","ch_tap_movies":PH+"tap-movies-ph.png",
-    "ch_tap_sports":PH+"tap-sports-ph.png","ch_tmc":PH+"tmc-ph.png","ch_buko":PH+"buko-ph.png",
-    "ch_nba_tv_philippines":PH+"nba-tv-philippines-ph.png","ch_tvn_movies_pinoy":PH+"tvn-movies-pinoy-ph.png",
-    "ch_viva_cinema":PH+"viva-cinema-ph.png","ch_warner_tv":PH+"warner-tv-ph.png",
-    "ch_knowledge_channel":PH+"knowledge-channel-ph.png","ch_solar_sports":PH+"solar-sports-ph.png",
-    "ch_solarflix":PH+"solar-flix-ph.png","ch_kix":PH+"kix-ph.png","ch_aniplus":PH+"aniplus-ph.png",
-    "ch_jeepney_tv":PH+"jeepney-tv-ph.png","ch_rock_action":PH+"rock-action-ph.png",
-    "ch_celestial_movies_pinoy":PH+"celestial-movies-pinoy-ph.png",
-    "ch_animal_planet":INT+"animal-planet-int.png","ch_arirang":INT+"arirang-int.png",
-    "ch_bbc_news":INT+"bbc-world-news-int.png","ch_cartoon_network":INT+"cartoon-network-int.png",
-    "ch_cna":INT+"cna-int.png","ch_cnn":INT+"cnn-international-int.png",
-    "ch_dazn_combat":INT+"dazn-int.png","ch_dazn_ringside":INT+"dazn-int.png",
-    "ch_disney_channel":INT+"disney-channel-int.png","ch_dreamworks":INT+"dreamworks-tv-int.png",
-    "ch_fashion_tv":INT+"fashion-tv-int.png","ch_bloomberg":INT+"bloomberg-television-int.png",
-    "ch_nat_geo":INT+"national-geographic-int.png","ch_nat_geo_wild":INT+"national-geographic-wild-int.png",
-    "ch_nickelodeon":INT+"nickelodeon-int.png","ch_nick_jr":INT+"nick-jr-int.png",
-    "ch_nhk_world_japan":INT+"nhk-world-japan-int.png","ch_discovery_asia":INT+"discovery-asia-int.png",
-    "ch_afn":INT+"asian-food-network-int.png","ch_kbs_world":INT+"kbs-world-int.png",
-    "ch_disney_jr":INT+"disney-jr-int.png","ch_cartoonito":INT+"cartoonito-int.png",
-    "ch_animax":INT+"animax-int.png","ch_anime_x_hidive":INT+"hidive-int.png","ch_axn":INT+"axn-int.png",
-    "ch_love_nature":INT+"love-nature-int.png","ch_tvn":INT+"tvn-int.png",
-    "ch_tvn_movies":INT+"tvn-movies-int.png","ch_bein_sports_1":INT+"bein-sports-1-int.png",
-    "ch_bein_sports_2":INT+"bein-sports-2-int.png","ch_bein_sports_3":INT+"bein-sports-3-int.png",
-    "ch_one_championship":INT+"one-championship-int.png","ch_fifa_plus":INT+"fifa-plus-int.png",
-    "ch_bbc_earth":AU+"bbc-earth-au.png","ch_discovery":AU+"discovery-channel-au.png",
-    "ch_crime_investigation":AU+"crime-and-investigation-au.png","ch_adult_swim":AU+"adult-swim-au.png",
-    "ch_abc_australia":AU+"abc-au.png","ch_cbeebies":AU+"bbc-cbeebies-au.png",
-    "ch_al_jazeera":UK+"al-jazeera-uk.png","ch_sky_sports_f1":UK+"sky-sports-f1-uk.png",
-    "ch_tnt_sports_1":UK+"tnt-sports-1-uk.png","ch_tnt_sports_2":UK+"tnt-sports-2-uk.png",
-    "ch_tnt_sports_3":UK+"tnt-sports-3-uk.png","ch_tnt_sports_4":UK+"tnt-sports-4-uk.png",
-    "ch_eurosport_1":UK+"eurosport-1-uk.png","ch_eurosport_2":UK+"eurosport-2-uk.png",
-    "ch_hgtv":US+"hgtv-us.png","ch_food_network":US+"food-network-us.png",
-    "ch_history":US+"history-us.png","ch_lifetime":US+"lifetime-us.png",
-    "ch_trutv":US+"trutv-us.png","ch_true_tv":US+"trutv-us.png",
-    "ch_travel_channel":US+"travel-channel-us.png","ch_nba_tv":US+"nba-tv-us.png",
-    "ch_nfl_network":US+"nfl-network-us.png","ch_cnbc":US+"cnbc-us.png",
-    "ch_espn":US+"espn-us.png","ch_espn2":US+"espn2-us.png",
-    "ch_cbs_sports_network":US+"cbs-sports-network-us.png",
-    "ch_ytv":CA+"ytv-ca.png","ch_moonbug":MY+"moonbug-kids-my.png",
-    "ch_hits":ASI+"hits-asi.png","ch_hits_movies":ASI+"hits-movies-asi.png",
-    "ch_hits_now":ASI+"hits-now-asi.png",
-    "ch_rock_x_stream":ASI+"rock-entertainment-asi.png",
-    "ch_astro_showcase":ASI+"astro-showcase-asi.png",
-    "ch_astro_showtime":ASI+"astro-showtime-asi.png",
-    "ch_celestial_movies":ASI+"celestial-movies-asi.png",
-    "ch_ccm":ASI+"celestial-classic-movies-asi.png",
-}
-
-WIKI_FILE_MAP = {
-    "ch_star_movies":"Star_Movies_logo.svg","ch_star_movies_select":"Star_Movies_Select_logo.png",
-    "ch_movies_now":"Movies_Now_Logo.png","ch_bnc":"Bilyonaryo_News_Channel_logo.png",
-    "ch_deped_tv":"DepEd_TV_logo.png","ch_hits_now":"HITS_Now_logo.png",
-    "ch_thrill":"THRILL_Channel_PH.png","ch_varsity_channel":"UAAP_Varsity_Channel_logo.png",
-    "ch_wil_tv":"Wil_TV_logo.png","ch_myx":"MYX_logo_2021.svg","ch_tfc":"The_Filipino_Channel_logo.svg",
-    "ch_light_tv":"Light_TV_logo.png","ch_mindanow_network":"Mindanow_Network_logo.png",
-    "ch_living_asia_channel":"Living_Asia_Channel_logo.png","ch_metro_channel":"Metro_Channel_PH_logo.png",
-    "ch_amc_presents":"AMC_logo_2016.svg","ch_moviesphere":"Moviesphere_logo.png",
-    "ch_wild_earth":"Wild_Earth_channel_logo.png","ch_new_k_pop":"K-pop_logo.png",
-    "ch_vevo_pop":"Vevo_logo.svg","ch_one":"ONE_TV_Philippines.png",
-    "ch_tennis_plus":"Tennis_Channel_logo.svg","ch_tennnis_channel":"Tennis_Channel_logo.svg",
-    "ch_k_plus":"K%2B_channel_logo.png","ch_abante_radyo":"No_image_available.svg",
-    "ch_f1_tv":"F1_logo.svg",
-    "ch_astro_grandstand":"Astro_Grandstand.png",
-    "ch_redbull_tv":"Red_Bull_TV_logo.png",
-    "ch_x_games_tv":"X_Games_logo.svg",
-    "ch_tna_wrestling":"TNA_Wrestling_Logo.png",
-    "ch_world_poker_tour":"World_Poker_Tour_logo.png",
-    "ch_nascar":"NASCAR_logo.svg",
-    "ch_motorvision_tv":"Motorvision_TV_logo.png",
-    "ch_mnplus":"Movies_Now_Logo.png",
-    "ch_mnx_hd":"MNX_HD_logo.png",
-    "ch_romedy_now":"Romedy_Now_logo.png",
-    "ch_amc":"AMC_logo_2016.svg",
-    "ch_zee_sine":"Zee_Sine_logo.png",
-}
-
-# ── 7. Helper functions ───────────────────────────────────────────────────────
+# ── 7. Helper Functions ───────────────────────────────────────────────────────
 def get_logo(ch):
     if "logo" in ch: return ch["logo"]
     ll = ch.get("logoLocal","")
-    if ll in TV_LOGO_MAP:   return TV_LOGO_MAP[ll]
-    if ll in WIKI_FILE_MAP: return f"https://en.wikipedia.org/wiki/Special:FilePath/{WIKI_FILE_MAP[ll]}?width=400"
+    if ll in tv_logo_map: return tv_logo_map[ll]
+    if ll in wiki_file_map: return f"https://en.wikipedia.org/wiki/Special:FilePath/{wiki_file_map[ll]}?width=400"
     return ""
 
 def build_m3u_entry(ch):
-    name=ch.get("name","Unknown"); category=ch.get("category","General")
-    logo=get_logo(ch); stream_url=ch.get("streamUrl","")
-    drm=ch.get("drm",None); headers=ch.get("headers",{})
-    extinf=f'#EXTINF:-1 tvg-name="{name}" tvg-logo="{logo}" group-title="{category}",{name}'
-    lines=[extinf]
+    name = ch.get("name","Unknown")
+    category = ch.get("category","General")
+    logo = get_logo(ch)
+    stream_url = ch.get("streamUrl","")
+    drm = ch.get("drm",None)
+    headers = ch.get("headers",{})
+    
+    # EPG mapper fallback logic
+    tvg_id = ch.get("tvg-id", ch.get("epg_id", name))
+    
+    extinf = f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" tvg-logo="{logo}" group-title="{category}",{name}'
+    lines = [extinf]
+    
     if drm:
         lines.append("#KODIPROP:inputstream=inputstream.adaptive")
         lines.append("#KODIPROP:inputstream.adaptive.manifest_type=mpd")
@@ -214,48 +150,43 @@ def build_m3u_entry(ch):
         if "keys" in drm:
             keys_out=[]
             for key in drm["keys"]:
-                k=key["k"].replace("+","-").replace("/","_").rstrip("=")
-                kid=key["kid"].replace("+","-").replace("/","_").rstrip("=")
+                k = key["k"].replace("+","-").replace("/","_").rstrip("=")
+                kid = key["kid"].replace("+","-").replace("/","_").rstrip("=")
                 keys_out.append({"kty":"oct","k":k,"kid":kid})
-            license_key=json.dumps({"keys":keys_out,"type":"temporary"},separators=(",",":"))
+            license_key = json.dumps({"keys":keys_out,"type":"temporary"},separators=(",",":"))
             lines.append(f"#KODIPROP:inputstream.adaptive.license_key={license_key}")
         else:
-            kid,key=next(iter(drm.items()))
+            kid, key = next(iter(drm.items()))
             lines.append(f"#KODIPROP:inputstream.adaptive.license_key={kid}:{key}")
-    ua=headers.get("User-Agent","")
-    if ua: stream_url=f"{stream_url}|User-Agent={ua}"
+            
+    ua = headers.get("User-Agent","")
+    if ua: stream_url = f"{stream_url}|User-Agent={ua}"
+    
     lines.append(stream_url)
     return "\n".join(lines)
 
-# ── 8. Build and save M3U files ───────────────────────────────────────────────
-timestamp  = datetime.now(timezone.utc).astimezone(timezone(timedelta(hours=8))).strftime("%Y-%m-%d %H:%M:%S GMT+8")
-m3u_header = f'#EXTM3U\n# Last Updated: {timestamp}'
+# ── 8. Build and Save M3U ─────────────────────────────────────────────────────
+timestamp = datetime.now(timezone.utc).astimezone(timezone(timedelta(hours=8))).strftime("%Y-%m-%d %H:%M:%S GMT+8")
+
+# Join EPG URLs with commas for TiviMate
+epg_string = ",".join(EPG_URLS)
+m3u_header = f'#EXTM3U x-tvg-url="{epg_string}"\n# Last Updated: {timestamp}'
 
 m3u_all = [m3u_header] + [build_m3u_entry(ch) for ch in data]
-with open("channels-all.m3u","w",encoding="utf-8") as f:
+with open("channels-all.m3u", "w", encoding="utf-8") as f:
     f.write("\n\n".join(m3u_all))
 
-# ── 9. Save new hash (only reached if changes were found) ────────────────────
+# ── 9. Save Hash ──────────────────────────────────────────────────────────────
 with open(HASH_FILE, "w") as f:
     f.write(new_hash)
 
-# ── 10. Write commit message summary ─────────────────────────────────────────
-new_count     = len([ch for ch in data if ch["name"] not in {c["name"] for c in backup}])
-updated_count = len(data) - len(backup) - new_count + len(backup) - sum(
-    1 for ch in data
-    if ch["name"] in {c["name"] for c in backup}
-    and ch == next((c for c in backup if c["name"] == ch["name"]), ch)
-)
-
-# Simpler: count via fetched vs backup diff
-fetched_names  = {ch["name"] for ch in fetched}
-backup_names   = {ch["name"] for ch in backup}
+# ── 10. Commit Message ────────────────────────────────────────────────────────
+fetched_names = {ch["name"] for ch in fetched}
+backup_names = {ch["name"] for ch in backup}
 added_channels = fetched_names - backup_names
 updated_channels = [
-    ch["name"] for ch in fetched
-    if ch["name"] in backup_names and ch.get("streamUrl","") != next(
-        (c.get("streamUrl","") for c in backup if c["name"] == ch["name"]), ""
-    )
+    ch["name"] for ch in fetched 
+    if ch["name"] in backup_names and ch.get("streamUrl","") != next((c.get("streamUrl","") for c in backup if c["name"] == ch["name"]), "")
 ]
 
 commit_msg = (
@@ -267,7 +198,6 @@ commit_msg = (
 with open("commit_msg.txt", "w") as f:
     f.write(commit_msg)
 
-print(f"channels-all.m3u  → {len(data)} channels")
+print(f"channels-all.m3u → {len(data)} channels")
 print(f"New: {len(added_channels)} | Updated: {len(updated_channels)}")
 print(f"Hash updated: {new_hash[:12]}...")
-print(f"Timestamp: {timestamp}")
