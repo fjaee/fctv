@@ -30,9 +30,6 @@ LOGOS_FILE = "logos.json"
 EPG_FILE = "epg.xml"
 MY_EPG_URL = "https://raw.githubusercontent.com/fjaee/fctv/master/epg.xml"
 
-# Whitelist to prevent regex from destroying valid numbered channel names
-VALID_NUMBERED_CHANNELS = {"GMA 7", "Net 25", "TV5", "A2Z", "RJTV 29", "IBC 13"}
-
 # ── 1. Fetch JSON Data ────────────────────────────────────────────────────────
 fetched = []
 for url in SOURCES:
@@ -46,50 +43,48 @@ for url in SOURCES:
     except Exception as e:
         print(f"[FAIL] Could not fetch {url.split('/')[-1]}: {e}")
 
-# ── 2. Filter, Deduplicate, and Clean ─────────────────────────────────────────
+# ── 2. Filter URLs (Drop blanks, .mp4, and bad links) ─────────────────────────
 filtered_data = []
-seen_names = set()
-
-def clean_channel_name(raw_name):
-    # 1. Strip symbols: | 1, - 2, (1), • 2
-    name = re.sub(r'\s*(?:[\|\-•]\s*[0-9]+|\([0-9]+\))$', '', raw_name).strip()
-    # 2. Strip raw trailing numbers (e.g., "F1 TV 1"), UNLESS it's a known valid channel
-    if name not in VALID_NUMBERED_CHANNELS:
-        name = re.sub(r'\s+[0-9]+$', '', name).strip()
-    return name
 
 for ch in fetched:
-    clean_name = clean_channel_name(ch.get("name", "Unknown"))
+    stream_url = ch.get("streamUrl", "").strip()
     
-    # Keep only the first working instance of a channel
-    if clean_name not in seen_names:
-        seen_names.add(clean_name)
-        ch["name"] = clean_name  # Overwrite with the clean name
-        filtered_data.append(ch)
+    # 2a. Fix intentional upstream typos (Anti-Leech)
+    if stream_url.startswith("htps://"): 
+        stream_url = stream_url.replace("htps://", "https://", 1)
+    elif stream_url.startswith("htp://"): 
+        stream_url = stream_url.replace("htp://", "http://", 1)
+        
+    ch["streamUrl"] = stream_url # Save the fixed URL back to the channel data
+    
+    # 2b. Strict Quality Filters
+    if not stream_url:
+        continue # Drop blanks
+        
+    if not stream_url.startswith("http"):
+        continue # Drop raw YouTube IDs or malformed links
+        
+    if ".mp4" in stream_url.lower():
+        continue # Drop static VOD files
+        
+    # If it survives the filters, keep it exactly as-is (preserves Pilipinas Live 1, 2, etc.)
+    filtered_data.append(ch)
 
-print(f"Data cleaned. Retained {len(filtered_data)} unique channels.")
+print(f"Data cleaned. Retained {len(filtered_data)} high-quality channels.")
 
 # ── 3. EPG Aggregation & Duplication ──────────────────────────────────────────
-print("Merging EPG sources...")
 root_tv = ET.Element("tv")
-
 for url in EPG_SOURCES:
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
         with urllib.request.urlopen(req, timeout=10) as resp:
-            xml_data = resp.read()
-            tree = ET.fromstring(xml_data)
+            tree = ET.fromstring(resp.read())
             for child in tree:
                 root_tv.append(child)
     except Exception as e:
         print(f"Failed to fetch EPG {url.split('/')[-1]}: {e}")
 
-# Map source EPG IDs to your target duplicates
-DUPLICATE_MAP = {
-    "alltv2": "Kapamilya Channel",
-    "kapusostream": "GMA 7"
-}
-
+DUPLICATE_MAP = {"alltv2": "Kapamilya Channel", "kapusostream": "GMA 7"}
 new_elements = []
 for elem in root_tv:
     if elem.tag == "channel":
@@ -98,10 +93,8 @@ for elem in root_tv:
             if src in ch_id:
                 new_ch = copy.deepcopy(elem)
                 new_ch.set("id", target)
-                for dn in new_ch.findall('display-name'):
-                    dn.text = target
+                for dn in new_ch.findall('display-name'): dn.text = target
                 new_elements.append(new_ch)
-                
     elif elem.tag == "programme":
         prog_ch = elem.get("channel", "").lower()
         for src, target in DUPLICATE_MAP.items():
@@ -109,14 +102,10 @@ for elem in root_tv:
                 new_prog = copy.deepcopy(elem)
                 new_prog.set("channel", target)
                 new_elements.append(new_prog)
+for n in new_elements: root_tv.append(n)
 
-for n in new_elements:
-    root_tv.append(n)
-
-# Save the master EPG locally
 tree = ET.ElementTree(root_tv)
 tree.write(EPG_FILE, encoding="utf-8", xml_declaration=True)
-print("Master EPG generated.")
 
 # ── 4. Load Logos ─────────────────────────────────────────────────────────────
 tv_logo_map = {}
@@ -136,22 +125,14 @@ def get_logo(ch):
     return ""
 
 def build_m3u_entry(ch):
-    name = ch["name"]
-    category = ch.get("category","General")
+    name = ch.get("name", "Unknown")
+    category = ch.get("category", "General")
     logo = get_logo(ch)
-    stream_url = ch.get("streamUrl","")
+    stream_url = ch.get("streamUrl", "")
+    drm = ch.get("drm", None)
+    headers = ch.get("headers", {})
     
-    # ANTI-LEECH FIX
-    if stream_url.startswith("htps://"): stream_url = stream_url.replace("htps://", "https://", 1)
-    elif stream_url.startswith("htp://"): stream_url = stream_url.replace("htp://", "http://", 1)
-    
-    drm = ch.get("drm",None)
-    headers = ch.get("headers",{})
-    
-    # TiviMate will link to our new duplicated EPG nodes automatically by name
-    tvg_id = name 
-    
-    extinf = f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" tvg-logo="{logo}" group-title="{category}",{name}'
+    extinf = f'#EXTINF:-1 tvg-id="{name}" tvg-name="{name}" tvg-logo="{logo}" group-title="{category}",{name}'
     lines = [extinf]
     
     if drm:
@@ -165,21 +146,15 @@ def build_m3u_entry(ch):
             kid, key = next(iter(drm.items()))
             lines.append(f"#KODIPROP:inputstream.adaptive.license_key={kid}:{key}")
             
-    ua = headers.get("User-Agent","")
+    ua = headers.get("User-Agent", "")
     if ua: stream_url = f"{stream_url}|User-Agent={ua}"
     
     lines.append(stream_url)
     return "\n".join(lines)
 
 timestamp = datetime.now(timezone.utc).astimezone(timezone(timedelta(hours=8))).strftime("%Y-%m-%d %H:%M:%S GMT+8")
-
-# Point M3U header directly to the locally generated master EPG
 m3u_header = f'#EXTM3U x-tvg-url="{MY_EPG_URL}"\n# Last Updated: {timestamp}'
 m3u_all = [m3u_header] + [build_m3u_entry(ch) for ch in filtered_data]
 
 with open("channels-all.m3u", "w", encoding="utf-8") as f:
     f.write("\n\n".join(m3u_all))
-
-# Backup data for hash checks
-with open(BACKUP_FILE, "w", encoding="utf-8") as f:
-    json.dump(filtered_data, f, indent=2, ensure_ascii=False)
