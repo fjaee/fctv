@@ -1042,6 +1042,583 @@
     "streamUrl": "htp://akariko.netgenx.site/stream/jp/wowow_prime/stream-output.m3u8?mode=hls"
   },
   {
+    "name": "Cinema One",
+    "logoLocal": "ch_cinema_one",
+    "category": "Movies",
+    "streamUrl": "htps://abslive.akamaized.net/dash/live/2027618/c1ph/manifest.mpd",
+    "drm": {
+      "55eddd1e157e4c3b830866e4679e7032": "525030e984567ba8df0af80660952368"
+    }
+  },
+  {
+    "name": "Cinemo",
+    "logoLocal": "ch_cinemo",
+    "category": "Movies",
+    "streamUrl": "htp://136.239.158.30:6610/001/2/ch00000090990000001254/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BpP1%2FTBq4G4yW%2Bysf7XC2GUytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001547&contentid=ch00000000000000001547&videoid=ch00000090990000001254&recommendtype=0&userid=1828619826254&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=RW7BWNI1AISXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO"
+  },
+  {
+    "name": "Tapsilog",
+    "logoLocal": "ch_tapsilog",
+    "category": "Movies",
+    "dateAdded": "2026-04-18",
+    "streamUrl": "rtp://210.4.112.99:1935/tapdmv/TVN_movies"
+  },
+  {
+    "name": "Movies Now",
+    "logoLocal": "ch_movies_now",
+    "category": "Movies",
+    "streamUrl": "htps://times-ott-live.akamaized.net/moviesnow_wv_drm/index.mpd",
+    "drm": {
+      "40f019b86241d23ef075633fd7f1e927": "058dec845bd340178a388edd104a015e"
+    }
+  },
+  {
+    "name": "MN+",
+    "logoLocal": "ch_mnplus",
+    "category": "Movies",
+    "dateAdded": "2026-03-24T21:01:00",
+    "streamUrl": "htps://times-ott-live.akamaized.net/mnplus_wv_drm/index.mpd",
+    "drm": {
+      "40f019b86241d23ef075633fd7f1e927": "058dec845bd340178a388edd104a015e"
+    }
+  },
+  {
+    "name": "MNX HD",
+    "logoLocal": "ch_mnx_hd",
+    "category": "Movies",
+    "dateAdded": "2026-03-24T21:02:00",
+    "streamUrl": "htps://times-ott-live.akamaized.net/mnxhd_wv_drm/index.mpd",
+    "drm": {
+      "40f019b86241d23ef075633fd7f1e927": "058dec845bd340178a388edd104a015e"
+    }
+  },
+  {
+    "name": "Romedy Now",
+    "logoLocal": "ch_romedy_now",
+    "category": "Movies",
+    "dateAdded": "2026-03-24T21:03:00",
+    "streamUrl": "htps://times-ott-live.akamaized.net/romedynow_wv_drm/index.mpd",
+    "drm": {
+      "40f019b86241d23ef075633fd7f1e927": "058dec845bd340178a388edd104a015e"
+    }
+  },
+  {
+    "name": "Star Movies",
+    "logoLocal": "ch_star_movies",
+    "category": "Movies",
+    "streamUrl": "htp://103.185.24.134:3001/Star-Movies/tracks-v1a1/mono.m3u8",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "Star Movies Select",
+    "logoLocal": "ch_star_movies_select",
+    "category": "Movies",
+    "streamUrl": "htp://103.185.24.134:3001/STAR-MOVIES-SEL-HD/tracks-v1a1/mono.m3u8",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "Blast Movies",
+    "logoLocal": "ch_blast_movies",
+    "category": "Movies",
+    "dateAdded": "2026-03-24T21:10:00",
+    "streamUrl": "htps://amg19223-amg19223c7-amgplt0351.playout.now3.amagi.tv/playlist/amg19223-amg19223c7-amgplt0351/playlist.m3u8"
+  },
+  {
+    "name": "Cinemax",
+    "logoLocal": "ch_cinemax",
+    "category": "Movies",
+    "streamUrl": "htp://136.239.173.10:6610/001/2/ch00000090990000001108/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BoD7Jkv0l3sE1jz6821dGRWytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001233&contentid=ch00000000000000001233&videoid=ch00000090990000001108&recommendtype=0&userid=1349825919509&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=LAO494UQ9QXXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO"
+  },
+  {
+    "name": "Cinemax US",
+    "logoLocal": "ch_cinemax",
+    "category": "Movies",
+    "dateAdded": "2026-04-27",
+    "streamUrl": "htps://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rckhgp0mdp/out/v1/3952b81ea31d45b38372b128371301d2/cenc.mpd",
+    "drm": {
+      "3a5fc143bea61aa94eee0479933d5e72": "8a365e8c3e2b8efdbcaab16d07c3b929"
+    }
+  },
+  {
+    "name": "Cinemax Hits",
+    "logoLocal": "ch_cinemax_hits",
+    "category": "Movies",
+    "dateAdded": "2026-04-17",
+    "streamUrl": "htps://otte.live.fly.ww.aiv-cdn.net/iad-nitro/clients/dash/enc/bw5g1vx3k9/out/v1/6913f190498b44c8a705e91728401769/cenc.mpd",
+    "drm": {
+      "046c374a3db594dfb32cba86d2e4f72f": "04c00a6ed0fc4ce37841210a42eeeb35"
+    }
+  },
+  {
+    "name": "Cinemax Action",
+    "logoLocal": "ch_cinemax_action",
+    "category": "Movies",
+    "dateAdded": "2026-04-29",
+    "streamUrl": "htps://otte.live.fly.ww.aiv-cdn.net/iad-nitro/clients/dash/enc/995zvakyej/out/v1/3fa049c0afea4a83bb5f508f1859f160/cenc.mpd",
+    "drm": {
+      "136a75130b82cdf89cb5f05d739b663f": "0ef360ff75bb11b7f0982a86b86d39ae"
+    }
+  },
+  {
+    "name": "Cinemax Classics",
+    "logoLocal": "ch_cinemax_classics",
+    "category": "Movies",
+    "dateAdded": "2026-04-29",
+    "streamUrl": "htps://otte.live.fly.ww.aiv-cdn.net/iad-nitro/clients/dash/enc/yfo5p7nmtt/out/v1/fdce98358ffb47c9b6314feb9cfeda3f/cenc.mpd",
+    "drm": {
+      "81a74ef0cf71e28d5d9bc55d5fd7921a": "884e89f90a9f5cbaaa5c2a451e1d8f86"
+    }
+  },
+  {
+    "name": "Universal Movies",
+    "logoLocal": "ch_universal_movies",
+    "category": "Movies",
+    "dateAdded": "2026-04-17",
+    "streamUrl": "htps://bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash/enc/sxwo5bmuz5/out/v1/3a73b7f0ef1947bc93027ec75a92cbfa/cenc.mpd",
+    "drm": {
+      "5140ef6622446b7f26bacb12f7d7a1ec": "ad6be1a83d188dc4bc7782b29a7ffb59"
+    }
+  },
+  {
+    "name": "Miramax Movie Channel",
+    "logoLocal": "ch_miramax_movie_channel",
+    "category": "Movies",
+    "dateAdded": "2026-04-05",
+    "streamUrl": "htps://linear-798.frequency.stream/mt/plex/798/hls/master/playlist.m3u8",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "HBO",
+    "logoLocal": "ch_hbo",
+    "category": "Movies",
+    "streamUrl": "htp://136.239.158.10:6610/001/2/ch00000090990000001065/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BosKg8aLji3LHWqHUI%2FwQyJytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001085&contentid=ch00000000000000001085&videoid=ch00000090990000001065&recommendtype=0&userid=1362658369654&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=UVJL5F87UVBXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO"
+  },
+  {
+    "name": "HBO US",
+    "logoLocal": "ch_hbo",
+    "category": "Movies",
+    "dateAdded": "2026-04-17",
+    "streamUrl": "htps://otte.live.fly.ww.aiv-cdn.net/iad-nitro/clients/dash/enc/u7xfabrc5b/out/v1/67371e988d6649afbde43ba1e9747550/cenc.mpd",
+    "drm": {
+      "0b380bec87af5c16ee145bbf8cd7d65e": "edcb65d1269bd76f166d6bc56114211f"
+    }
+  },
+  {
+    "name": "HBO+",
+    "logoLocal": "ch_hbo_plus",
+    "category": "Movies",
+    "dateAdded": "2026-04-27",
+    "streamUrl": "htps://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/zzhnlvao6q/out/v1/66f60c1d629549a78a22cc2913bfb3d1/cenc.mpd",
+    "drm": {
+      "266fed45577cd293af39165e8073bc19": "8e805607852c0606ecc553bd234d78b2"
+    }
+  },
+  {
+    "name": "HBO Hits",
+    "logoLocal": "ch_hbo_hits",
+    "category": "Movies",
+    "streamUrl": "htps://ucdn.mediaquest.com.ph/bpk-tv/cg_hbohits/default/index.mpd",
+    "drm": {
+      "b04ae8017b5b4601a5a0c9060f6d5b7d": "a8795f3bdb8a4778b7e888ee484cc7a1"
+    }
+  },
+  {
+    "name": "HBO Hits US",
+    "logoLocal": "ch_hbo_hits",
+    "category": "Movies",
+    "dateAdded": "2026-04-17",
+    "streamUrl": "htps://otte.live.fly.ww.aiv-cdn.net/iad-nitro/clients/dash/enc/zilmviiwo5/out/v1/fe78320a319045d99299fb05208d90af/cenc.mpd",
+    "drm": {
+      "e8c6a262b77b153530a6caaf2e07944a": "81071cf5808c0387adab93d8ff9b1f09"
+    }
+  },
+  {
+    "name": "HBO Family",
+    "logoLocal": "ch_hbo_family",
+    "category": "Movies",
+    "streamUrl": "htps://ucdn.mediaquest.com.ph/bpk-tv/cg_hbofam/default/index.mpd",
+    "drm": {
+      "872910c843294319800d85f9a0940607": "f79fd895b79c590708cf5e8b5c6263be"
+    }
+  },
+  {
+    "name": "HBO Signature",
+    "logoLocal": "ch_hbo_signature",
+    "category": "Movies",
+    "streamUrl": "htps://ucdn.mediaquest.com.ph/bpk-tv/cg_hbosign/default/index.mpd",
+    "drm": {
+      "a06ca6c275744151895762e0346380f5": "559da1b63eec77b5a942018f14d3f56f"
+    }
+  },
+  {
+    "name": "HBO Comedy US",
+    "logoLocal": "ch_hbo_comedy",
+    "category": "Movies",
+    "dateAdded": "2026-04-17",
+    "streamUrl": "htps://otte.live.fly.ww.aiv-cdn.net/iad-nitro/clients/dash/enc/f6ns8qsqde/out/v1/0827e077a8224107a1e6137627cc8198/cenc.mpd",
+    "drm": {
+      "217624a3983b3593ca7d1f3b01042d4f": "fecaa3486d9deef3f7f0e1a95b662cb7"
+    }
+  },
+  {
+    "name": "HBO Drama US",
+    "logoLocal": "ch_hbo_drama",
+    "category": "Movies",
+    "dateAdded": "2026-04-17",
+    "streamUrl": "htps://otte.live.fly.ww.aiv-cdn.net/iad-nitro/clients/dash/enc/o6rq3swwr4/out/v1/6a362c145af241e5a6eb45e0729ce5e6/cenc.mpd",
+    "drm": {
+      "2742f4791f17231bdb933844dabfb5bc": "3c49eb8a723248f87fb8c3722874557e"
+    }
+  },
+  {
+    "name": "MGM+",
+    "logoLocal": "ch_mgm_plus",
+    "category": "Movies",
+    "dateAdded": "2026-05-04",
+    "streamUrl": "htps://epix.live.epix.services/out/v1/9e8d7f463c10401da4c78387a627e184/index.mpd",
+    "drm": {
+      "34bbe1d5cad94e81a2f2eb3275611f85": "7e6a42fbe78e7ff8c20cb4eeb475ed17"
+    }
+  },
+  {
+    "name": "MGM+ Drive-In",
+    "logoLocal": "ch_mgm_plus_drive_in",
+    "category": "Movies",
+    "dateAdded": "2026-05-04",
+    "streamUrl": "htps://epix-drivein.live.epix.services/out/v1/bef1dd342f69416e9fdd844ece496dc0/index.mpd",
+    "drm": {
+      "2aa5443eab3841fca0804ed7df621e21": "f6337da72d318e72e77742c7f8d2e698"
+    }
+  },
+  {
+    "name": "MGM+ Hits",
+    "logoLocal": "ch_mgm_plus_hits",
+    "category": "Movies",
+    "dateAdded": "2026-05-04",
+    "streamUrl": "htps://epix2.live.epix.services/out/v1/08bcf975c3ef4013adb31929aef1fb82/index.mpd",
+    "drm": {
+      "2e177abdd25b476dbb474fa7c2ee76b3": "dc43cb2d4bd48774ef9620fda1158060"
+    }
+  },
+  {
+    "name": "MGM+ Marquee",
+    "logoLocal": "ch_mgm_plus_marquee",
+    "category": "Movies",
+    "dateAdded": "2026-05-04",
+    "streamUrl": "htps://epix-hits.live.epix.services/out/v1/a87dee961e4249afae86749c59202b9e/index.mpd",
+    "drm": {
+      "2f2032b4cae944a0adf5ce111a2ff693": "2b4a2855b0abde035714985be6db4bd0"
+    }
+  },
+  {
+    "name": "FX Movie Channel",
+    "logoLocal": "ch_fx_movie_channel",
+    "category": "Movies",
+    "dateUpdated": "2026-06-22",
+    "streamUrl": "htp://206.212.242.21:8080/live/hwilliamsw1/0938999941/23309.m3u8",
+    "standbyUrls": [
+      "htp://206.212.242.21:8080/live/s66CwphxKj/Megalodon1031/23309.m3u8",
+      "htp://206.212.242.21:8080/live/MeZyl1987/9735100903/23309.m3u8",
+      "htp://206.212.242.21:8080/live/P6YPNCrcgG/7329973937/23309.m3u8",
+      "htp://206.212.242.21:8080/live/jsdaniels74/1836272615/23309.m3u8",
+      "htp://206.212.242.21:8080/live/w2D5PuzVEW/0290724379/23309.m3u8",
+      "htp://206.212.242.21:8080/live/4yNXhET6j/4992732590/23309.m3u8",
+      "htp://206.212.242.21:8080/live/r39TcYT28q/7310509285/23309.m3u8",
+      "htp://206.212.242.21:8080/live/CgqzWqMHQ9/5257748697/23309.m3u8",
+      "htp://206.212.242.21:8080/live/jG62F4EcHn/3074729531/23309.m3u8",
+      "htp://206.212.242.21:8080/live/4abYcSzugD/7732488130/23309.m3u8",
+      "htp://206.212.242.21:8080/live/5eDrAkMfU2/5154760227/23309.m3u8",
+      "htp://206.212.242.21:8080/live/GsPDfRs2H/Grade100/23309.m3u8",
+      "htp://206.212.242.21:8080/live/EaJA7HJ40g/3854700321/23309.m3u8",
+      "htp://206.212.242.21:8080/live/Omart955/3690963957/23309.m3u8",
+      "htp://206.212.242.21:8080/live/1SgEXx8QYg/5979366148/23309.m3u8",
+      "htp://206.212.242.21:8080/live/6rk80svXKE/44886815569/23309.m3u8",
+      "htp://206.212.242.21:8080/live/grijalva28/Infiniti08/23309.m3u8",
+      "htp://206.212.242.21:8080/live/G3ZxfW9BUz/1838132923/23309.m3u8",
+      "htp://206.212.242.21:8080/live/HDH5UREEYP/42660591264/23309.m3u8"
+    ]
+  },
+  {
+    "name": "Starz",
+    "logoLocal": "ch_starz",
+    "category": "Movies",
+    "dateUpdated": "2026-05-03",
+    "streamUrl": "htp://206.212.242.21:8080/live/hwilliamsw1/0938999941/15906.m3u8",
+    "standbyUrls": [
+      "htp://206.212.242.21:8080/live/P6YPNCrcgG/7329973937/15906.m3u8",
+      "htp://206.212.242.21:8080/live/jsdaniels74/1836272615/15906.m3u8",
+      "htp://206.212.242.21:8080/live/w2D5PuzVEW/0290724379/15906.m3u8",
+      "htp://206.212.242.21:8080/live/r39TcYT28q/7310509285/15906.m3u8",
+      "htp://206.212.242.21:8080/live/GsPDfRs2H/Grade100/15906.m3u8",
+      "htp://206.212.242.21:8080/live/Omart955/3690963957/15906.m3u8",
+      "htp://206.212.242.21:8080/live/4yNXhET6j/4992732590/15906.m3u8",
+      "htp://206.212.242.21:8080/live/CgqzWqMHQ9/5257748697/15906.m3u8",
+      "htp://206.212.242.21:8080/live/5eDrAkMfU2/5154760227/15906.m3u8",
+      "htp://206.212.242.21:8080/live/G3ZxfW9BUz/1838132923/15906.m3u8",
+      "htp://206.212.242.21:8080/live/grijalva28/Infiniti08/15906.m3u8",
+      "htp://206.212.242.21:8080/live/s66CwphxKj/Megalodon1031/15906.m3u8",
+      "htp://206.212.242.21:8080/live/HDH5UREEYP/42660591264/15906.m3u8",
+      "htp://206.212.242.21:8080/live/1SgEXx8QYg/5979366148/15906.m3u8",
+      "htp://206.212.242.21:8080/live/4abYcSzugD/7732488130/15906.m3u8",
+      "htp://206.212.242.21:8080/live/MeZyl1987/9735100903/15906.m3u8",
+      "htp://206.212.242.21:8080/live/6rk80svXKE/44886815569/15906.m3u8",
+      "htp://206.212.242.21:8080/live/jG62F4EcHn/3074729531/15906.m3u8",
+      "htp://206.212.242.21:8080/live/EaJA7HJ40g/3854700321/15906.m3u8"
+    ]
+  },
+  {
+    "name": "HITS Movies",
+    "logoLocal": "ch_hits_movies",
+    "category": "Movies",
+    "streamUrl": "htps://linearjitp-playback.astro.com.my/dash-wv/linear/2305/default_ott.mpd",
+    "drm": {
+      "keys": [
+        {
+          "kty": "oct",
+          "k": "OPv7OlbkD/ksnfisvLqe9g",
+          "kid": "/x/r1wGNDdcRYB55Xg1iEA"
+        }
+      ],
+      "type": "temporary"
+    },
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "Celestial Movies Pinoy",
+    "logoLocal": "ch_celestial_movies_pinoy",
+    "category": "Movies",
+    "streamUrl": "htp://136.239.158.30:6610/001/2/ch00000090990000001077/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMArHUpvQtyXgWxpVCozt4hcgsyK4TH4mOENKJ45mwOyS0g%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001136&contentid=ch00000000000000001136&videoid=ch00000090990000001077&recommendtype=0&userid=1058297419636&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=B8CE333QUH6XXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO"
+  },
+  {
+    "name": "Celestial Movies",
+    "logoLocal": "ch_celestial_movies",
+    "category": "Movies",
+    "streamUrl": "htps://linearjitp-playback.astro.com.my/dash-wv/linear/506/default_ott.mpd",
+    "drm": {
+      "keys": [
+        {
+          "kty": "oct",
+          "k": "NhGXgF0BScKYAZRs8t3mfA",
+          "kid": "xcG6JpByka/sEamnjVE0EA"
+        }
+      ],
+      "type": "temporary"
+    },
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "Celestial Classic Movies",
+    "logoLocal": "ch_ccm",
+    "category": "Movies",
+    "streamUrl": "htps://linearjitp-playback.astro.com.my/dash-wv/linear/100/default_ott.mpd",
+    "drm": {
+      "a642dd4bf3ea782e19202adefb604b10": "3f59355e15eed1bb219ea1687d55cfbb"
+    },
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "PBO",
+    "logoLocal": "ch_pbo",
+    "category": "Movies",
+    "streamUrl": "htp://136.239.158.18:6610/001/2/ch00000090990000001078/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMAq9SZLE5HgafIcQ2VcLQB9EsyK4TH4mOENKJ45mwOyS0g%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001137&contentid=ch00000000000000001137&videoid=ch00000090990000001078&recommendtype=0&userid=1960500443734&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=8WK79ZSBXVGXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO"
+  },
+  {
+    "name": "Tap Movies",
+    "logoLocal": "ch_tap_movies",
+    "category": "Movies",
+    "streamUrl": "htps://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_tapmovies_hd1/default/index.mpd",
+    "drm": {
+      "71cbdf02b595468bb77398222e1ade09": "c3f2aa420b8908ab8761571c01899460"
+    }
+  },
+  {
+    "name": "Tap Action Flix",
+    "logoLocal": "ch_tap_action_flix",
+    "category": "Movies",
+    "streamUrl": "htp://161.49.17.2:6610/001/2/ch00000090990000001305/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMApahcUJJEYAxPtEef94INw12%2FjHNuou2Jtxin49X3LQKw%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001775&contentid=ch00000000000000001775&videoid=ch00000090990000001305&recommendtype=0&userid=1992031084771&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=HTEZZPU574PXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO"
+  },
+  {
+    "name": "THRILL",
+    "logoLocal": "ch_thrill",
+    "category": "Movies",
+    "streamUrl": "htp://136.239.173.10:6610/001/2/ch00000090990000001253/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2Bq7M3KTlp1dzcZcVVxlNmQdytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001563&contentid=ch00000000000000001563&videoid=ch00000090990000001253&recommendtype=0&userid=1896007622720&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=8LJ3RRPRMVYXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO"
+  },
+  {
+    "name": "Tagalized Movie Channel",
+    "logoLocal": "ch_tmc",
+    "category": "Movies",
+    "streamUrl": "htp://136.239.159.20:6610/001/2/ch00000090990000001080/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BrHx%2Fyl86rMkFVqtHp1NtQIytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001153&contentid=ch00000000000000001153&videoid=ch00000090990000001080&recommendtype=0&userid=1123674387331&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=OWFM2G9EILPXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO"
+  },
+  {
+    "name": "New KMovies & Series",
+    "logo": "htps://raw.githubusercontent.com/eyhehez/ugh/main/images/ch_new_korean_movies_series.webp",
+    "category": "Movies",
+    "dateAdded": "2026-06-27",
+    "streamUrl": "htps://dbrb49pjoymg4.cloudfront.net/10001/99991386/hls/master.m3u8?includeAssetTags=true&ads.xumo_channelId=99991386"
+  },
+  {
+    "name": "tvN Movies",
+    "logoLocal": "ch_tvn_movies",
+    "category": "Movies",
+    "streamUrl": "htps://linearjitp-playback.astro.com.my/dash-wv/linear/2406/default_ott.mpd",
+    "drm": {
+      "8e269c8aa32ad77eb83068312343d610": "d12ccebafbba2a535d88a3087f884252"
+    },
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "tvN Movies Pinoy",
+    "logoLocal": "ch_tvn_movies_pinoy",
+    "category": "Movies",
+    "streamUrl": "htps://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_tvnmovie/default/index.mpd",
+    "drm": {
+      "2e53f8d8a5e94bca8f9a1e16ce67df33": "3471b2464b5c7b033a03bb8307d9fa35"
+    }
+  },
+  {
+    "name": "Viva Cinema",
+    "logoLocal": "ch_viva_cinema",
+    "category": "Movies",
+    "streamUrl": "htp://136.239.159.20:6610/001/2/ch00000090990000001079/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMAoglCgy7TAZamPXsCV8PgebsyK4TH4mOENKJ45mwOyS0g%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001138&contentid=ch00000000000000001138&videoid=ch00000090990000001079&recommendtype=0&userid=1022847749017&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=LZTWKL0XP7XXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO"
+  },
+  {
+    "name": "SolarFlix",
+    "logoLocal": "ch_solarflix",
+    "category": "Movies",
+    "streamUrl": "htp://136.239.159.18:6610/001/2/ch00000090990000001243/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BpbUxUxZzyq5Czg7gUnQAcvytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001543&contentid=ch00000000000000001543&videoid=ch00000090990000001243&recommendtype=0&userid=1633620334084&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=B91ZY82QQ8UXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO"
+  },
+  {
+    "name": "Stories by AMC",
+    "logoLocal": "ch_amc_presents",
+    "category": "Movies",
+    "streamUrl": "htps://amc-amcpresents-1-us.plex.wurl.tv/playlist.m3u8"
+  },
+  {
+    "name": "MovieSphere",
+    "logoLocal": "ch_moviesphere",
+    "category": "Movies",
+    "streamUrl": "htps://amg00353-lionsgatestudio-moviesphere-xumo-zh5u0.amagi.tv/playlist.m3u8"
+  },
+  {
+    "name": "ROCK Action",
+    "logoLocal": "ch_rock_action",
+    "category": "Movies",
+    "streamUrl": "htps://linearjitp-playback.astro.com.my/dash-wv/linear/5143/default_primary.mpd",
+    "drm": {
+      "keys": [
+        {
+          "kty": "oct",
+          "k": "ooFuWncl1q35-_LATMug-w",
+          "kid": "VPL7-vUpXINEgJ0k3KkbEA"
+        }
+      ],
+      "type": "temporary"
+    },
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "Astro Showcase",
+    "logoLocal": "ch_astro_showcase",
+    "category": "Movies",
+    "streamUrl": "htps://linearjitp-playback.astro.com.my/dash-wv/linear/5054/default_primary.mpd",
+    "drm": {
+      "b8090c8361cc5cc5c1aac0ec2710de10": "ca0d18538845bae2cb4f4a168036f174"
+    },
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "Astro Showtime",
+    "logoLocal": "ch_astro_showtime",
+    "category": "Movies",
+    "streamUrl": "htps://linearjitp-playback.astro.com.my/dash-wv/linear/5145/default_primary.mpd",
+    "drm": {
+      "keys": [
+        {
+          "kty": "oct",
+          "k": "7RJVdgSDgSHZlvDXg3nKow",
+          "kid": "aZ-4LHCn7Cl_M6pEI7q1EA"
+        }
+      ],
+      "type": "temporary"
+    },
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "Astro FAM Time",
+    "logoLocal": "ch_astro_fam_time",
+    "category": "Movies",
+    "dateAdded": "2026-04-18",
+    "streamUrl": "htps://linearjitp-playback.astro.com.my/dash-wv/linear/5186/default_primary.mpd",
+    "drm": {
+      "keys": [
+        {
+          "kty": "oct",
+          "k": "wzb9fIuxjRe_Y8nkYDKo7Q",
+          "kid": "B_pqn3_ngGu6mw6X0KxbEA"
+        }
+      ],
+      "type": "temporary"
+    },
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36"
+    }
+  },
+  {
+    "name": "Sony Movies",
+    "logoLocal": "ch_sony_movies",
+    "category": "Movies",
+    "dateAdded": "2026-03-24T21:00:00",
+    "streamUrl": "htps://a-cdn.klowdtv.com/live1/smc_720p/chunks.m3u8"
+  },
+  {
+    "name": "Sony One Action Hits",
+    "logoLocal": "ch_sony_one_action_hits",
+    "category": "Movies",
+    "dateAdded": "2026-04-03",
+    "streamUrl": "htps://89514e758f814907be6d14bbc0aa66b7.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-800-UK-SONYONEACTIONHITS-LG_UK/playlist.m3u8"
+  },
+  {
+    "name": "Sony One Comedy Hits",
+    "logoLocal": "ch_sony_one_comedy_hits",
+    "category": "Movies",
+    "dateAdded": "2026-04-03",
+    "streamUrl": "htps://9f8e2ffcd87f4c469be7194e48f84874.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-802-UK-SONYONECOMEDYHITS-LG_UK/playlist.m3u8"
+  },
+  {
+    "name": "MyTime Movie Network",
+    "logoLocal": "ch_mytime_movie_network",
+    "category": "Movies",
+    "dateAdded": "2026-04-26",
+    "streamUrl": "htps://mytime-tcl.amagi.tv/playlist.m3u8"
+  },
+  {
+    "name": "WOWOW Cinema",
+    "logoLocal": "ch_wowow_cinema",
+    "category": "Movies",
+    "dateUpdated": "2026-06-11",
+    "streamUrl": "htp://akariko.netgenx.site/stream/jp/wowow_cinema/stream-output.m3u8?mode=hls"
+  },
+  {
     "name": "Animax",
     "logoLocal": "ch_animax",
     "category": "Anime",
