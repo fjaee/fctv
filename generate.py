@@ -43,8 +43,9 @@ for url in SOURCES:
     except Exception as e:
         print(f"[FAIL] Could not fetch {url.split('/')[-1]}: {e}")
 
-# ── 2. Filter URLs (Drop blanks, .mp4, and bad links) ─────────────────────────
+# ── 2. Filter URLs & Deduplicate by Link ──────────────────────────────────────
 filtered_data = []
+seen_urls = set()
 
 for ch in fetched:
     stream_url = ch.get("streamUrl", "").strip()
@@ -55,24 +56,40 @@ for ch in fetched:
     elif stream_url.startswith("htp://"): 
         stream_url = stream_url.replace("htp://", "http://", 1)
         
-    ch["streamUrl"] = stream_url # Save the fixed URL back to the channel data
+    ch["streamUrl"] = stream_url
     
     # 2b. Strict Quality Filters
     if not stream_url:
         continue # Drop blanks
-        
     if not stream_url.startswith("http"):
         continue # Drop raw YouTube IDs or malformed links
-        
     if ".mp4" in stream_url.lower():
         continue # Drop static VOD files
         
-    # If it survives the filters, keep it exactly as-is (preserves Pilipinas Live 1, 2, etc.)
+    # 2c. URL-Based Deduplication
+    if stream_url in seen_urls:
+        continue # Drop if we already have this exact stream link
+        
+    seen_urls.add(stream_url)
     filtered_data.append(ch)
 
-print(f"Data cleaned. Retained {len(filtered_data)} high-quality channels.")
+print(f"Data cleaned. Retained {len(filtered_data)} high-quality unique channels.")
 
-# ── 3. EPG Aggregation & Duplication ──────────────────────────────────────────
+# ── 3. Prioritize Specific Channels ───────────────────────────────────────────
+# Force "Kapamilya Channel" to the very top of the list
+top_channels = []
+other_channels = []
+
+for ch in filtered_data:
+    if ch.get("name", "").strip().lower() == "kapamilya channel":
+        top_channels.append(ch)
+    else:
+        other_channels.append(ch)
+
+# Merge back together with priority channels first
+filtered_data = top_channels + other_channels
+
+# ── 4. EPG Aggregation & Duplication ──────────────────────────────────────────
 root_tv = ET.Element("tv")
 for url in EPG_SOURCES:
     try:
@@ -107,7 +124,7 @@ for n in new_elements: root_tv.append(n)
 tree = ET.ElementTree(root_tv)
 tree.write(EPG_FILE, encoding="utf-8", xml_declaration=True)
 
-# ── 4. Load Logos ─────────────────────────────────────────────────────────────
+# ── 5. Load Logos ─────────────────────────────────────────────────────────────
 tv_logo_map = {}
 wiki_file_map = {}
 if os.path.exists(LOGOS_FILE):
@@ -116,7 +133,7 @@ if os.path.exists(LOGOS_FILE):
         tv_logo_map = logos.get("TV_LOGO_MAP", {})
         wiki_file_map = logos.get("WIKI_FILE_MAP", {})
 
-# ── 5. Build M3U ──────────────────────────────────────────────────────────────
+# ── 6. Build M3U ──────────────────────────────────────────────────────────────
 def get_logo(ch):
     if "logo" in ch: return ch["logo"]
     ll = ch.get("logoLocal","")
