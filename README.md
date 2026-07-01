@@ -4,6 +4,12 @@ A personal automated data aggregation and parsing pipeline.
 
 This repository contains a Python script configured to run via GitHub Actions. It fetches standard JSON data from multiple external endpoints, merges them into a single localized structure, applies custom deduplication logic, and outputs a formatted text payload.
 
+## Build Outputs
+
+Compiled payloads for external ingestion. Use these URLs for your local client configuration:
+* **Raw Payload:** `https://raw.githubusercontent.com/fjaee/fctv/master/channels-all.m3u`
+* **Shortlink:** `https://goo.su/tq6Et`
+
 ## Architecture
 
 * **Multi-Source Fetching:** Iterates over a predefined list of modular JSON endpoints to prevent single-source failure.
