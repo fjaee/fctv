@@ -11,6 +11,15 @@ export interface HlsLevel {
   name?: string;
 }
 
+function upgradeUrl(url: string): string {
+  // Upgrade http:// to https:// to avoid mixed-content blocking on https pages.
+  // Most CDNs support both; if the https endpoint fails, the error recovery will handle it.
+  if (url.startsWith("http://")) {
+    return "https://" + url.slice(7);
+  }
+  return url;
+}
+
 export function usePlayer() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const hlsRef = useRef<Hls | null>(null);
@@ -36,9 +45,10 @@ export function usePlayer() {
   }, []);
 
   const loadStream = useCallback(
-    (ch: Channel, url: string, label: string) => {
+    (ch: Channel, rawUrl: string, label: string) => {
       const video = videoRef.current;
       if (!video) return;
+      const url = upgradeUrl(rawUrl);
       setStatus("loading");
       setErrorMsg("");
       setLevels([]);
@@ -54,16 +64,27 @@ export function usePlayer() {
           lowLatencyMode: true,
           maxBufferLength: 30,
           maxMaxBufferLength: 60,
-          manifestLoadingTimeOut: 12000,
-          manifestLoadingMaxRetry: 3,
-          levelLoadingTimeOut: 12000,
+          manifestLoadingTimeOut: 15000,
+          manifestLoadingMaxRetry: 4,
+          manifestLoadingRetryDelay: 500,
+          levelLoadingTimeOut: 15000,
           levelLoadingMaxRetry: 4,
-          fragLoadingTimeOut: 20000,
+          fragLoadingTimeOut: 25000,
           fragLoadingMaxRetry: 6,
           fragLoadingRetryDelay: 500,
           fragLoadingMaxRetryTimeout: 64000,
         });
         hlsRef.current = hls;
+
+        // Inject custom headers via xhrSetup if the channel requires them
+        if (ch.headers && Object.keys(ch.headers).length > 0) {
+          hls.config.xhrSetup = (xhr: XMLHttpRequest) => {
+            for (const [key, value] of Object.entries(ch.headers)) {
+              try { xhr.setRequestHeader(key, value); } catch {}
+            }
+          };
+        }
+
         hls.loadSource(url);
         hls.attachMedia(video);
 
@@ -89,6 +110,11 @@ export function usePlayer() {
 
         hls.on(Hls.Events.ERROR, (_e, data) => {
           if (!data.fatal) return;
+          // If we upgraded http->https and it failed, try the original http url
+          if (rawUrl.startsWith("http://") && url !== rawUrl) {
+            loadStreamDirect(ch, rawUrl, label);
+            return;
+          }
           switch (data.type) {
             case Hls.ErrorTypes.NETWORK_ERROR:
               hls.startLoad();
@@ -109,6 +135,10 @@ export function usePlayer() {
           video.removeEventListener("loadedmetadata", onMeta);
         };
         const onErr = () => {
+          if (rawUrl.startsWith("http://") && url !== rawUrl) {
+            video.src = rawUrl;
+            return;
+          }
           tryNextUrl(ch, label);
           video.removeEventListener("error", onErr);
         };
@@ -117,6 +147,51 @@ export function usePlayer() {
       } else {
         setStatus("error");
         setErrorMsg("HLS playback is not supported in this browser.");
+      }
+    },
+    []
+  );
+
+  // Load without the http->https upgrade fallback (used when the upgrade itself fails)
+  const loadStreamDirect = useCallback(
+    (ch: Channel, url: string, label: string) => {
+      const video = videoRef.current;
+      if (!video) return;
+      setStatus("loading");
+      if (hlsRef.current) { hlsRef.current.destroy(); hlsRef.current = null; }
+      if (Hls.isSupported()) {
+        const hls = new Hls({
+          enableWorker: true,
+          lowLatencyMode: true,
+          manifestLoadingTimeOut: 15000,
+          manifestLoadingMaxRetry: 4,
+        });
+        hlsRef.current = hls;
+        if (ch.headers && Object.keys(ch.headers).length > 0) {
+          hls.config.xhrSetup = (xhr: XMLHttpRequest) => {
+            for (const [key, value] of Object.entries(ch.headers)) {
+              try { xhr.setRequestHeader(key, value); } catch {}
+            }
+          };
+        }
+        hls.loadSource(url);
+        hls.attachMedia(video);
+        hls.on(Hls.Events.MANIFEST_PARSED, () => {
+          video.play().catch(() => {});
+          setStatus("playing");
+        });
+        hls.on(Hls.Events.ERROR, (_e, data) => {
+          if (!data.fatal) return;
+          switch (data.type) {
+            case Hls.ErrorTypes.NETWORK_ERROR: hls.startLoad(); break;
+            case Hls.ErrorTypes.MEDIA_ERROR: hls.recoverMediaError(); break;
+            default: tryNextUrl(ch, label); break;
+          }
+        });
+      } else {
+        video.src = url;
+        video.addEventListener("loadedmetadata", () => { video.play().catch(() => {}); setStatus("playing"); }, { once: true });
+        video.addEventListener("error", () => tryNextUrl(ch, label), { once: true });
       }
     },
     []

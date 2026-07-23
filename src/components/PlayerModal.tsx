@@ -10,6 +10,7 @@ import {
   PauseIcon,
   PlayIcon,
   RefreshIcon,
+  SearchIcon,
   SettingsIcon,
   UnlockIcon,
   VolumeIcon,
@@ -27,13 +28,15 @@ export function PlayerModal({ channel, player, allChannels, onSelectChannel }: P
   const { videoRef, status, errorMsg, levels, currentLevel, refresh, setLevel, tryNextFallback, hasFallback } = player;
   const controls = useControls(videoRef, status === "playing");
   const [qualityOpen, setQualityOpen] = useState(false);
+  const [sidebarSearch, setSidebarSearch] = useState("");
 
   const sidebarChannels = useMemo(() => {
-    const sameCat = allChannels.filter(
-      (c) => c.category === channel.category && c.id !== channel.id
-    );
-    return sameCat.slice(0, 40);
-  }, [allChannels, channel]);
+    const q = sidebarSearch.trim().toLowerCase();
+    const filtered = q
+      ? allChannels.filter((c) => c.name.toLowerCase().includes(q))
+      : allChannels;
+    return filtered;
+  }, [allChannels, sidebarSearch]);
 
   const handleSidebarClick = (ch: Channel) => {
     onSelectChannel(ch);
@@ -207,15 +210,25 @@ export function PlayerModal({ channel, player, allChannels, onSelectChannel }: P
         {/* ===== Right: Sidebar Playlist (30%) ===== */}
         <div className="player-sidebar">
           <div className="sidebar-header">
-            <h3>{channel.category}</h3>
-            <span className="sidebar-count">{sidebarChannels.length + 1} channels</span>
+            <h3>All Channels</h3>
+            <span className="sidebar-count">{sidebarChannels.length}</span>
+          </div>
+          <div className="sidebar-search">
+            <SearchIcon size={16} />
+            <input
+              type="text"
+              placeholder="Search…"
+              value={sidebarSearch}
+              onChange={(e) => setSidebarSearch(e.target.value)}
+              aria-label="Search channels"
+            />
           </div>
           <div className="sidebar-list">
-            {/* Current channel */}
-            <div className="sidebar-item active">
+            {/* Current channel at top */}
+            <div className={`sidebar-item active`} onClick={() => {}}>
               <div className="sidebar-thumb">
                 {channel.logo ? (
-                  <img src={channel.logo} alt="" />
+                  <img src={channel.logo} alt="" onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }} />
                 ) : (
                   <span className="sidebar-placeholder">{channel.name.slice(0, 2).toUpperCase()}</span>
                 )}
@@ -227,28 +240,30 @@ export function PlayerModal({ channel, player, allChannels, onSelectChannel }: P
               </div>
             </div>
 
-            {sidebarChannels.map((ch) => (
-              <div
-                key={ch.id}
-                className="sidebar-item"
-                onClick={() => handleSidebarClick(ch)}
-                role="button"
-                tabIndex={0}
-                onKeyDown={(e) => e.key === "Enter" && handleSidebarClick(ch)}
-              >
-                <div className="sidebar-thumb">
-                  {ch.logo ? (
-                    <img src={ch.logo} alt="" />
-                  ) : (
-                    <span className="sidebar-placeholder">{ch.name.slice(0, 2).toUpperCase()}</span>
-                  )}
+            {sidebarChannels
+              .filter((ch) => ch.id !== channel.id)
+              .map((ch) => (
+                <div
+                  key={ch.id}
+                  className="sidebar-item"
+                  onClick={() => handleSidebarClick(ch)}
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={(e) => e.key === "Enter" && handleSidebarClick(ch)}
+                >
+                  <div className="sidebar-thumb">
+                    {ch.logo ? (
+                      <img src={ch.logo} alt="" onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }} />
+                    ) : (
+                      <span className="sidebar-placeholder">{ch.name.slice(0, 2).toUpperCase()}</span>
+                    )}
+                  </div>
+                  <div className="sidebar-info">
+                    <div className="sidebar-name">{ch.name}</div>
+                    <div className="sidebar-status">{ch.category}{ch.playableType !== "hls" ? ` · ${ch.playableType.toUpperCase()}` : " · Live"}</div>
+                  </div>
                 </div>
-                <div className="sidebar-info">
-                  <div className="sidebar-name">{ch.name}</div>
-                  <div className="sidebar-status">{ch.playableType === "hls" ? "Live" : ch.playableType.toUpperCase()}</div>
-                </div>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
       </div>

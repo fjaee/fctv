@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import type { Channel, LogoMap } from "./types";
-import { fetchChannels, fetchLogos, normalizeChannels, groupByCategory, filterPlayable } from "./data";
+import { fetchAndNormalizeAll, fetchLogos, groupByCategory, filterPlayable } from "./data";
 import { TopNav } from "./components/TopNav";
 import { Hero } from "./components/Hero";
 import { CategoryRow } from "./components/CategoryRow";
@@ -23,10 +23,11 @@ export default function App() {
     let cancelled = false;
     (async () => {
       try {
-        const [rawChannels, logoMap] = await Promise.all([fetchChannels(), fetchLogos()]);
+        const logoMap = await fetchLogos();
         if (cancelled) return;
         setLogos(logoMap);
-        const normalized = normalizeChannels(rawChannels, logoMap);
+        const normalized = await fetchAndNormalizeAll(logoMap);
+        if (cancelled) return;
         setAllChannels(normalized);
         const playable = filterPlayable(normalized);
         const withLogo = playable.filter(c => c.logo);

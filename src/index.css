@@ -756,6 +756,28 @@ button {
   color: var(--text-3);
   flex-shrink: 0;
 }
+.sidebar-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  margin: 0 12px 8px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-3);
+  flex-shrink: 0;
+}
+.sidebar-search input {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text);
+  font-size: 0.82rem;
+  width: 100%;
+}
+.sidebar-search input::placeholder { color: var(--text-3); }
+
 .sidebar-list {
   flex: 1;
   overflow-y: auto;
