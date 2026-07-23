@@ -105,7 +105,14 @@ export default function App() {
         <br />
         Personal educational project · Not for redistribution
       </footer>
-      {player.channel && <PlayerModal channel={player.channel} player={player} />}
+      {player.channel && (
+        <PlayerModal
+          channel={player.channel}
+          player={player}
+          allChannels={allChannels}
+          onSelectChannel={handlePlay}
+        />
+      )}
     </div>
   );
 }
