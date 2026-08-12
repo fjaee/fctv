@@ -1,124 +1,31 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="ALLTV2" tvg-name="ALLTV2" group-title="Entertainment" tvg-logo="https://commons.wikimedia.org/wiki/Special:FilePath/ALLTV%202024%20logo.svg",ALLTV2
+#EXTINF:-1 tvg-name="ALLTV2" group-title="Entertainment",ALLTV2
 http://136.239.158.10:6610/001/2/ch00000090990000001179/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2Bow35sHUcBhGBpxqddBGYEnytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001415&contentid=ch00000000000000001415&videoid=ch00000090990000001179&recommendtype=0&userid=1205050496206&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=02WMA0HI2O3AXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
-#EXTINF:-1 tvg-id="Kapamilya_Channel" tvg-name="Kapamilya Channel" group-title="Entertainment" tvg-logo="https://commons.wikimedia.org/wiki/Special:FilePath/KPChannel.png",Kapamilya Channel
+#EXTINF:-1 tvg-name="Kapamilya Channel" group-title="Entertainment",Kapamilya Channel
 http://136.239.173.2:6610/001/2/ch00000090990000001286/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2Bqw65FFCygtQMRRIUPF0xuXytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001694&contentid=ch00000000000000001694&videoid=ch00000090990000001286&recommendtype=0&userid=1004802317138&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=CCJLYZ04O9IXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
-#EXTINF:-1 tvg-id="GMA_7" tvg-name="GMA 7" group-title="Entertainment" tvg-logo="https://philippines.mom-gmr.org/uploads/tx_lfrogmom/company/1043-167_company_import.png",GMA 7
+#EXTINF:-1 tvg-name="GMA 7" group-title="Entertainment",GMA 7
 http://136.158.97.2:6610/001/2/ch00000090990000001093/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMAoLvT86fM74ocVChyFS93HUsyK4TH4mOENKJ45mwOyS0g%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001214&contentid=ch00000000000000001214&videoid=ch00000090990000001093&recommendtype=0&userid=1438418816418&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=BLJMICF8T5XXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO&IASHttpSessionId=RR20448620260101155237367179&ispcode=55
-#EXTINF:-1 tvg-id="TV5" tvg-name="TV5" group-title="Entertainment" tvg-logo="https://commons.wikimedia.org/wiki/Special:FilePath/TV5%20Logo%20%282021%29.png",TV5
+#EXTINF:-1 tvg-name="TV5" group-title="Entertainment" x-logo="ch_tv5",TV5
 http://136.158.97.2:6610/001/2/ch00000090990000001088/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMAoh0xOsaoSFLqA0PEh9gVjisyK4TH4mOENKJ45mwOyS0g%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001213&contentid=ch00000000000000001213&videoid=ch00000090990000001088&recommendtype=0&userid=1099183361159&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=ZRUDOFEVUJOXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
-#EXTINF:-1 tvg-id="Star_Movies" tvg-name="Star Movies" group-title="Movies" tvg-logo="https://commons.wikimedia.org/wiki/Special:FilePath/Star%20movies%20%28bein%29%20logo.png",Star Movies
+#EXTINF:-1 tvg-name="Star Movies" group-title="Movies",Star Movies
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+#KODIPROP:http-user-agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
 http://103.185.24.134:3001/Star-Movies/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="Star_Movies_Select" tvg-name="Star Movies Select" group-title="Movies" tvg-logo="https://commons.wikimedia.org/wiki/Special:FilePath/Star%20movies%20%28bein%29%20logo.png",Star Movies Select
+#EXTINF:-1 tvg-name="Star Movies Select" group-title="Movies",Star Movies Select
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
+#KODIPROP:http-user-agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
 http://103.185.24.134:3001/STAR-MOVIES-SEL-HD/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="Movies_Now" tvg-name="Movies Now" group-title="Movies",Movies Now
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"QPAZuGJB0j7wdWM_1_HpJw","k":"BY3shFvTQBeKOI7dEEoBXg"}],"type":"temporary"}
-https://times-ott-live.akamaized.net/moviesnow_wv_drm/index.mpd
-#EXTINF:-1 tvg-id="MN+" tvg-name="MN+" group-title="Movies",MN+
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"QPAZuGJB0j7wdWM_1_HpJw","k":"BY3shFvTQBeKOI7dEEoBXg"}],"type":"temporary"}
-https://times-ott-live.akamaized.net/mnplus_wv_drm/index.mpd
-#EXTINF:-1 tvg-id="MNX_HD" tvg-name="MNX HD" group-title="Movies",MNX HD
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"QPAZuGJB0j7wdWM_1_HpJw","k":"BY3shFvTQBeKOI7dEEoBXg"}],"type":"temporary"}
-https://times-ott-live.akamaized.net/mnxhd_wv_drm/index.mpd
-#EXTINF:-1 tvg-id="Cinema_One" tvg-name="Cinema One" group-title="Movies" tvg-logo="https://commons.wikimedia.org/wiki/Special:FilePath/Cinema%20One%20logo.png",Cinema One
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"Ve3dHhV-TDuDCGbkZ55wMg","k":"UlAw6YRWe6jfCvgGYJUjaA"}],"type":"temporary"}
-https://abslive.akamaized.net/dash/live/2027618/c1ph/manifest.mpd
-#EXTINF:-1 tvg-id="Cinemo" tvg-name="Cinemo" group-title="Movies",Cinemo
+#EXTINF:-1 tvg-name="Cinemo" group-title="Movies" x-logo="ch_cinemo",Cinemo
 http://136.239.158.30:6610/001/2/ch00000090990000001254/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BpP1%2FTBq4G4yW%2Bysf7XC2GUytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001547&contentid=ch00000000000000001547&videoid=ch00000090990000001254&recommendtype=0&userid=1828619826254&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=RW7BWNI1AISXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
-#EXTINF:-1 tvg-id="New_KMovies_&_Series" tvg-name="New KMovies & Series" group-title="Movies",New KMovies & Series
+#EXTINF:-1 tvg-name="New KMovies & Series" group-title="Movies" x-logo="ch_new_korean_movies_series",New KMovies & Series
 https://dbrb49pjoymg4.cloudfront.net/10001/99991386/hls/master.m3u8?includeAssetTags=true&ads.xumo_channelId=99991386
-#EXTINF:-1 tvg-id="tvN_Movies" tvg-name="tvN Movies" group-title="Movies",tvN Movies
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"jiaciqMq1364MGgxI0PWEA","k":"0SzOuvu6KlNdiKMIf4hCUg"}],"type":"temporary"}
-https://linearjitp-playback.astro.com.my/dash-wv/linear/2406/default_ott.mpd
-#EXTINF:-1 tvg-id="HBO_Hits_US" tvg-name="HBO Hits US" group-title="Movies" tvg-logo="https://commons.wikimedia.org/wiki/Special:FilePath/HBO%20logo.png",HBO Hits US
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"6MaiYrd7FTUwpsqvLgeUSg","k":"gQcc9YCMA4etq5PY_5sfCQ"}],"type":"temporary"}
-https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/clients/dash/enc/zilmviiwo5/out/v1/fe78320a319045d99299fb05208d90af/cenc.mpd
-#EXTINF:-1 tvg-id="HBO_Comedy_US" tvg-name="HBO Comedy US" group-title="Movies" tvg-logo="https://commons.wikimedia.org/wiki/Special:FilePath/HBO%20logo.png",HBO Comedy US
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"IXYko5g7NZPKfR87AQQtTw","k":"_sqjSG2d7vP38OGpW2Ystw"}],"type":"temporary"}
-https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/clients/dash/enc/f6ns8qsqde/out/v1/0827e077a8224107a1e6137627cc8198/cenc.mpd
-#EXTINF:-1 tvg-id="HBO_Drama_US" tvg-name="HBO Drama US" group-title="Movies" tvg-logo="https://commons.wikimedia.org/wiki/Special:FilePath/HBO%20logo.png",HBO Drama US
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"J0L0eR8XIxvbkzhE2r-1vA","k":"PEnrinIySPh_uMNyKHRVfg"}],"type":"temporary"}
-https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/clients/dash/enc/o6rq3swwr4/out/v1/6a362c145af241e5a6eb45e0729ce5e6/cenc.mpd
-#EXTINF:-1 tvg-id="AMC" tvg-name="AMC" group-title="Entertainment" tvg-logo="https://commons.wikimedia.org/wiki/Special:FilePath/Amc%20logo.svg",AMC
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"MpDv5MXPZxZehGoHQsIs2Q","k":"3blEY8Rq9gN0MvwCYznAnQ"}],"type":"temporary"}
-https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/clients/dash/enc/gyczo3tdxu/out/v1/4e9f7dd1b08a404581818c3923af9a93/cenc.mpd
-#EXTINF:-1 tvg-id="AMC+" tvg-name="AMC+" group-title="Entertainment" tvg-logo="https://commons.wikimedia.org/wiki/Special:FilePath/Amc%20logo.svg",AMC+
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"WaURZMLJFTUvBAZqBvboBw","k":"66XMNi0dY8D-ZGD-vKD9EQ"}],"type":"temporary"}
-https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/clients/dash/enc/0f5clvxn6o/out/v1/d5a953bb19734fa3baa1776266887fcb/cenc.mpd
-#EXTINF:-1 tvg-id="Astro_Showcase" tvg-name="Astro Showcase" group-title="Movies" tvg-logo="https://commons.wikimedia.org/wiki/Special:FilePath/Astro%20Malaysia%20%282024%29.png",Astro Showcase
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"uAkMg2HMXMXBqsDsJxDeEA","k":"yg0YU4hFuuLLT0oWgDbxdA"}],"type":"temporary"}
-https://linearjitp-playback.astro.com.my/dash-wv/linear/5054/default_primary.mpd
-#EXTINF:-1 tvg-id="Astro_Showtime" tvg-name="Astro Showtime" group-title="Movies" tvg-logo="https://commons.wikimedia.org/wiki/Special:FilePath/Astro%20Showtime%20%282026%29.png",Astro Showtime
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"7RJVdgSDgSHZlvDXg3nKow","kid":"aZ-4LHCn7Cl_M6pEI7q1EA"}],"type":"temporary"}
-https://linearjitp-playback.astro.com.my/dash-wv/linear/5145/default_primary.mpd
-#EXTINF:-1 tvg-id="Astro_FAM_Time" tvg-name="Astro FAM Time" group-title="Movies" tvg-logo="https://commons.wikimedia.org/wiki/Special:FilePath/Astro%20Malaysia%20%282024%29.png",Astro FAM Time
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13; UltraBox Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.61 Mobile Safari/537.36
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"wzb9fIuxjRe_Y8nkYDKo7Q","kid":"B_pqn3_ngGu6mw6X0KxbEA"}],"type":"temporary"}
-https://linearjitp-playback.astro.com.my/dash-wv/linear/5186/default_primary.mpd
-#EXTINF:-1 tvg-id="Trace_Urban" tvg-name="Trace Urban" group-title="Music" tvg-logo="https://commons.wikimedia.org/wiki/Special:FilePath/Trace%20Urban%20logo%202010.svg",Trace Urban
+#EXTINF:-1 tvg-name="Trace Urban" group-title="Music",Trace Urban
 https://lightning-traceurban-samsungau.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="The_K-Pop" tvg-name="The K-Pop" group-title="Music",The K-Pop
+#EXTINF:-1 tvg-name="The K-Pop" group-title="Music",The K-Pop
 https://beta-live-phcorner.pages.dev/JVocS7Yftw8/index.m3u8
-#EXTINF:-1 tvg-id="New_K-Pop" tvg-name="New K-Pop" group-title="Music",New K-Pop
+#EXTINF:-1 tvg-name="New K-Pop" group-title="Music",New K-Pop
 https://newidco-newkid-1-eu.xiaomi.wurl.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="AniPlus" tvg-name="AniPlus" group-title="Anime" tvg-logo="https://commons.wikimedia.org/wiki/Special:FilePath/Aniplus%20logo.svg",AniPlus
+#EXTINF:-1 tvg-name="AniPlus" group-title="Anime",AniPlus
 https://amg18481-amg18481c1-amgplt0352.playout.now3.amagi.tv/playlist/amg18481-amg18481c1-amgplt0352/playlist.m3u8
-#EXTINF:-1 tvg-id="Animax" tvg-name="Animax" group-title="Anime" tvg-logo="https://commons.wikimedia.org/wiki/Special:FilePath/Animax%20logo.svg",Animax
+#EXTINF:-1 tvg-name="Animax" group-title="Anime",Animax
 https://amg02159-amg02159c9-amgplt0352.playout.now3.amagi.tv/ts-eu-w1-n2/playlist/amg02159-amg02159c9-amgplt0352/playlist.m3u8
